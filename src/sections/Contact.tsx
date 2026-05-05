@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useI18n } from "@/lib/i18n";
 import { FadeIn } from "@/components/FadeIn";
-import { submitContact } from "@/server/contact.functions";
+import { submitContact } from "@/utils/contact.functions";
 
 const schema = z.object({
   name: z.string().trim().min(1).max(100),
