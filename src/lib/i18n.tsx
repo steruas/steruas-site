@@ -1,7 +1,8 @@
 import { createContext, useContext, type ReactNode } from "react";
 import { content, type Locale } from "@/content/site";
 
-type Ctx = { locale: Locale; t: (typeof content)["pt"]; other: Locale };
+type Dict = (typeof content)[Locale];
+type Ctx = { locale: Locale; t: Dict; other: Locale };
 const I18nContext = createContext<Ctx | null>(null);
 
 export function I18nProvider({ locale, children }: { locale: Locale; children: ReactNode }) {
