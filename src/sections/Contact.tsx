@@ -1,35 +1,8 @@
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import { useI18n } from "@/lib/i18n";
 import { FadeIn } from "@/components/FadeIn";
-import { submitContact } from "@/utils/contact.functions";
-
-const schema = z.object({
-  name: z.string().trim().min(1).max(100),
-  email: z.string().trim().email().max(255),
-  message: z.string().trim().min(1).max(2000),
-});
-type FormData = z.infer<typeof schema>;
 
 export function Contact() {
   const { t } = useI18n();
-  const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>({
-    resolver: zodResolver(schema),
-  });
-
-  const onSubmit = async (data: FormData) => {
-    setStatus("sending");
-    try {
-      await submitContact({ data });
-      setStatus("ok");
-      reset();
-    } catch {
-      setStatus("error");
-    }
-  };
 
   return (
     <section id="contact" className="section-dark py-24 md:py-32">
@@ -40,57 +13,29 @@ export function Contact() {
             <h2 className="mt-6 font-serif text-5xl md:text-6xl tracking-tight text-[#F5F5F0]">
               {t.contact.headline}
             </h2>
-            <p className="mt-6 text-[17px] leading-[1.7] text-[#F5F5F0]/70">{t.contact.intro}</p>
+            <p className="mt-6 text-[17px] leading-[1.7] text-[#F5F5F0]/70">
+              {t.contact.intro}
+            </p>
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <form onSubmit={handleSubmit(onSubmit)} className="mt-14 text-left space-y-6">
-              <Field label={t.contact.name} error={errors.name?.message}>
-                <input
-                  {...register("name")}
-                  className="w-full bg-transparent border-b border-[#2A2A2A] focus:border-[#B8862B] text-[#F5F5F0] py-3 outline-none transition-colors"
-                  autoComplete="name"
-                />
-              </Field>
-              <Field label={t.contact.email} error={errors.email?.message}>
-                <input
-                  type="email"
-                  {...register("email")}
-                  className="w-full bg-transparent border-b border-[#2A2A2A] focus:border-[#B8862B] text-[#F5F5F0] py-3 outline-none transition-colors"
-                  autoComplete="email"
-                />
-              </Field>
-              <Field label={t.contact.message} error={errors.message?.message}>
-                <textarea
-                  rows={5}
-                  {...register("message")}
-                  className="w-full bg-transparent border-b border-[#2A2A2A] focus:border-[#B8862B] text-[#F5F5F0] py-3 outline-none resize-none transition-colors"
-                />
-              </Field>
-
-              <div className="pt-4 flex items-center gap-6">
-                <button
-                  type="submit"
-                  disabled={status === "sending"}
-                  className="inline-flex items-center justify-center bg-[#B8862B] text-white px-8 h-12 rounded-md text-sm font-medium hover:bg-[#a3771f] transition-colors disabled:opacity-60"
-                >
-                  {status === "sending" ? t.contact.sending : t.contact.submit}
-                </button>
-                {status === "ok" && (
-                  <span className="text-sm text-[#B8862B]">{t.contact.success}</span>
-                )}
-                {status === "error" && (
-                  <span className="text-sm text-red-400">{t.contact.error}</span>
-                )}
-              </div>
-            </form>
-
-            <div className="mt-14 flex items-center justify-center gap-6 text-sm text-[#F5F5F0]/60">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                 className="hover:text-[#B8862B] transition-colors">LinkedIn</a>
-              <span aria-hidden className="text-[#2A2A2A]">/</span>
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"
-                 className="hover:text-[#B8862B] transition-colors">{t.contact.whatsapp}</a>
+            <div className="mt-14 flex flex-col gap-4 max-w-md mx-auto">
+              <ContactButton
+                href="https://www.linkedin.com/in/stephanie-nakamura-ruas/"
+                label={t.contact.linkedin.label}
+                hint={t.contact.linkedin.hint}
+                primary
+              />
+              <ContactButton
+                href="https://wa.me/55SEUNUMERO"
+                label={t.contact.whatsapp.label}
+                hint={t.contact.whatsapp.hint}
+              />
+              <ContactButton
+                href="mailto:oi@steruas.com"
+                label={t.contact.email.label}
+                hint={t.contact.email.hint}
+              />
             </div>
           </FadeIn>
         </div>
@@ -99,12 +44,51 @@ export function Contact() {
   );
 }
 
-function Field({ label, error, children }: { label: string; error?: string; children: React.ReactNode }) {
+function ContactButton({
+  href,
+  label,
+  hint,
+  primary = false,
+}: {
+  href: string;
+  label: string;
+  hint: string;
+  primary?: boolean;
+}) {
+  const isExternal = href.startsWith("http");
   return (
-    <label className="block">
-      <span className="eyebrow !text-[#F5F5F0]/50">{label}</span>
-      <div className="mt-1">{children}</div>
-      {error && <span className="block mt-1 text-xs text-red-400">{error}</span>}
-    </label>
+    
+      href={href}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
+      className={
+        primary
+          ? "group flex items-center justify-between bg-[#B8862B] hover:bg-[#a3771f] text-white px-6 py-5 rounded-md transition-colors"
+          : "group flex items-center justify-between bg-transparent border border-[#2A2A2A] hover:border-[#B8862B] text-[#F5F5F0] px-6 py-5 rounded-md transition-colors"
+      }
+    >
+      <div className="text-left">
+        <div className="text-base font-medium">{label}</div>
+        <div
+          className={
+            primary
+              ? "text-xs text-white/70 mt-0.5"
+              : "text-xs text-[#F5F5F0]/50 mt-0.5"
+          }
+        >
+          {hint}
+        </div>
+      </div>
+      <span
+        aria-hidden
+        className={
+          primary
+            ? "text-white/70 group-hover:translate-x-1 transition-transform"
+            : "text-[#F5F5F0]/40 group-hover:text-[#B8862B] group-hover:translate-x-1 transition-transform"
+        }
+      >
+        →
+      </span>
+    </a>
   );
 }
