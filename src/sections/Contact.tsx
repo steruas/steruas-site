@@ -20,7 +20,7 @@ function ContactButton({ href, label, hint, primary = false }: ContactButtonProp
     : "text-[#F5F5F0]/40 group-hover:text-[#B8862B] group-hover:translate-x-1 transition-transform";
 
   return (
-    
+      <a
       href={href}
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}
