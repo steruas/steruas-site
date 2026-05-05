@@ -1,6 +1,40 @@
 import { useI18n } from "@/lib/i18n";
 import { FadeIn } from "@/components/FadeIn";
 
+type ContactButtonProps = {
+  href: string;
+  label: string;
+  hint: string;
+  primary?: boolean;
+};
+
+function ContactButton({ href, label, hint, primary = false }: ContactButtonProps) {
+  const isExternal = href.startsWith("http");
+  const baseClass = "group flex items-center justify-between px-6 py-5 rounded-md transition-colors";
+  const styleClass = primary
+    ? "bg-[#B8862B] hover:bg-[#a3771f] text-white"
+    : "bg-transparent border border-[#2A2A2A] hover:border-[#B8862B] text-[#F5F5F0]";
+  const hintClass = primary ? "text-xs text-white/70 mt-0.5" : "text-xs text-[#F5F5F0]/50 mt-0.5";
+  const arrowClass = primary
+    ? "text-white/70 group-hover:translate-x-1 transition-transform"
+    : "text-[#F5F5F0]/40 group-hover:text-[#B8862B] group-hover:translate-x-1 transition-transform";
+
+  return (
+    
+      href={href}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
+      className={`${baseClass} ${styleClass}`}
+    >
+      <div className="text-left">
+        <div className="text-base font-medium">{label}</div>
+        <div className={hintClass}>{hint}</div>
+      </div>
+      <span aria-hidden className={arrowClass}>→</span>
+    </a>
+  );
+}
+
 export function Contact() {
   const { t } = useI18n();
 
@@ -41,54 +75,5 @@ export function Contact() {
         </div>
       </div>
     </section>
-  );
-}
-
-function ContactButton({
-  href,
-  label,
-  hint,
-  primary = false,
-}: {
-  href: string;
-  label: string;
-  hint: string;
-  primary?: boolean;
-}) {
-  const isExternal = href.startsWith("http");
-  return (
-    
-      href={href}
-      target={isExternal ? "_blank" : undefined}
-      rel={isExternal ? "noopener noreferrer" : undefined}
-      className={
-        primary
-          ? "group flex items-center justify-between bg-[#B8862B] hover:bg-[#a3771f] text-white px-6 py-5 rounded-md transition-colors"
-          : "group flex items-center justify-between bg-transparent border border-[#2A2A2A] hover:border-[#B8862B] text-[#F5F5F0] px-6 py-5 rounded-md transition-colors"
-      }
-    >
-      <div className="text-left">
-        <div className="text-base font-medium">{label}</div>
-        <div
-          className={
-            primary
-              ? "text-xs text-white/70 mt-0.5"
-              : "text-xs text-[#F5F5F0]/50 mt-0.5"
-          }
-        >
-          {hint}
-        </div>
-      </div>
-      <span
-        aria-hidden
-        className={
-          primary
-            ? "text-white/70 group-hover:translate-x-1 transition-transform"
-            : "text-[#F5F5F0]/40 group-hover:text-[#B8862B] group-hover:translate-x-1 transition-transform"
-        }
-      >
-        →
-      </span>
-    </a>
   );
 }
