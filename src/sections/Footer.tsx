@@ -16,8 +16,8 @@ export function Footer() {
           <li><a href="#contact" className="hover:text-[#B8862B] transition-colors">{t.nav.contact}</a></li>
         </ul>
         <ul className="space-y-2 md:text-right">
-          <li><a href="https://linkedin.com" className="hover:text-[#B8862B] transition-colors">LinkedIn</a></li>
-          <li><a href="https://wa.me/" className="hover:text-[#B8862B] transition-colors">WhatsApp</a></li>
+          <li><a href="https://www.linkedin.com/in/steruas/" className="hover:text-[#B8862B] transition-colors">LinkedIn</a></li>
+          <li><a href="https://wa.me/5511951629833" className="hover:text-[#B8862B] transition-colors">WhatsApp</a></li>
         </ul>
       </div>
       <div className="hairline-dark">
