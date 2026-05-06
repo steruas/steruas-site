@@ -48,14 +48,14 @@ export const content = {
   intro: "Aberta a conversas sobre growth com IA, posições em fintechs e instituições financeiras, ou colaborações editoriais.",
   linkedin: {
     label: "LinkedIn",
-    hint: "Onde costumo responder mais rápido",
+    hint: "Conecte-se comigo",
   },
   whatsapp: {
     label: "WhatsApp",
-    hint: "Para conversas diretas",
+    hint: "Onde respondo mais rápido",
   },
   email: {
-    label: "oi@steruas.com",
+    label: "E-mail",
     hint: "Para tudo o mais",
   },
 },
@@ -108,17 +108,17 @@ export const content = {
     contact: {
   eyebrow: "Contact",
   headline: "Let's talk.",
-  intro: "Open to conversations about AI-native growth, roles at fintechs and financial institutions, or editorial collaborations.",
+  intro: "Open to conversations about AI, Strategy, Growth, roles at fintechs and financial institutions, or editorial collaborations.",
   linkedin: {
     label: "LinkedIn",
-    hint: "Where I respond fastest",
+    hint: "Follow me or add me to your network",
   },
   whatsapp: {
     label: "WhatsApp",
-    hint: "For direct conversations",
+    hint: "Where I respond fastest",
   },
   email: {
-    label: "oi@steruas.com",
+    label: "E-mail",
     hint: "For everything else",
   },
 },
