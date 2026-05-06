@@ -45,7 +45,7 @@ export const content = {
     contact: {
   eyebrow: "Contato",
   headline: "Vamos conversar.",
-  intro: "Aberta a conversas sobre growth com IA, posições em fintechs e instituições financeiras, ou colaborações editoriais.",
+  intro: "Aberta a conversas sobre Growth, IA, Dados, Estratégia & Execução.",
   linkedin: {
     label: "LinkedIn",
     hint: "Conecte-se comigo",
@@ -108,7 +108,7 @@ export const content = {
     contact: {
   eyebrow: "Contact",
   headline: "Let's talk.",
-  intro: "Open to conversations about AI, Strategy, Growth, roles at fintechs and financial institutions, or editorial collaborations.",
+  intro: "Open to conversations about Growth, AI, Data, Strategy and Execution.",
   linkedin: {
     label: "LinkedIn",
     hint: "Follow me or add me to your network",
