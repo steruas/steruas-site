@@ -55,18 +55,18 @@ export function Contact() {
           <FadeIn delay={0.1}>
             <div className="mt-14 flex flex-col gap-4 max-w-md mx-auto">
               <ContactButton
-                href="https://www.linkedin.com/in/stephanie-nakamura-ruas/"
+                href="https://www.linkedin.com/in/steruas/"
                 label={t.contact.linkedin.label}
                 hint={t.contact.linkedin.hint}
                 primary
               />
               <ContactButton
-                href="https://wa.me/55SEUNUMERO"
+                href="https://wa.me/5511951629833"
                 label={t.contact.whatsapp.label}
                 hint={t.contact.whatsapp.hint}
               />
               <ContactButton
-                href="mailto:oi@steruas.com"
+                href="mailto:hello@steruas.com"
                 label={t.contact.email.label}
                 hint={t.contact.email.hint}
               />
