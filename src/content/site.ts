@@ -52,18 +52,18 @@ export const content = {
     contact: {
       eyebrow: "Contato",
       headline: "Vamos conversar.",
-      intro: "Aberta a conversas sobre growth com IA, posições em fintechs e instituições financeiras, ou colaborações.",
+      intro: "Aberta a conversas sobre Growth, IA, Dados, Estratégia & Execução.",
       linkedin: {
         label: "LinkedIn",
-        hint: "Onde costumo responder mais rápido",
+        hint: "Conecte-se comigo",
       },
       whatsapp: {
         label: "WhatsApp",
-        hint: "Para conversas diretas",
+        hint: "Onde respondo mais rápido",
       },
       email: {
-        label: "Email",
-        hint: "Para mensagens mais formais",
+        label: "E-mail",
+        hint: "Para tudo o mais",
       },
     },
     footer: {
@@ -122,18 +122,18 @@ export const content = {
     contact: {
       eyebrow: "Contact",
       headline: "Let's talk.",
-      intro: "Open to conversations about AI-native growth, roles at fintechs and financial institutions, or collaborations.",
+      intro: "Open to conversations about Growth, AI, Data, Strategy and Execution.",
       linkedin: {
         label: "LinkedIn",
-        hint: "Where I respond fastest",
+        hint: "Let's connect",
       },
       whatsapp: {
         label: "WhatsApp",
-        hint: "For direct conversations",
+        hint: "Where I respond fastest",
       },
       email: {
-        label: "Email",
-        hint: "For more formal messages",
+        label: "E-mail",
+        hint: "For everything else",
       },
     },
     footer: {
