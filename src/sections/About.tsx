@@ -1,8 +1,9 @@
+import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
 import { FadeIn } from "@/components/FadeIn";
 
 export function About() {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   return (
     <section id="about" className="section-light py-24 md:py-32">
       <div className="container-wide">
@@ -17,9 +18,9 @@ export function About() {
           </div>
           <div className="col-span-12 md:col-span-6 md:col-start-7">
             <FadeIn delay={0.1}>
-              <div className="space-y-6 text-[17px] leading-[1.7] text-[#1A1A1A]/80">
-                {t.about.body.map((p, i) => <p key={i}>{p}</p>)}
-              </div>
+              <p className="text-[17px] leading-[1.7] text-[#1A1A1A]/80">
+                {t.about.hookHome}
+              </p>
               <div className="mt-10 flex flex-wrap gap-2">
                 {t.about.tags.map((tag) => (
                   <span
@@ -30,13 +31,14 @@ export function About() {
                   </span>
                 ))}
               </div>
-              <a
-                href="#"
+              <Link
+                to="/$locale/sobre"
+                params={{ locale }}
                 className="mt-10 inline-flex items-center gap-2 text-sm text-[#1A1A1A] border-b border-[#B8862B] pb-1 hover:text-[#B8862B] transition-colors"
               >
-                {t.about.download}
-                <span aria-hidden>↓</span>
-              </a>
+                {t.about.readMore}
+                <span aria-hidden>→</span>
+              </Link>
             </FadeIn>
           </div>
         </div>
