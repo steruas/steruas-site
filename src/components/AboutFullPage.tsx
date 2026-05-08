@@ -1,23 +1,15 @@
-import { I18nProvider, useI18n } from "@/lib/i18n";
+import { useEffect } from "react";
+import { useI18n } from "@/lib/i18n";
 import type { Locale } from "@/content/site";
-import { Nav } from "@/components/Nav";
-import { Footer } from "@/sections/Footer";
 import { FadeIn } from "@/components/FadeIn";
 
-export function AboutFullPage({ locale }: { locale: Locale }) {
-  return (
-    <I18nProvider locale={locale}>
-      <Nav />
-      <main>
-        <AboutContent />
-      </main>
-      <Footer />
-    </I18nProvider>
-  );
-}
-
-function AboutContent() {
+export function AboutFullPage({ locale: _locale }: { locale: Locale }) {
   const { t } = useI18n();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="section-light py-24 md:py-32">
       <div className="container-wide">

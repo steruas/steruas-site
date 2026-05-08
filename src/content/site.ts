@@ -13,6 +13,9 @@ export const content = {
     about: {
       eyebrow: "Sobre",
       headline: "Estrategista voltando pra growth, com IA aplicada.",
+      hookHome: "Consultoria deu o rigor. Startups deram a navegação na incerteza. Corporativo deu a tradução. IA dá a velocidade pra finalmente operar no ritmo de quem pensa em árvore.",
+      readMore: "Ler bio completa",
+
       body: [
         "Estrategista voltando pra growth depois de seis anos em estratégia corporativa. Background plural de propósito: consultoria, startups em estágios diversos e corporações de tamanhos diferentes. Cada uma dessas escolas treinou um músculo diferente em mim, e a combinação dos três é o que me faz ler negócios como sistemas, não como anedotas.",
         "A consultoria estratégica me ensinou rigor. Comecei a carreira na A.T. Kearney, e sou grata até hoje pelo padrão que aprendi ali: como estruturar problemas, como conduzir projetos, como dar e receber feedback, como conversar no nível de quem decide. Boa parte do que faço bem hoje vem desse período.",
@@ -83,6 +86,8 @@ export const content = {
     about: {
       eyebrow: "About",
       headline: "Strategist returning to growth, with applied AI.",
+      hookHome: "Consulting gave me rigor. Startups taught me to navigate uncertainty. Large corporations taught me translation. AI gives me the speed to finally operate at the pace of someone who thinks in trees.",
+      readMore: "Read full bio",
       body: [
         "Strategist returning to growth after six years in corporate strategy. Plural background by design: consulting, startups across various stages, and corporations of different sizes. Each of these schools trained a different muscle in me, and the combination of the three is what makes me read businesses as systems, not as anecdotes.",
         "Strategy consulting taught me rigor. I started my career at A.T. Kearney, and I'm grateful to this day for the standard I learned there: how to structure problems, how to lead projects, how to give and receive feedback, how to operate at the level of decision-makers. Most of what I do well today comes from that period.",

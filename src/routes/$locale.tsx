@@ -1,5 +1,7 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
-import { SitePage } from "@/components/SitePage";
+import { createFileRoute, notFound, Outlet } from "@tanstack/react-router";
+import { I18nProvider } from "@/lib/i18n";
+import { Nav } from "@/components/Nav";
+import { Footer } from "@/sections/Footer";
 import type { Locale } from "@/content/site";
 
 export const Route = createFileRoute("/$locale")({
@@ -46,5 +48,13 @@ export const Route = createFileRoute("/$locale")({
 
 function RouteComponent() {
   const { locale } = Route.useLoaderData();
-  return <SitePage locale={locale} />;
+  return (
+    <I18nProvider locale={locale}>
+      <Nav />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </I18nProvider>
+  );
 }
