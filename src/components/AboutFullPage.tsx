@@ -1,14 +1,11 @@
-import { useEffect } from "react";
 import { useI18n } from "@/lib/i18n";
+import { useScrollToTop } from "@/lib/hooks";
 import type { Locale } from "@/content/site";
 import { FadeIn } from "@/components/FadeIn";
 
 export function AboutFullPage({ locale: _locale }: { locale: Locale }) {
-  const { t } = useI18n();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+const { t } = useI18n();
+  useScrollToTop();
 
   return (
     <section className="section-light py-24 md:py-32">
