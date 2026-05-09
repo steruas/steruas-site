@@ -1,9 +1,16 @@
+import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
 import { FadeIn } from "@/components/FadeIn";
 import { cases } from "@/content/site";
 
 export function BuiltWithAi() {
   const { t, locale } = useI18n();
+
+  // Caso 1 (destaque) — primeiro do array, sempre active
+  const featured = cases[0];
+  // Casos secundários — todos os outros
+  const others = cases.slice(1);
+
   return (
     <section id="built" className="section-light py-24 md:py-32">
       <div className="container-wide">
@@ -23,7 +30,7 @@ export function BuiltWithAi() {
           </div>
         </div>
 
-        {/* Featured case */}
+        {/* Featured case — Caso 1 */}
         <FadeIn delay={0.1}>
           <article className="mt-20 border border-[#E5E3DC] bg-white/40 rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-5">
@@ -43,37 +50,54 @@ export function BuiltWithAi() {
                 </svg>
               </div>
               <div className="lg:col-span-2 p-8 md:p-10 flex flex-col">
-                <div className="eyebrow">Featured</div>
+                <div className="eyebrow">{t.builtWithAi.featured}</div>
                 <h3 className="mt-4 font-serif text-2xl md:text-[28px] leading-[1.15] text-[#1A1A1A]">
-                  {t.builtWithAi.featuredTitle}
+                  {featured.title[locale]}
                 </h3>
-                <div className="mt-5 space-y-4 text-[15px] leading-[1.65] text-[#1A1A1A]/75">
-                  {t.builtWithAi.featuredDesc.map((p, i) => <p key={i}>{p}</p>)}
-                </div>
+                <p className="mt-5 text-[15px] leading-[1.65] text-[#1A1A1A]/75">
+                  {featured.desc[locale]}
+                </p>
                 <div className="mt-6 grid grid-cols-2 gap-4 text-xs">
                   <div>
                     <div className="eyebrow !text-[#1A1A1A]/50">{t.builtWithAi.tools}</div>
-                    <div className="mt-2 text-[#1A1A1A]/80">Python · LLMs · dbt</div>
+                    <div className="mt-2 text-[#1A1A1A]/80">{featured.tools.join(" · ")}</div>
                   </div>
                   <div>
                     <div className="eyebrow !text-[#1A1A1A]/50">{t.builtWithAi.sector}</div>
-                    <div className="mt-2 text-[#1A1A1A]/80">{locale === "pt" ? "Bancos" : "Banking"}</div>
+                    <div className="mt-2 text-[#1A1A1A]/80">{featured.sector[locale]}</div>
                   </div>
                 </div>
-                <a href="#" className="mt-8 inline-flex items-center gap-2 text-sm text-[#B8862B] hover:underline underline-offset-4">
+                <Link
+                  to="/$locale/feito-com-ia/$slug"
+                  params={{ locale, slug: featured.slug }}
+                  className="mt-8 inline-flex items-center gap-2 text-sm text-[#B8862B] hover:underline underline-offset-4"
+                >
                   {t.builtWithAi.featuredCta} →
-                </a>
+                </Link>
               </div>
             </div>
           </article>
         </FadeIn>
 
-        {/* Smaller cases */}
+        {/* Other cases */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {cases.map((c, i) => (
-            <FadeIn key={i} delay={i * 0.08}>
-              <article className="border border-[#E5E3DC] rounded-lg p-8 h-full transition-transform hover:scale-[1.02] hover:border-[#B8862B]/40 cursor-pointer">
-                <div className="aspect-[16/9] -mx-2 -mt-2 mb-6 rounded bg-gradient-to-br from-[#F0EFE8] to-[#E5E3DC]" />
+          {others.map((c, i) => {
+            const isComingSoon = c.status === "coming-soon";
+            const cardClasses = `border rounded-lg p-8 h-full transition-transform ${
+              isComingSoon
+                ? "border-[#E5E3DC] opacity-75"
+                : "border-[#E5E3DC] hover:scale-[1.02] hover:border-[#B8862B]/40 cursor-pointer"
+            }`;
+
+            const cardContent = (
+              <article className={cardClasses}>
+                <div className="aspect-[16/9] -mx-2 -mt-2 mb-6 rounded bg-gradient-to-br from-[#F0EFE8] to-[#E5E3DC] relative">
+                  {isComingSoon && (
+                    <div className="absolute top-3 right-3 text-[10px] uppercase tracking-[0.18em] text-[#1A1A1A]/60 bg-white/80 px-2 py-1 rounded">
+                      {t.builtWithAi.comingSoon}
+                    </div>
+                  )}
+                </div>
                 <h3 className="font-serif text-xl text-[#1A1A1A]">{c.title[locale]}</h3>
                 <p className="mt-3 text-sm text-[#1A1A1A]/70 leading-[1.6]">{c.desc[locale]}</p>
                 <div className="mt-6 flex flex-wrap gap-2">
@@ -87,8 +111,35 @@ export function BuiltWithAi() {
                   </span>
                 </div>
               </article>
-            </FadeIn>
-          ))}
+            );
+
+            return (
+              <FadeIn key={c.slug} delay={i * 0.08}>
+                {isComingSoon ? (
+                  cardContent
+                ) : (
+                  <Link
+                    to="/$locale/feito-com-ia/$slug"
+                    params={{ locale, slug: c.slug }}
+                    className="block h-full"
+                  >
+                    {cardContent}
+                  </Link>
+                )}
+              </FadeIn>
+            );
+          })}
+        </div>
+
+        {/* Ver todos */}
+        <div className="mt-16 text-center">
+          <Link
+            to="/$locale/feito-com-ia"
+            params={{ locale }}
+            className="text-sm text-[#B8862B] hover:underline underline-offset-4"
+          >
+            {t.builtWithAi.viewAll} →
+          </Link>
         </div>
       </div>
     </section>

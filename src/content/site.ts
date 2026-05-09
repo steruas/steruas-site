@@ -42,15 +42,14 @@ export const content = {
       eyebrow: "Projetos",
       headline: "Feito com IA.",
       intro: "Análises, protótipos e ferramentas que estou construindo, com foco inicial no setor financeiro brasileiro.",
-      featuredTitle: "[Caso 1: Análise Bacen + Reclame Aqui]",
-      featuredDesc: [
-        "Cruzamento entre reclamações registradas no Banco Central e o Reclame Aqui pra mapear onde a experiência do cliente bancário se descola da régua regulatória, e onde está a próxima vaga competitiva.",
-        "Pipeline construído com Python, LLMs para classificação semântica e dashboards interativos. O resultado é uma leitura inédita do mercado, atualizável trimestralmente.",
-      ],
       featuredCta: "Ver análise completa",
+      viewAll: "Ver todos os projetos",
       tools: "Ferramentas",
       sector: "Setor",
       outcome: "Insight",
+      comingSoon: "Em breve",
+      institutions: "Análises por instituição",
+      featured: "Destaque",
     },
     contact: {
       eyebrow: "Contato",
@@ -114,15 +113,14 @@ export const content = {
       eyebrow: "Projects",
       headline: "Built with AI.",
       intro: "Analyses, prototypes, and tools I'm building, with initial focus on the Brazilian financial sector.",
-      featuredTitle: "[Case 1: Bacen + Reclame Aqui Analysis]",
-      featuredDesc: [
-        "A cross-reference between complaints filed with the Brazilian Central Bank and Reclame Aqui to map where banking customer experience drifts from regulatory standards, and where the next competitive opening lives.",
-        "Pipeline built with Python, LLMs for semantic classification, and interactive dashboards. The output is a novel read on the market, refreshable each quarter.",
-      ],
       featuredCta: "See full analysis",
+      viewAll: "View all projects",
       tools: "Tools",
       sector: "Sector",
       outcome: "Insight",
+      comingSoon: "Coming soon",
+      institutions: "Analyses by institution",
+      featured: "Featured",
     },
     contact: {
       eyebrow: "Contact",
@@ -158,6 +156,18 @@ export const posts = [
       en: "Growth teams inherited the funnel's language. But AI doesn't run in funnels, it runs in compounding loops. How to describe what we're building.",
     },
     date: "2026-04-22", readingTime: 8,
+    body: {
+      pt: [
+        "Times de growth nasceram dentro de empresas que viam aquisição como funil. AARRR, AIDA, jornada do cliente em fases lineares. Esse vocabulário moldou métricas, ferramentas e estruturas organizacionais. Mas IA não opera em funil. IA opera em loops compostos onde cada interação alimenta o próximo modelo, e o tempo de aprendizado é a métrica que mais importa.",
+        "Quando a equipe segue chamando de 'topo de funil' o que na verdade é 'sinal de treinamento', a discussão estratégica fica enviesada. Você acaba otimizando volume de leads quando deveria estar otimizando qualidade de sinal. E pior: gerentes acima do time, formados na linguagem antiga, fazem perguntas que não têm resposta no novo paradigma.",
+        "[Placeholder de ensaio em construção. O conteúdo final será publicado em breve.]",
+      ],
+      en: [
+        "Growth teams were born inside companies that saw acquisition as a funnel. AARRR, AIDA, customer journey in linear stages. This vocabulary shaped metrics, tools, and organizational structures. But AI doesn't run in funnels. AI runs in compounding loops where each interaction feeds the next model, and learning time is the metric that matters most.",
+        "When the team keeps calling 'top of funnel' what is actually 'training signal,' strategic discussion gets biased. You end up optimizing for lead volume when you should be optimizing for signal quality. And worse: managers above the team, trained in the old language, ask questions that have no answer in the new paradigm.",
+        "[Essay in progress. Final content will be published soon.]",
+      ],
+    },
   },
   {
     slug: "bancos-versus-fintechs-ia",
@@ -168,6 +178,16 @@ export const posts = [
       en: "Distribution, proprietary data, and regulatory leverage. A counterintuitive read on the current state of financial services competition.",
     },
     date: "2026-03-30", readingTime: 11,
+    body: {
+      pt: [
+        "A narrativa dominante diz que fintechs vão dominar o próximo ciclo. A realidade é mais sutil. Bancos incumbentes têm três ativos que IA amplifica: distribuição massiva, dados proprietários acumulados em décadas, e relação regulatória estável. Fintechs têm velocidade e cultura de produto, mas isso não compensa a falta dos três anteriores quando o jogo muda de aquisição pra retenção.",
+        "[Placeholder de ensaio em construção. O conteúdo final será publicado em breve.]",
+      ],
+      en: [
+        "The dominant narrative says fintechs will dominate the next cycle. Reality is more nuanced. Incumbent banks have three assets that AI amplifies: massive distribution, proprietary data accumulated over decades, and stable regulatory relationships. Fintechs have speed and product culture, but that doesn't compensate for the lack of the first three when the game shifts from acquisition to retention.",
+        "[Essay in progress. Final content will be published soon.]",
+      ],
+    },
   },
   {
     slug: "agentes-aquisicao",
@@ -178,6 +198,16 @@ export const posts = [
       en: "What changes when the first customer touch is agent-mediated. Ethical limits, real gains, and the most common mistake.",
     },
     date: "2026-03-12", readingTime: 7,
+    body: {
+      pt: [
+        "Quando o primeiro contato comercial é mediado por agente, três coisas mudam de uma vez: o ritmo, o roteiro e o limite ético. Times que tratam isso como 'SDR mais barato' perdem. Times que tratam como 'novo canal com regras próprias' ganham.",
+        "[Placeholder de ensaio em construção. O conteúdo final será publicado em breve.]",
+      ],
+      en: [
+        "When the first commercial contact is agent-mediated, three things change at once: the rhythm, the script, and the ethical limit. Teams that treat this as 'cheaper SDR' lose. Teams that treat it as 'new channel with its own rules' win.",
+        "[Essay in progress. Final content will be published soon.]",
+      ],
+    },
   },
   {
     slug: "reclame-aqui-sinal",
@@ -188,6 +218,16 @@ export const posts = [
       en: "How to read the Reclame Aqui base with LLMs and surface product opportunities the CS team has stopped trying to explain.",
     },
     date: "2026-02-18", readingTime: 9,
+    body: {
+      pt: [
+        "Reclame Aqui é tratado como termômetro de reputação. É também — e principalmente — uma base estruturada de dor de cliente, organizada por empresa e categoria, que com LLMs pode ser lida em escala. O que o time de CS desistiu de explicar pra liderança aparece ali, em volume, com vocabulário do próprio cliente.",
+        "[Placeholder de ensaio em construção. O conteúdo final será publicado em breve.]",
+      ],
+      en: [
+        "Reclame Aqui is treated as a reputation thermometer. It is also — and primarily — a structured customer pain database, organized by company and category, that with LLMs can be read at scale. What the CS team has given up trying to explain to leadership shows up there, in volume, with the customer's own vocabulary.",
+        "[Essay in progress. Final content will be published soon.]",
+      ],
+    },
   },
   {
     slug: "regulado-rapido",
@@ -198,6 +238,16 @@ export const posts = [
       en: "Most of the friction we blame on legal is, in fact, missing design. A framework for getting AI out of regulatory limbo.",
     },
     date: "2026-01-29", readingTime: 6,
+    body: {
+      pt: [
+        "Existe um padrão repetido em corporativos com áreas de compliance fortes: cada projeto de IA passa meses em revisão jurídica, e a frustração das equipes técnicas vai aumentando. O diagnóstico fácil é dizer que o jurídico é lento. O diagnóstico correto, na maior parte dos casos, é que o projeto chegou no jurídico mal desenhado.",
+        "[Placeholder de ensaio em construção. O conteúdo final será publicado em breve.]",
+      ],
+      en: [
+        "There's a recurring pattern in corporates with strong compliance areas: each AI project spends months in legal review, and frustration on technical teams keeps growing. The easy diagnosis is to say legal is slow. The correct diagnosis, most of the time, is that the project arrived at legal poorly designed.",
+        "[Essay in progress. Final content will be published soon.]",
+      ],
+    },
   },
   {
     slug: "metricas-que-sobram",
@@ -208,20 +258,93 @@ export const posts = [
       en: "CAC and LTV survive. Almost everything else needs rewriting. An honest inventory of what makes it through.",
     },
     date: "2026-01-08", readingTime: 10,
+    body: {
+      pt: [
+        "Quando IA assume execução de boa parte do operacional de marketing e vendas, métricas tradicionais ou perdem significado ou precisam ser reescritas. CAC e LTV continuam, porque medem fluxo de caixa real. Mas taxa de conversão por etapa, tempo de resposta de SDR, número de toques antes de fechar — quase todas precisam de redefinição.",
+        "[Placeholder de ensaio em construção. O conteúdo final será publicado em breve.]",
+      ],
+      en: [
+        "When AI takes execution of much of marketing and sales operations, traditional metrics either lose meaning or need to be rewritten. CAC and LTV remain, because they measure real cash flow. But conversion rate per stage, SDR response time, number of touches before closing — almost all of them need redefinition.",
+        "[Essay in progress. Final content will be published soon.]",
+      ],
+    },
   },
 ] as const;
 
 export const cases = [
   {
-    title: { pt: "[Caso 2: Mapa de churn em crédito]", en: "[Case 2: Credit churn map]" },
-    desc: { pt: "Modelo de propensão e narrativa de retenção para carteira de crédito pessoal.", en: "Propensity model and retention narrative for a personal credit book." },
-    tools: ["Python", "Claude", "dbt"],
-    sector: { pt: "Crédito", en: "Credit" },
+    slug: "bacen-reclame-aqui",
+    title: { pt: "Caso 1: Análise Bacen + Reclame Aqui", en: "Case 1: Bacen + Reclame Aqui Analysis" },
+    desc: {
+      pt: "Cruzamento entre reclamações registradas no Banco Central e o Reclame Aqui pra mapear onde a experiência do cliente bancário se descola da régua regulatória.",
+      en: "A cross-reference between complaints filed with the Brazilian Central Bank and Reclame Aqui to map where banking customer experience drifts from regulatory standards.",
+    },
+    tools: ["Python", "LLMs", "dbt"],
+    sector: { pt: "Serviços financeiros", en: "Financial services" },
+    status: "active",
+    body: {
+      pt: [
+        "A maioria das instituições financeiras lê reclamações como ruído operacional. Eu leio como sinal de mercado. O Banco Central publica trimestralmente um ranking de reclamações por instituição, com classificação padronizada. O Reclame Aqui publica continuamente reclamações com texto livre, escritas pelo próprio cliente, identificadas por instituição.",
+        "Cruzando os dois com classificação semântica via LLMs, dá pra mapear onde a experiência do cliente se descola da régua regulatória, e onde está a próxima vaga competitiva. Não é hipótese: é o que o cliente está literalmente dizendo, em volume.",
+        "[Análise em construção. Cada instituição abaixo terá página dedicada com leitura específica do que aparece nos dados.]",
+      ],
+      en: [
+        "Most financial institutions read complaints as operational noise. I read them as market signal. The Central Bank publishes quarterly a complaint ranking per institution, with standardized classification. Reclame Aqui continuously publishes complaints in free text, written by the customer themselves, identified by institution.",
+        "Cross-referencing the two with semantic classification via LLMs, it's possible to map where customer experience drifts from regulatory standards, and where the next competitive opening lives. Not hypothesis: it's what customers are literally saying, at scale.",
+        "[Analysis in progress. Each institution below will have a dedicated page with specific reading of what appears in the data.]",
+      ],
+    },
+    institutions: [
+      {
+        slug: "nubank",
+        name: "Nubank",
+        body: {
+          pt: [
+            "[Análise específica do Nubank em construção. Vai cobrir as principais frentes de reclamação dos últimos trimestres, padrões identificados via LLM no texto do Reclame Aqui, e onde a experiência se descola da régua regulatória do Bacen.]",
+          ],
+          en: [
+            "[Nubank-specific analysis in progress. Will cover the main complaint vectors from recent quarters, patterns identified via LLM in Reclame Aqui text, and where the experience drifts from Bacen's regulatory standards.]",
+          ],
+        },
+      },
+      {
+        slug: "mercado-pago",
+        name: "Mercado Pago",
+        body: {
+          pt: [
+            "[Análise específica do Mercado Pago em construção. Vai cobrir as principais frentes de reclamação dos últimos trimestres, padrões identificados via LLM no texto do Reclame Aqui, e onde a experiência se descola da régua regulatória do Bacen.]",
+          ],
+          en: [
+            "[Mercado Pago-specific analysis in progress. Will cover the main complaint vectors from recent quarters, patterns identified via LLM in Reclame Aqui text, and where the experience drifts from Bacen's regulatory standards.]",
+          ],
+        },
+      },
+    ],
   },
   {
-    title: { pt: "[Caso 3: Onboarding com agentes]", en: "[Case 3: Agent-led onboarding]" },
-    desc: { pt: "Fluxo de KYC assistido por agente com queda de 38% no abandono em testes.", en: "Agent-assisted KYC flow with 38% drop in abandonment in tests." },
+    slug: "mapa-churn-credito",
+    title: { pt: "Caso 2: Mapa de churn em crédito", en: "Case 2: Credit churn map" },
+    desc: {
+      pt: "Modelo de propensão e narrativa de retenção para carteira de crédito pessoal.",
+      en: "Propensity model and retention narrative for a personal credit book.",
+    },
+    tools: ["Python", "Claude", "dbt"],
+    sector: { pt: "Crédito", en: "Credit" },
+    status: "coming-soon",
+    body: { pt: [], en: [] },
+    institutions: [],
+  },
+  {
+    slug: "onboarding-agentes",
+    title: { pt: "Caso 3: Onboarding com agentes", en: "Case 3: Agent-led onboarding" },
+    desc: {
+      pt: "Fluxo de KYC assistido por agente com queda de 38% no abandono em testes.",
+      en: "Agent-assisted KYC flow with 38% drop in abandonment in tests.",
+    },
     tools: ["LangGraph", "OpenAI", "Figma"],
     sector: { pt: "Fintech", en: "Fintech" },
+    status: "coming-soon",
+    body: { pt: [], en: [] },
+    institutions: [],
   },
 ] as const;

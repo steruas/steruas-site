@@ -13,6 +13,14 @@ import { Route as LocaleRouteImport } from './routes/$locale'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as LocaleIndexRouteImport } from './routes/$locale.index'
 import { Route as LocaleSobreRouteImport } from './routes/$locale.sobre'
+import { Route as LocaleFeitoComIaRouteImport } from './routes/$locale.feito-com-ia'
+import { Route as LocaleEnsaiosRouteImport } from './routes/$locale.ensaios'
+import { Route as LocaleFeitoComIaIndexRouteImport } from './routes/$locale.feito-com-ia.index'
+import { Route as LocaleEnsaiosIndexRouteImport } from './routes/$locale.ensaios.index'
+import { Route as LocaleFeitoComIaSlugRouteImport } from './routes/$locale.feito-com-ia.$slug'
+import { Route as LocaleEnsaiosSlugRouteImport } from './routes/$locale.ensaios.$slug'
+import { Route as LocaleFeitoComIaSlugIndexRouteImport } from './routes/$locale.feito-com-ia.$slug.index'
+import { Route as LocaleFeitoComIaSlugInstituicaoRouteImport } from './routes/$locale.feito-com-ia.$slug.$instituicao'
 
 const LocaleRoute = LocaleRouteImport.update({
   id: '/$locale',
@@ -34,31 +42,127 @@ const LocaleSobreRoute = LocaleSobreRouteImport.update({
   path: '/sobre',
   getParentRoute: () => LocaleRoute,
 } as any)
+const LocaleFeitoComIaRoute = LocaleFeitoComIaRouteImport.update({
+  id: '/feito-com-ia',
+  path: '/feito-com-ia',
+  getParentRoute: () => LocaleRoute,
+} as any)
+const LocaleEnsaiosRoute = LocaleEnsaiosRouteImport.update({
+  id: '/ensaios',
+  path: '/ensaios',
+  getParentRoute: () => LocaleRoute,
+} as any)
+const LocaleFeitoComIaIndexRoute = LocaleFeitoComIaIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LocaleFeitoComIaRoute,
+} as any)
+const LocaleEnsaiosIndexRoute = LocaleEnsaiosIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LocaleEnsaiosRoute,
+} as any)
+const LocaleFeitoComIaSlugRoute = LocaleFeitoComIaSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => LocaleFeitoComIaRoute,
+} as any)
+const LocaleEnsaiosSlugRoute = LocaleEnsaiosSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => LocaleEnsaiosRoute,
+} as any)
+const LocaleFeitoComIaSlugIndexRoute =
+  LocaleFeitoComIaSlugIndexRouteImport.update({
+    id: '/',
+    path: '/',
+    getParentRoute: () => LocaleFeitoComIaSlugRoute,
+  } as any)
+const LocaleFeitoComIaSlugInstituicaoRoute =
+  LocaleFeitoComIaSlugInstituicaoRouteImport.update({
+    id: '/$instituicao',
+    path: '/$instituicao',
+    getParentRoute: () => LocaleFeitoComIaSlugRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$locale': typeof LocaleRouteWithChildren
+  '/$locale/ensaios': typeof LocaleEnsaiosRouteWithChildren
+  '/$locale/feito-com-ia': typeof LocaleFeitoComIaRouteWithChildren
   '/$locale/sobre': typeof LocaleSobreRoute
   '/$locale/': typeof LocaleIndexRoute
+  '/$locale/ensaios/$slug': typeof LocaleEnsaiosSlugRoute
+  '/$locale/feito-com-ia/$slug': typeof LocaleFeitoComIaSlugRouteWithChildren
+  '/$locale/ensaios/': typeof LocaleEnsaiosIndexRoute
+  '/$locale/feito-com-ia/': typeof LocaleFeitoComIaIndexRoute
+  '/$locale/feito-com-ia/$slug/$instituicao': typeof LocaleFeitoComIaSlugInstituicaoRoute
+  '/$locale/feito-com-ia/$slug/': typeof LocaleFeitoComIaSlugIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$locale/sobre': typeof LocaleSobreRoute
   '/$locale': typeof LocaleIndexRoute
+  '/$locale/ensaios/$slug': typeof LocaleEnsaiosSlugRoute
+  '/$locale/ensaios': typeof LocaleEnsaiosIndexRoute
+  '/$locale/feito-com-ia': typeof LocaleFeitoComIaIndexRoute
+  '/$locale/feito-com-ia/$slug/$instituicao': typeof LocaleFeitoComIaSlugInstituicaoRoute
+  '/$locale/feito-com-ia/$slug': typeof LocaleFeitoComIaSlugIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/$locale': typeof LocaleRouteWithChildren
+  '/$locale/ensaios': typeof LocaleEnsaiosRouteWithChildren
+  '/$locale/feito-com-ia': typeof LocaleFeitoComIaRouteWithChildren
   '/$locale/sobre': typeof LocaleSobreRoute
   '/$locale/': typeof LocaleIndexRoute
+  '/$locale/ensaios/$slug': typeof LocaleEnsaiosSlugRoute
+  '/$locale/feito-com-ia/$slug': typeof LocaleFeitoComIaSlugRouteWithChildren
+  '/$locale/ensaios/': typeof LocaleEnsaiosIndexRoute
+  '/$locale/feito-com-ia/': typeof LocaleFeitoComIaIndexRoute
+  '/$locale/feito-com-ia/$slug/$instituicao': typeof LocaleFeitoComIaSlugInstituicaoRoute
+  '/$locale/feito-com-ia/$slug/': typeof LocaleFeitoComIaSlugIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/$locale' | '/$locale/sobre' | '/$locale/'
+  fullPaths:
+    | '/'
+    | '/$locale'
+    | '/$locale/ensaios'
+    | '/$locale/feito-com-ia'
+    | '/$locale/sobre'
+    | '/$locale/'
+    | '/$locale/ensaios/$slug'
+    | '/$locale/feito-com-ia/$slug'
+    | '/$locale/ensaios/'
+    | '/$locale/feito-com-ia/'
+    | '/$locale/feito-com-ia/$slug/$instituicao'
+    | '/$locale/feito-com-ia/$slug/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/$locale/sobre' | '/$locale'
-  id: '__root__' | '/' | '/$locale' | '/$locale/sobre' | '/$locale/'
+  to:
+    | '/'
+    | '/$locale/sobre'
+    | '/$locale'
+    | '/$locale/ensaios/$slug'
+    | '/$locale/ensaios'
+    | '/$locale/feito-com-ia'
+    | '/$locale/feito-com-ia/$slug/$instituicao'
+    | '/$locale/feito-com-ia/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/$locale'
+    | '/$locale/ensaios'
+    | '/$locale/feito-com-ia'
+    | '/$locale/sobre'
+    | '/$locale/'
+    | '/$locale/ensaios/$slug'
+    | '/$locale/feito-com-ia/$slug'
+    | '/$locale/ensaios/'
+    | '/$locale/feito-com-ia/'
+    | '/$locale/feito-com-ia/$slug/$instituicao'
+    | '/$locale/feito-com-ia/$slug/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -96,15 +200,115 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocaleSobreRouteImport
       parentRoute: typeof LocaleRoute
     }
+    '/$locale/feito-com-ia': {
+      id: '/$locale/feito-com-ia'
+      path: '/feito-com-ia'
+      fullPath: '/$locale/feito-com-ia'
+      preLoaderRoute: typeof LocaleFeitoComIaRouteImport
+      parentRoute: typeof LocaleRoute
+    }
+    '/$locale/ensaios': {
+      id: '/$locale/ensaios'
+      path: '/ensaios'
+      fullPath: '/$locale/ensaios'
+      preLoaderRoute: typeof LocaleEnsaiosRouteImport
+      parentRoute: typeof LocaleRoute
+    }
+    '/$locale/feito-com-ia/': {
+      id: '/$locale/feito-com-ia/'
+      path: '/'
+      fullPath: '/$locale/feito-com-ia/'
+      preLoaderRoute: typeof LocaleFeitoComIaIndexRouteImport
+      parentRoute: typeof LocaleFeitoComIaRoute
+    }
+    '/$locale/ensaios/': {
+      id: '/$locale/ensaios/'
+      path: '/'
+      fullPath: '/$locale/ensaios/'
+      preLoaderRoute: typeof LocaleEnsaiosIndexRouteImport
+      parentRoute: typeof LocaleEnsaiosRoute
+    }
+    '/$locale/feito-com-ia/$slug': {
+      id: '/$locale/feito-com-ia/$slug'
+      path: '/$slug'
+      fullPath: '/$locale/feito-com-ia/$slug'
+      preLoaderRoute: typeof LocaleFeitoComIaSlugRouteImport
+      parentRoute: typeof LocaleFeitoComIaRoute
+    }
+    '/$locale/ensaios/$slug': {
+      id: '/$locale/ensaios/$slug'
+      path: '/$slug'
+      fullPath: '/$locale/ensaios/$slug'
+      preLoaderRoute: typeof LocaleEnsaiosSlugRouteImport
+      parentRoute: typeof LocaleEnsaiosRoute
+    }
+    '/$locale/feito-com-ia/$slug/': {
+      id: '/$locale/feito-com-ia/$slug/'
+      path: '/'
+      fullPath: '/$locale/feito-com-ia/$slug/'
+      preLoaderRoute: typeof LocaleFeitoComIaSlugIndexRouteImport
+      parentRoute: typeof LocaleFeitoComIaSlugRoute
+    }
+    '/$locale/feito-com-ia/$slug/$instituicao': {
+      id: '/$locale/feito-com-ia/$slug/$instituicao'
+      path: '/$instituicao'
+      fullPath: '/$locale/feito-com-ia/$slug/$instituicao'
+      preLoaderRoute: typeof LocaleFeitoComIaSlugInstituicaoRouteImport
+      parentRoute: typeof LocaleFeitoComIaSlugRoute
+    }
   }
 }
 
+interface LocaleEnsaiosRouteChildren {
+  LocaleEnsaiosSlugRoute: typeof LocaleEnsaiosSlugRoute
+  LocaleEnsaiosIndexRoute: typeof LocaleEnsaiosIndexRoute
+}
+
+const LocaleEnsaiosRouteChildren: LocaleEnsaiosRouteChildren = {
+  LocaleEnsaiosSlugRoute: LocaleEnsaiosSlugRoute,
+  LocaleEnsaiosIndexRoute: LocaleEnsaiosIndexRoute,
+}
+
+const LocaleEnsaiosRouteWithChildren = LocaleEnsaiosRoute._addFileChildren(
+  LocaleEnsaiosRouteChildren,
+)
+
+interface LocaleFeitoComIaSlugRouteChildren {
+  LocaleFeitoComIaSlugInstituicaoRoute: typeof LocaleFeitoComIaSlugInstituicaoRoute
+  LocaleFeitoComIaSlugIndexRoute: typeof LocaleFeitoComIaSlugIndexRoute
+}
+
+const LocaleFeitoComIaSlugRouteChildren: LocaleFeitoComIaSlugRouteChildren = {
+  LocaleFeitoComIaSlugInstituicaoRoute: LocaleFeitoComIaSlugInstituicaoRoute,
+  LocaleFeitoComIaSlugIndexRoute: LocaleFeitoComIaSlugIndexRoute,
+}
+
+const LocaleFeitoComIaSlugRouteWithChildren =
+  LocaleFeitoComIaSlugRoute._addFileChildren(LocaleFeitoComIaSlugRouteChildren)
+
+interface LocaleFeitoComIaRouteChildren {
+  LocaleFeitoComIaSlugRoute: typeof LocaleFeitoComIaSlugRouteWithChildren
+  LocaleFeitoComIaIndexRoute: typeof LocaleFeitoComIaIndexRoute
+}
+
+const LocaleFeitoComIaRouteChildren: LocaleFeitoComIaRouteChildren = {
+  LocaleFeitoComIaSlugRoute: LocaleFeitoComIaSlugRouteWithChildren,
+  LocaleFeitoComIaIndexRoute: LocaleFeitoComIaIndexRoute,
+}
+
+const LocaleFeitoComIaRouteWithChildren =
+  LocaleFeitoComIaRoute._addFileChildren(LocaleFeitoComIaRouteChildren)
+
 interface LocaleRouteChildren {
+  LocaleEnsaiosRoute: typeof LocaleEnsaiosRouteWithChildren
+  LocaleFeitoComIaRoute: typeof LocaleFeitoComIaRouteWithChildren
   LocaleSobreRoute: typeof LocaleSobreRoute
   LocaleIndexRoute: typeof LocaleIndexRoute
 }
 
 const LocaleRouteChildren: LocaleRouteChildren = {
+  LocaleEnsaiosRoute: LocaleEnsaiosRouteWithChildren,
+  LocaleFeitoComIaRoute: LocaleFeitoComIaRouteWithChildren,
   LocaleSobreRoute: LocaleSobreRoute,
   LocaleIndexRoute: LocaleIndexRoute,
 }
