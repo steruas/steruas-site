@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
 import { FadeIn } from "@/components/FadeIn";
 import { posts } from "@/content/site";
@@ -7,6 +8,9 @@ export function Blog() {
   const fmt = new Intl.DateTimeFormat(locale === "pt" ? "pt-BR" : "en-US", {
     year: "numeric", month: "short", day: "numeric",
   });
+
+  // Mostra os 3 mais recentes na home (posts já estão ordenados por data desc no site.ts)
+  const featured = posts.slice(0, 3);
 
   return (
     <section id="blog" className="section-dark py-24 md:py-32">
@@ -28,30 +32,40 @@ export function Blog() {
         </div>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-px bg-[#2A2A2A] border border-[#2A2A2A]">
-          {posts.map((p, i) => (
+          {featured.map((p, i) => (
             <FadeIn key={p.slug} delay={i * 0.05} className="bg-[#0A0A0A]">
-              <article className="h-full p-8 md:p-10 group cursor-pointer transition-transform hover:scale-[1.01]">
-                <div className="eyebrow">{p.category[locale]}</div>
-                <h3 className="mt-5 font-serif text-2xl leading-[1.2] text-[#F5F5F0] group-hover:text-[#B8862B] transition-colors">
-                  {p.title[locale]}
-                </h3>
-                <p className="mt-4 text-[15px] leading-[1.6] text-[#F5F5F0]/65 line-clamp-2">
-                  {p.excerpt[locale]}
-                </p>
-                <div className="mt-8 flex items-center gap-3 text-xs text-[#F5F5F0]/50">
-                  <time>{fmt.format(new Date(p.date))}</time>
-                  <span aria-hidden>·</span>
-                  <span>{p.readingTime} {t.blog.readingTime}</span>
-                </div>
-              </article>
+              <Link
+                to="/$locale/ensaios/$slug"
+                params={{ locale, slug: p.slug }}
+                className="block h-full"
+              >
+                <article className="h-full p-8 md:p-10 group cursor-pointer transition-transform hover:scale-[1.01]">
+                  <div className="eyebrow">{p.category[locale]}</div>
+                  <h3 className="mt-5 font-serif text-2xl leading-[1.2] text-[#F5F5F0] group-hover:text-[#B8862B] transition-colors">
+                    {p.title[locale]}
+                  </h3>
+                  <p className="mt-4 text-[15px] leading-[1.6] text-[#F5F5F0]/65 line-clamp-2">
+                    {p.excerpt[locale]}
+                  </p>
+                  <div className="mt-8 flex items-center gap-3 text-xs text-[#F5F5F0]/50">
+                    <time>{fmt.format(new Date(p.date))}</time>
+                    <span aria-hidden>·</span>
+                    <span>{p.readingTime} {t.blog.readingTime}</span>
+                  </div>
+                </article>
+              </Link>
             </FadeIn>
           ))}
         </div>
 
         <div className="mt-16 text-center">
-          <a href="#" className="text-sm text-[#B8862B] hover:underline underline-offset-4">
+          <Link
+            to="/$locale/ensaios"
+            params={{ locale }}
+            className="text-sm text-[#B8862B] hover:underline underline-offset-4"
+          >
             {t.blog.viewAll} →
-          </a>
+          </Link>
         </div>
       </div>
     </section>
