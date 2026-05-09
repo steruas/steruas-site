@@ -1,17 +1,31 @@
+import { Link } from "@tanstack/react-router";
 import { useI18n } from "@/lib/i18n";
 import { useScrollToTop } from "@/lib/hooks";
 import type { Locale } from "@/content/site";
 import { FadeIn } from "@/components/FadeIn";
 
-export function AboutFullPage({ locale: _locale }: { locale: Locale }) {
-const { t } = useI18n();
+export function AboutFullPage({ locale }: { locale: Locale }) {
+  const { t } = useI18n();
   useScrollToTop();
+
+  const backLabel = locale === "pt" ? "Voltar para home" : "Back to home";
 
   return (
     <section className="section-light py-24 md:py-32">
       <div className="container-wide">
         <div className="hairline-light pt-16 md:pt-20">
           <FadeIn>
+            <Link
+              to="/$locale"
+              params={{ locale }}
+              className="inline-flex items-center gap-2 text-sm text-[#1A1A1A]/60 hover:text-[#B8862B] transition-colors mb-12"
+            >
+              <span aria-hidden>←</span>
+              {backLabel}
+            </Link>
+          </FadeIn>
+
+          <FadeIn delay={0.05}>
             <span className="eyebrow">{t.about.eyebrow}</span>
             <h1 className="mt-6 font-serif text-4xl md:text-6xl leading-[1.05] tracking-tight text-[#1A1A1A] max-w-4xl">
               {t.about.headline}
@@ -36,6 +50,19 @@ const { t } = useI18n();
                   {tag}
                 </span>
               ))}
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.25}>
+            <div className="mt-20 max-w-2xl pt-8 border-t border-[#E5E3DC]">
+              <Link
+                to="/$locale"
+                params={{ locale }}
+                className="inline-flex items-center gap-2 text-sm text-[#1A1A1A] border-b border-[#B8862B] pb-1 hover:text-[#B8862B] transition-colors"
+              >
+                <span aria-hidden>←</span>
+                {backLabel}
+              </Link>
             </div>
           </FadeIn>
         </div>
