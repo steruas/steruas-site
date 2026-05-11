@@ -72,7 +72,7 @@ export const content = {
       },
     },
     footer: {
-      tagline: "Growth com IA, com olhar de estrategista.",
+      tagline: "Growth com IA e olhar de estrategista.",
       built: "Construído com IA",
     },
   },
