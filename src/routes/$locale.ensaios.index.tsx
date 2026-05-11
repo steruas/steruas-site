@@ -58,7 +58,7 @@ function RouteComponent() {
 
           <FadeIn delay={0.2}>
             <ul className="mt-20 max-w-3xl divide-y divide-[#E5E3DC]">
-              {posts.map((p) => (
+              {posts.filter((p) => !p.draft).map((p) => (
                 <li key={p.slug}>
                   <Link
                     to="/$locale/ensaios/$slug"

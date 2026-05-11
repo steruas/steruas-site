@@ -74,9 +74,50 @@ function RouteComponent() {
 
           <FadeIn delay={0.1}>
             <div className="mt-16 md:mt-20 max-w-2xl space-y-6 text-[18px] leading-[1.75] text-[#1A1A1A]/80">
-              {post.body[locale].map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+              {post.body[locale].map((block, i) => {
+                if (block.type === "h2") {
+                    return (
+                    <h2
+                        key={i}
+                        className="font-serif text-2xl md:text-3xl leading-tight mt-12 mb-2 text-[#1A1A1A]"
+                    >
+                        {block.text}
+                    </h2>
+                    );
+                }
+                if (block.type === "quote") {
+                    return (
+                    <blockquote
+                        key={i}
+                        className="my-8 pl-6 border-l-2 border-[#B8862B] font-serif text-xl md:text-2xl leading-snug text-[#1A1A1A] italic"
+                    >
+                        <p>{block.text}</p>
+                        {block.attribution && (
+                        <footer className="mt-3 text-sm not-italic text-[#1A1A1A]/60 font-sans">
+                            — {block.attribution}
+                        </footer>
+                        )}
+                    </blockquote>
+                    );
+                }
+                if (block.type === "image") {
+                    return (
+                    <figure key={i} className="my-10">
+                        <img
+                        src={block.src}
+                        alt={block.alt}
+                        className="w-full rounded-md border border-[#E5E3DC]"
+                        />
+                        {block.caption && (
+                        <figcaption className="mt-3 text-sm text-[#1A1A1A]/60">
+                            {block.caption}
+                        </figcaption>
+                        )}
+                    </figure>
+                    );
+                }
+                return <p key={i}>{block.text}</p>;
+                })}
             </div>
           </FadeIn>
 
