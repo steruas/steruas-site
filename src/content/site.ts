@@ -9,7 +9,7 @@ export const content = {
     nav: { about: "Sobre", blog: "Ensaios", builtWithAi: "Feito com IA", contact: "Contato" },
     hero: {
       eyebrow: "Growth · IA · Estratégia",
-      headline: "Growth com IA, com olhar de estrategista.",
+      headline: "Growth com IA e olhar de estrategista.",
       sub: "Voltando pra growth depois de seis anos em estratégia corporativa. Pensamento divergente e fluência em IA. Olhando primeiro pra serviços financeiros, onde a margem ainda paga curiosidade.",
       ctaPrimary: "Ver projetos",
       ctaGhost: "Ler ensaios",
