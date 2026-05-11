@@ -11,7 +11,7 @@ export const Route = createFileRoute("/$locale/feito-com-ia/$slug/$instituicao")
   head: ({ params }) => {
     return {
       meta: [
-        { title: `${params.instituicao} — ${params.slug} — M.` },
+        { title: `${params.instituicao} — ${params.slug} — SteRuas` },
       ],
     };
   },

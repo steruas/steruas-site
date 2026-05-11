@@ -12,7 +12,7 @@ export const Route = createFileRoute("/$locale/ensaios/")({
   },
   head: ({ params }) => {
     const isPt = params.locale === "pt";
-    const title = isPt ? "Ensaios — M." : "Essays — M.";
+    const title = isPt ? "Ensaios — SteRuas" : "Essays — SteRuas";
     const desc = isPt
       ? "Ensaios sobre IA, growth e o futuro do trabalho. Notas de campo, reações ao que estou lendo, e tentativas de articular pensamento próprio."
       : "Essays on AI, growth, and the future of work. Field notes, reactions to what I'm reading, and attempts to articulate my own thinking.";

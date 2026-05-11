@@ -15,7 +15,7 @@ export const Route = createFileRoute("/$locale/ensaios/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) return {};
     const { locale, post } = loaderData;
-    const title = `${post.title[locale]} — M.`;
+    const title = `${post.title[locale]} — SteRuas`;
     const desc = post.excerpt[locale];
     return {
       meta: [

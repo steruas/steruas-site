@@ -12,8 +12,8 @@ export const Route = createFileRoute("/$locale")({
   head: ({ params }) => {
     const isPt = params.locale === "pt";
     const title = isPt
-      ? "M. — Growth com IA para serviços financeiros"
-      : "M. — AI-native growth for financial services";
+      ? "SteRuas — Growth com IA e visão sistêmica"
+      : "SteRuas — AI-native growth and systems thinking";
     const desc = isPt
       ? "Estrategista de growth com foco em serviços financeiros. Ensaios e ferramentas construídos com IA."
       : "Growth strategist focused on financial services. Essays and tools built with AI.";
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/$locale")({
           children: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            name: "M.",
+            name: "SteRuas",
             jobTitle: isPt ? "Estrategista de Growth com IA" : "AI Growth Strategist",
             description: desc,
           }),

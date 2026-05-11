@@ -10,8 +10,8 @@ export const Route = createFileRoute("/$locale/sobre")({
   head: ({ params }) => {
     const isPt = params.locale === "pt";
     const title = isPt
-      ? "Sobre — M."
-      : "About — M.";
+      ? "Sobre — SteRuas"
+      : "About — SteRuas";
     const desc = isPt
       ? "Estrategista voltando pra growth depois de seis anos em estratégia corporativa. Background plural por desenho: consultoria, startups e corporativo grande."
       : "Strategist returning to growth after six years in corporate strategy. Plural background by design: consulting, startups, and large corporations.";

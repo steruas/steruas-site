@@ -12,7 +12,7 @@ export const Route = createFileRoute("/$locale/feito-com-ia/")({
   },
   head: ({ params }) => {
     const isPt = params.locale === "pt";
-    const title = isPt ? "Feito com IA — M." : "Built with AI — M.";
+    const title = isPt ? "Feito com IA — SteRuas" : "Built with AI — SteRuas";
     const desc = isPt
       ? "Análises, protótipos e ferramentas que estou construindo, com foco inicial no setor financeiro brasileiro."
       : "Analyses, prototypes, and tools I'm building, with initial focus on the Brazilian financial sector.";
