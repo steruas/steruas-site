@@ -55,14 +55,40 @@ export function Nav() {
       }`}
     >
       <nav className="container-wide flex items-center justify-between h-16">
-        <Link
+       <Link
           to="/$locale"
           params={{ locale }}
-          className="font-serif text-xl tracking-tight text-[#1A1A1A]"
+          className="text-[#1A1A1A] hover:text-[#B8862B] transition-colors"
           onClick={() => setMenuOpen(false)}
+          aria-label="steruas — home"
         >
-          M.
-        </Link>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="-50 -70 100 150"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-7 w-7"
+            role="img"
+            aria-hidden="true"
+          >
+            <line x1="0" y1="75" x2="0" y2="-65" />
+            <line x1="0" y1="55" x2="-40" y2="22" />
+            <line x1="0" y1="55" x2="40" y2="22" />
+            <line x1="0" y1="35" x2="-32" y2="5" />
+            <line x1="0" y1="35" x2="32" y2="5" />
+            <line x1="0" y1="15" x2="-25" y2="-12" />
+            <line x1="0" y1="15" x2="25" y2="-12" />
+            <line x1="0" y1="-5" x2="-18" y2="-28" />
+            <line x1="0" y1="-5" x2="18" y2="-28" />
+            <line x1="0" y1="-25" x2="-12" y2="-45" />
+            <line x1="0" y1="-25" x2="12" y2="-45" />
+            <line x1="0" y1="-45" x2="-6" y2="-58" />
+            <line x1="0" y1="-45" x2="6" y2="-58" />
+          </svg>
+      </Link>
 
         {/* Links desktop */}
         <ul className="hidden md:flex items-center gap-8 text-sm text-[#1A1A1A]">
