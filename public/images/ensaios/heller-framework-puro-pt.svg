@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Inter, system-ui, -apple-system, sans-serif">
+  <style>
+    .header-title { font-size: 22px; font-weight: 700; fill: #1a1a1a; }
+    .header-sub { font-size: 13px; font-weight: 600; fill: #6a6a6a; letter-spacing: 0.8px; }
+    .cell-title { font-size: 16px; font-weight: 700; fill: #1a1a1a; }
+    .cell-body { font-size: 14px; font-weight: 400; fill: #3a3a3a; }
+    .row-label { font-size: 14px; font-weight: 700; fill: #1a1a1a; text-transform: uppercase; letter-spacing: 0.8px; }
+    .caption { font-size: 12px; font-weight: 400; fill: #8a8a8a; font-style: italic; }
+  </style>
+
+  <rect width="800" height="380" fill="#ffffff"/>
+
+  <text x="20" y="55" class="row-label">Tipo</text>
+
+  <rect x="170" y="20" width="200" height="70" fill="#E8EEF4" rx="6"/>
+  <text x="270" y="48" class="header-sub" text-anchor="middle">TIPO 1</text>
+  <text x="270" y="73" class="header-title" text-anchor="middle">Assist (Copilot)</text>
+
+  <rect x="380" y="20" width="200" height="70" fill="#E8EFE9" rx="6"/>
+  <text x="480" y="48" class="header-sub" text-anchor="middle">TIPO 2</text>
+  <text x="480" y="73" class="header-title" text-anchor="middle">Replace</text>
+
+  <rect x="590" y="20" width="200" height="70" fill="#F4EFE6" rx="6"/>
+  <text x="690" y="48" class="header-sub" text-anchor="middle">TIPO 3</text>
+  <text x="690" y="73" class="header-title" text-anchor="middle">Unimaginable</text>
+
+  <text x="20" y="145" class="row-label">Definição</text>
+
+  <rect x="170" y="115" width="200" height="110" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="145" class="cell-body">Ajuda profissionais</text>
+  <text x="185" y="164" class="cell-body">a fazer melhor o</text>
+  <text x="185" y="183" class="cell-body">que já fazem</text>
+
+  <rect x="380" y="115" width="200" height="110" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="145" class="cell-body">Substitui tarefas</text>
+  <text x="395" y="164" class="cell-body">que antes exigiam</text>
+  <text x="395" y="183" class="cell-body">humanos</text>
+
+  <rect x="590" y="115" width="200" height="110" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="145" class="cell-body">Viabiliza</text>
+  <text x="605" y="164" class="cell-body">capacidades que</text>
+  <text x="605" y="183" class="cell-body">antes eram</text>
+  <text x="605" y="202" class="cell-body">impossíveis</text>
+
+  <text x="20" y="285" class="row-label">Exemplo</text>
+  <text x="20" y="303" class="row-label">de Heller</text>
+
+  <rect x="170" y="255" width="200" height="80" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="285" class="cell-body">CoCounsel pra</text>
+  <text x="185" y="304" class="cell-body">advogados</text>
+
+  <rect x="380" y="255" width="200" height="80" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="285" class="cell-body">Suporte ao cliente,</text>
+  <text x="395" y="304" class="cell-body">contabilidade</text>
+
+  <rect x="590" y="255" width="200" height="80" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="285" class="cell-body">Analisar milhões</text>
+  <text x="605" y="304" class="cell-body">de documentos</text>
+  <text x="605" y="323" class="cell-body">instantaneamente</text>
+
+  <text x="20" y="360" class="caption">Framework de Jake Heller (Y Combinator, 2025).</text>
+</svg>

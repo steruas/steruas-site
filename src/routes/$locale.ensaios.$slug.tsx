@@ -85,6 +85,16 @@ function RouteComponent() {
                     </h2>
                     );
                 }
+                if (block.type === "h3") {
+                    return (
+                    <h3
+                        key={i}
+                        className="font-serif text-xl md:text-2xl leading-tight mt-8 mb-2 text-[#1A1A1A]"
+                    >
+                        {block.text}
+                    </h3>
+                    );
+                }
                 if (block.type === "quote") {
                     return (
                     <blockquote

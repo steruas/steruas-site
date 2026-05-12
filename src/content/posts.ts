@@ -1,6 +1,7 @@
 export type PostBlock =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
+  | { type: "h3"; text: string }
   | { type: "quote"; text: string; attribution?: string }
   | { type: "image"; src: string; alt: string; caption?: string };
 
@@ -17,6 +18,7 @@ export type Post = {
 
 const p = (text: string): PostBlock => ({ type: "p", text });
 const h2 = (text: string): PostBlock => ({ type: "h2", text });
+const h3 = (text: string): PostBlock => ({ type: "h3", text });
 const quote = (text: string, attribution?: string): PostBlock => ({
   type: "quote",
   text,
@@ -26,7 +28,7 @@ const quote = (text: string, attribution?: string): PostBlock => ({
 export const posts: Post[] = [
   {
     slug: "como-preparar-marca-produtos-recomendados-ias",
-    category: { pt: "Estratégia, Growth & IA", en: "Strategy, Growth & AI" },
+    category: { pt: "Growth & IA", en: "Growth & AI" },
     title: {
       pt: "Como preparar sua marca e produtos para serem recomendados pelas IAs",
       en: "How to prepare your brand and products to be recommended by AI",
@@ -111,18 +113,95 @@ export const posts: Post[] = [
     },
   },
   {
-    slug: "em-construcao-ensaio-1",
-    category: { pt: "Estratégia, Growth & IA", en: "Strategy, Growth & AI" },
-    title: { pt: "Em construção", en: "In progress" },
-    excerpt: {
-      pt: "Ensaio sobre os três tipos de startup de IA, o ponto cego do replace, e por que o foco no Unimaginable é a aposta certa. Em produção.",
-      en: "Essay on the three types of AI startups, the blind spot of replace, and why focusing on the Unimaginable is the right bet. In production.",
+    slug: "incentivos-ia-eficiencia-tiram-empresas-do-futuro",
+    category: { pt: "Estratégia & IA", en: "Strategy & AI" },
+    title: {
+      pt: "Assist, Replace, Unimaginable: por que seguir os incentivos te tira do futuro",
+      en: "Assist, Replace, Unimaginable: why following the incentives takes you out of the future",
     },
-    date: "2026-05-11",
-    readingTime: 1,
+    excerpt: {
+      pt: "Os três tipos de aposta em IA explicam por que o capital está fluindo pra eficiência enquanto os próximos líderes de mercado nascerão em outro lugar.",
+      en: "The three-types framework for AI bets explains why capital is flowing toward efficiency while the next market leaders will be born somewhere else.",
+    },
+    date: "2026-05-12",
+    readingTime: 7,
     body: {
-      pt: [p("Em construção. Publicação prevista para esta semana.")],
-      en: [p("In progress. Publication expected this week.")],
+      pt: [
+        p("Estamos entrando no ápice da destruição criativa que Schumpeter descreveu há um século. Barreiras de entrada caem em setores que pareciam invioláveis, software vira commodity infinitamente replicável, e times pequenos coordenam frotas de agentes que trabalham 24x7 sem cansar. É reset estratégico em camadas simultâneas, e ninguém pode mais confiar nas antigas regras de competição."),
+        p("Nesse contexto, fundadores estão escolhendo onde apostar e líderes incumbentes estão decidindo o que priorizar no roadmap de IA. Quase todo mundo está olhando pra mesma paisagem, mas com lentes diferentes. E é aí que aparece um problema: os incentivos racionais de curto prazo estão empurrando o capital pra um lugar que pode não ser onde os próximos líderes de mercado vão nascer."),
+        h2("Os três tipos de aposta em IA, segundo Heller"),
+        p("Jake Heller, fundador da Casetext (vendida pra Thomson Reuters por 650 milhões de dólares), deu uma fala no AI Startup School do Y Combinator em junho de 2025 que organiza a paisagem em três categorias. O framework foi pensado pra fundadores escolherem em que onda surfar, mas serve igualmente pra incumbentes decidirem onde alocar budget de transformação."),
+        p("Basicamente, os empreendedores que querem criar uma startup em IA têm 3 tipos de empresas a criar:"),
+        p("(1) Assist (Copilot) é IA que ajuda profissionais a fazer melhor o que já fazem."),
+        p("(2) Replace é IA que substitui inteiramente tarefas que antes exigiam humanos."),
+        p("(3) Unimaginable é IA que viabiliza capacidades que antes eram impossíveis."),
+        { type: "image", src: "/images/ensaios/heller-framework-puro-pt.svg", alt: "Tabela com o framework original de Jake Heller: três tipos de aposta em IA — Assist (Copilot), Replace e Unimaginable — com definição e exemplo de cada.", caption: "Framework original de Jake Heller. Os três tipos com definição e exemplo." },
+        h2("Complementando o framework"),
+        p("Andrew Ng deu um argumento adjacente no World Economic Forum em Davos, janeiro de 2026: retornos reais vêm de redesenho top-down de workflow, não de experimentos bottom-up de produtividade incremental. Mapeando isso, tomo a liberdade de adicionar ao framework do Heller um critério adicional que diferencia os três tipos: a unidade de mudança."),
+        p("(1) Assist otimiza tarefas dentro do processo existente."),
+        p("(2) Replace substitui humanos na realização de tarefas dentro do processo existente."),
+        p("(3) Unimaginable redesenha o processo."),
+        p("Vale também a menção de que essas categorias não são compartimentos estanques, e é muito comum começar em Assist e evoluir para Replace. CoCounsel começou como assistente legal e em 2025 já executa workflows completos. Cursor começou como autocomplete e em 2026 orquestra agentes que executam tarefas multi-arquivo. O movimento Assist → Replace é tendência, não exceção."),
+        h2("Por que o capital vai pra Replace — e por que isso pode ser miopia"),
+        p("Os incentivos racionais estão alinhados pra direcionar capital principalmente pra Replace. Não é coincidência — é onde o risco é menor e o retorno é tangível. É viável substituir parte das tarefas de um cargo, evals garantem precisão, e o mercado endereçável já existe: você sabe quanto custa manter um time de cem analistas, sabe que se um agente faz o trabalho de dez, o ROI é calculável antes do piloto. Demanda comprovada, métrica clara."),
+        p("Assist tem desafio diferente: provar retorno incremental atribuível à ferramenta pode ser difícil. Cálculo do ROI exige medição cuidadosa que poucas empresas têm. Sem essa prova, renovar contratos vira ato de fé."),
+        p("E Unimaginable enfrenta o oposto: retorno potencialmente alto, mas em mercados que talvez ainda não existam. Mais incerteza no retorno, maior risco de execução. Sem benchmark de adoção, sem caso comparável, sem framework regulatório. Em ambiente de capital caro, é onde comitês de investimento congelam."),
+        p("Em contexto de juros altos no mundo todo, cenário geopolítico apertado entre guerras, tarifas e oscilações no preço do petróleo, empresas priorizam redução de despesas e investimento certeiro. Replace cabe exatamente nesse mandato."),
+        p("Mas Ng trouxe um contraponto. Quando um banco usa IA pra revisar empréstimo, a versão Replace é cortar o tempo de 60 minutos pra 10, economizando hora-homem. Cliente ainda espera dias pelo email final. A versão Unimaginable é diferente. Se o processo leva milissegundos, o banco redesenha o workflow inteiro — marketing, application, risk assessment e transferência de fundos viram um loop autônomo. O resultado não é economia. É produto novo: empréstimo instantâneo. A primeira empresa é um banco com overhead mais baixo. A segunda é a fintech que tira a primeira do mercado."),
+        p("O ponto de Ng é seco: pare de usar IA pra pavimentar atalhos antigos. Use IA pra construir estradas novas. Focar só em eficiência pode te deixar eficiente — mas no passado. Pra incumbente, é risco existencial. Pra empreendedor, é oportunidade de criar negócio enorme."),
+        p("Esse é o paradoxo que dá título a esse ensaio. Seguir os incentivos racionais de curto prazo te tira do longo prazo. O framework dos três tipos serve a três leitores diferentes, e cada um precisa fazer uma pergunta distinta. Fundador: qual onda surfar? Replace tem mercado previsível mas janela curta antes de virar commodity. Unimaginable tem risco maior e defensibilidade real. Investidor: onde alocar entre os três quadrantes? Diversificar é mais inteligente que concentrar tudo no quadrante de ROI mais visível, porque o próximo líder vai nascer no menos óbvio. Executivo incumbente: como balancear o roadmap? Se 100% do investimento de IA está em Replace, o portfolio defende posição atual, não captura a próxima."),
+        h2("Como o caminho para o sucesso varia por categoria"),
+        p("Confiabilidade é pré-requisito em qualquer quadrante. Sem evals rigorosos, sem critério explícito do que é \"great\" pra cada micro-tarefa, sem holdout sets pra evitar overfitting, nenhum produto de IA sai da fase de demo bonita. Esse processo é árduo, e é onde a maioria dos founders desiste. Quando a precisão fica em 60-70%, é tentador declarar vitória. Mas é entre 70% e 99% que mora a diferença entre demo viral e produto sustentável — especialmente em domínios sensíveis como direito, saúde e serviços financeiros, onde erro destrói confiança que leva anos pra reconstruir."),
+        p("O método de Heller — começar com uma dúzia de evals por prompt, iterar até a IA acertar quase tudo, adicionar mais cinquenta pra estressar casos extremos — vale igual pra qualquer dos três tipos. Mas o desafio dominante acima dessa fundação muda por categoria."),
+        h3("Em Assist: provar valor e garantir adesão"),
+        p("O risco dominante é de adoção e mensuração. A ferramenta funciona — IA sugere, humano aceita. O desafio é provar que o ganho é real, incremental e atribuível à ferramenta, e não a outras variáveis. Sem essa prova, a renovação trava. E mesmo com prova, se a usabilidade não fizer o profissional adotar no fluxo natural, fica esquecida."),
+        h3("Em Replace: precisão técnica em escala"),
+        p("O risco dominante é técnico e operacional. Se você substitui dez analistas, o output precisa ter a precisão que eles teriam. Aqui o método de evals importa em sua forma mais aguda: cada caso extremo não descoberto na operação é um cliente perdido ou uma regulação acionada. A assertividade e escala dos usos amplifica tanto o ganho quanto o risco."),
+        h3("Em Unimaginable: redesenhar a partir de zero restrição"),
+        p("O risco dominante não é provar nem substituir. É inventar o que ainda não foi inventado. O ponto de partida não é a tecnologia, é a dor do cliente. A pergunta que Heller propõe é a chave: como resolveríamos esse problema se não houvesse limite de trabalho e energia em uma tarefa? Assumindo restrição zero (custo de processamento, tempo humano, latência), qual é a dor real que ninguém está atendendo? Stripe Radar nasceu dessa pergunta. BeeSafe AI também. Redesenhar o processo a partir dessa pergunta é o que diferencia Unimaginable de Replace bem feito. Construir Unimaginable é tecnicamente difícil exatamente por isso — mas é essa dificuldade que cria moat."),
+        h2("O ciclo curto e o ciclo longo"),
+        p("A tese de Schumpeter sobre destruição criativa nunca foi sobre saudosismo. Foi sobre o fato de que mercados maduros são derrubados não por quem otimiza o produto existente, mas por quem cria a categoria seguinte. IA é o ferramental mais poderoso que essa lógica já teve. O capital vai pra Replace por motivos racionais de curto prazo, e Replace vai gerar muito valor nessa década. Mas os próximos líderes de mercado vão nascer no Unimaginable."),
+        p("Quem só fizer eficiência com IA pode estar fazendo bem feito o jogo errado."),
+        { type: "image", src: "/images/ensaios/assist-replace-unimaginable-pt.svg", alt: "Tabela comparativa completa dos três tipos de aposta em IA: Assist (Copilot), Replace e Unimaginable, comparados em mercado endereçável, nível de risco, como ter sucesso e exemplos.", caption: "Framework completo: os três tipos comparados em mercado endereçável, risco, caminho pra ter sucesso e exemplos." },
+      ],
+      en: [
+        p("We are entering the peak of the creative destruction Schumpeter described a century ago. Entry barriers are falling in sectors that seemed inviolable, software is becoming an infinitely replicable commodity, and small teams now coordinate fleets of agents that work 24/7 without rest. It's a strategic reset in simultaneous layers, and no one can rely on the old rules of competition anymore."),
+        p("In this context, founders are choosing where to bet and leaders of incumbent companies are deciding what to prioritize on the AI roadmap. Almost everyone is looking at the same landscape, but through different lenses. And that's where a problem appears: rational short-term incentives are pushing capital toward a place that may not be where the next market leaders will be born."),
+        h2("The three types of AI bets, according to Heller"),
+        p("Jake Heller, founder of Casetext (sold to Thomson Reuters for $650 million), gave a talk at Y Combinator's AI Startup School in June 2025 that organizes the landscape into three categories. The framework was designed for founders to choose which wave to surf, but it works equally well for incumbents deciding where to allocate transformation budget."),
+        p("Basically, entrepreneurs who want to build an AI startup have 3 types of companies they can create:"),
+        p("(1) Assist (Copilot) is AI that helps professionals do better what they already do."),
+        p("(2) Replace is AI that fully replaces tasks that previously required humans."),
+        p("(3) Unimaginable is AI that enables capabilities that were previously impossible."),
+        { type: "image", src: "/images/ensaios/heller-framework-puro-en.svg", alt: "Table with Jake Heller's original framework: three types of AI bets — Assist (Copilot), Replace, and Unimaginable — with definition and example for each.", caption: "Jake Heller's original framework. The three types with definition and example." },
+        h2("Complementing the framework"),
+        p("Andrew Ng made an adjacent argument at the World Economic Forum in Davos, January 2026: real returns come from top-down workflow redesign, not from bottom-up experiments of incremental productivity. Mapping this, I take the liberty to add to Heller's framework an additional criterion that differentiates the three types: the unit of change."),
+        p("(1) Assist optimizes tasks within the existing process."),
+        p("(2) Replace substitutes humans in performing tasks within the existing process."),
+        p("(3) Unimaginable redesigns the process."),
+        p("Worth also mentioning that these categories are not airtight compartments, and it is very common to start as Assist and evolve to Replace. CoCounsel started as a legal assistant and by 2025 already executes complete workflows. Cursor started as autocomplete and by 2026 orchestrates agents that execute multi-file tasks. The Assist → Replace movement is a trend, not an exception."),
+        h2("Why capital goes to Replace — and why this can be myopia"),
+        p("Rational incentives are aligned to direct capital primarily toward Replace. It's not a coincidence — it's where the risk is lower and the return is tangible. It's viable to substitute part of the tasks of a role, evals ensure accuracy, and the addressable market already exists: you know how much it costs to maintain a team of one hundred analysts, you know that if an agent does the work of ten, ROI is calculable before the pilot. Proven demand, clear metric."),
+        p("Assist has a different challenge: proving incremental return attributable to the tool can be difficult. ROI calculation requires careful measurement that few companies have. Without that proof, renewing contracts becomes an act of faith."),
+        p("And Unimaginable faces the opposite: potentially high return, but in markets that may not yet exist. More uncertainty in return, higher execution risk. No adoption benchmark, no comparable case, no regulatory framework. In an environment of expensive capital, this is where investment committees freeze."),
+        p("In a context of high interest rates globally, with a tight geopolitical scenario between wars, tariffs, and oil price swings, companies prioritize cost reduction and targeted investment. Replace fits exactly into that mandate."),
+        p("But Ng brought a counterpoint. When a bank uses AI to review a loan, the Replace version is cutting review time from 60 minutes to 10, saving man-hours. The customer still waits days for the final email. The Unimaginable version is different. If the process takes milliseconds, the bank redesigns the entire workflow — marketing, application, risk assessment, and fund transfer become an autonomous loop. The result is not savings. It is a new product: instant loan. The first company is a bank with lower overhead. The second is the fintech that puts the first one out of business."),
+        p("Ng's point is dry: stop using AI to pave the old cow paths. Use AI to build new highways. Focusing only on efficiency may leave you efficient — but in the past. For incumbents, it's existential risk. For entrepreneurs, it's an opportunity to create enormous new business."),
+        p("This is the paradox that titles this essay. Following rational short-term incentives takes you out of the long term. The three-types framework serves three different readers, and each needs to ask a distinct question. Founder: which wave to surf? Replace has a predictable market but a short window before becoming a commodity. Unimaginable has higher risk and real defensibility. Investor: where to allocate among the three quadrants? Diversifying is smarter than concentrating everything in the quadrant with the most visible ROI, because the next leader will be born in the less obvious one. Incumbent executive: how to balance the roadmap? If 100% of the company's AI investment is in Replace, the portfolio defends current position, not captures the next."),
+        h2("How the path to success varies by category"),
+        p("Reliability is a prerequisite in any quadrant. Without rigorous evals, without explicit criteria for what is \"great\" for each micro-task, without holdout sets to avoid overfitting, no AI product moves beyond the beautiful demo stage. This process is arduous, and where most founders give up. When accuracy is at 60-70%, it's tempting to declare victory. But it's between 70% and 99% where the difference lives between viral demo and sustainable product — especially in sensitive domains like law, health, and financial services, where product error destroys trust that takes years to rebuild."),
+        p("Heller's method — starting with a dozen evals per prompt, iterating until the AI gets almost everything right, adding fifty more to stress edge cases — applies equally to any of the three types. But the dominant challenge above this foundation changes by category."),
+        h3("In Assist: prove value and ensure adoption"),
+        p("The dominant risk is adoption and measurement. The tool works — AI suggests, human accepts. The challenge is proving that the gain is real, incremental, and attributable to the tool, and not to other variables. Without that proof, renewal stalls. And even with proof, if the usability doesn't make the professional adopt it in the natural workflow, it gets forgotten."),
+        h3("In Replace: technical accuracy at scale"),
+        p("The dominant risk is technical and operational. If you replace ten analysts, the output needs to have the accuracy they would have. Here the evals method matters in its sharpest form: each edge case not discovered in operation is a lost customer or a triggered regulation. The accuracy and scale of usage amplifies both gain and risk."),
+        h3("In Unimaginable: redesign from zero constraint"),
+        p("The dominant risk is neither proving nor substituting. It's inventing what hasn't been invented yet. The starting point is not technology, it's the customer's pain. The question Heller proposes is the key: how would we solve this problem if there were no limit to work and energy spent on a task? Assuming zero constraint (processing cost, human time, latency), what is the real pain that nobody is addressing? Stripe Radar was born from this question. BeeSafe AI too. Redesigning the process from this question is what differentiates Unimaginable from well-done Replace. Building Unimaginable is technically difficult exactly because of this — but it's that difficulty that creates the moat."),
+        h2("The short cycle and the long cycle"),
+        p("Schumpeter's thesis on creative destruction was never about nostalgia. It was about the fact that mature markets are knocked down not by those who optimize the existing product, but by those who create the next category. AI is the most powerful tooling this logic has ever had. Capital will go to Replace for rational short-term reasons, and Replace will indeed generate a lot of value this decade. But the next market leaders will be born in Unimaginable."),
+        p("Whoever only does efficiency with AI may be doing the wrong game very well."),
+        { type: "image", src: "/images/ensaios/assist-replace-unimaginable-en.svg", alt: "Complete comparative table of the three types of AI bets: Assist (Copilot), Replace, and Unimaginable, compared across addressable market, risk level, how to succeed, and examples.", caption: "The complete framework: the three types compared across addressable market, risk, path to success, and examples." },
+      ],
     },
   },
   {

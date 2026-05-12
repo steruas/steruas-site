@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1170" font-family="Inter, system-ui, -apple-system, sans-serif">
+  <style>
+    .header-title { font-size: 22px; font-weight: 700; fill: #1a1a1a; }
+    .header-sub { font-size: 13px; font-weight: 600; fill: #6a6a6a; letter-spacing: 0.8px; }
+    .cell-title { font-size: 16px; font-weight: 700; fill: #1a1a1a; }
+    .cell-body { font-size: 14px; font-weight: 400; fill: #3a3a3a; }
+    .row-label { font-size: 14px; font-weight: 700; fill: #1a1a1a; text-transform: uppercase; letter-spacing: 0.8px; }
+    .caption { font-size: 12px; font-weight: 400; fill: #8a8a8a; font-style: italic; }
+  </style>
+
+  <rect width="800" height="1170" fill="#ffffff"/>
+
+  <text x="20" y="55" class="row-label">Type</text>
+
+  <rect x="170" y="20" width="200" height="70" fill="#E8EEF4" rx="6"/>
+  <text x="270" y="48" class="header-sub" text-anchor="middle">TYPE 1</text>
+  <text x="270" y="73" class="header-title" text-anchor="middle">Assist (Copilot)</text>
+
+  <rect x="380" y="20" width="200" height="70" fill="#E8EFE9" rx="6"/>
+  <text x="480" y="48" class="header-sub" text-anchor="middle">TYPE 2</text>
+  <text x="480" y="73" class="header-title" text-anchor="middle">Replace</text>
+
+  <rect x="590" y="20" width="200" height="70" fill="#F4EFE6" rx="6"/>
+  <text x="690" y="48" class="header-sub" text-anchor="middle">TYPE 3</text>
+  <text x="690" y="73" class="header-title" text-anchor="middle">Unimaginable</text>
+
+  <text x="20" y="145" class="row-label">Addressable</text>
+  <text x="20" y="163" class="row-label">market</text>
+
+  <rect x="170" y="115" width="200" height="130" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="145" class="cell-title">Medium</text>
+
+  <rect x="380" y="115" width="200" height="130" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="145" class="cell-title">High</text>
+  <text x="395" y="170" class="cell-body">Salaries and benefits</text>
+  <text x="395" y="189" class="cell-body">already paid to</text>
+  <text x="395" y="208" class="cell-body">perform these</text>
+  <text x="395" y="227" class="cell-body">functions</text>
+
+  <rect x="590" y="115" width="200" height="130" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="145" class="cell-title">Theoretically high</text>
+  <text x="605" y="170" class="cell-body">Not calculated, but</text>
+  <text x="605" y="189" class="cell-body">potential to absorb</text>
+  <text x="605" y="208" class="cell-body">existing markets and</text>
+  <text x="605" y="227" class="cell-body">create new ones</text>
+
+  <text x="20" y="305" class="row-label">Risk</text>
+  <text x="20" y="323" class="row-label">level</text>
+
+  <rect x="170" y="275" width="200" height="170" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="305" class="cell-title">High</text>
+  <text x="185" y="330" class="cell-body">Challenge is</text>
+  <text x="185" y="349" class="cell-body">measuring the real</text>
+  <text x="185" y="368" class="cell-body">incremental</text>
+  <text x="185" y="387" class="cell-body">productivity gain</text>
+  <text x="185" y="406" class="cell-body">attributable to the</text>
+  <text x="185" y="425" class="cell-body">tool</text>
+
+  <rect x="380" y="275" width="200" height="170" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="305" class="cell-title">Low / Medium</text>
+  <text x="395" y="330" class="cell-body">Demand already</text>
+  <text x="395" y="349" class="cell-body">proven, companies</text>
+  <text x="395" y="368" class="cell-body">already pay to have</text>
+  <text x="395" y="387" class="cell-body">functions performed</text>
+
+  <rect x="590" y="275" width="200" height="170" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="305" class="cell-title">High</text>
+  <text x="605" y="330" class="cell-body">Challenge of proving</text>
+  <text x="605" y="349" class="cell-body">value for needs not</text>
+  <text x="605" y="368" class="cell-body">yet addressed</text>
+
+  <text x="20" y="505" class="row-label">How to</text>
+  <text x="20" y="523" class="row-label">succeed</text>
+
+  <rect x="170" y="475" width="200" height="210" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="505" class="cell-body">Measure real impact</text>
+  <text x="185" y="524" class="cell-body">on outcomes and</text>
+  <text x="185" y="543" class="cell-body">ensure usability for</text>
+  <text x="185" y="562" class="cell-body">fast adoption of the</text>
+  <text x="185" y="581" class="cell-body">tool</text>
+
+  <rect x="380" y="475" width="200" height="210" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="505" class="cell-body">Accuracy and</text>
+  <text x="395" y="524" class="cell-body">reliability of the</text>
+  <text x="395" y="543" class="cell-body">tool. Prove in</text>
+  <text x="395" y="562" class="cell-body">testing that the</text>
+  <text x="395" y="581" class="cell-body">solution truly</text>
+  <text x="395" y="600" class="cell-body">replaces tasks and</text>
+  <text x="395" y="619" class="cell-body">reduces internal or</text>
+  <text x="395" y="638" class="cell-body">third-party</text>
+  <text x="395" y="657" class="cell-body">headcount</text>
+
+  <rect x="590" y="475" width="200" height="210" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="505" class="cell-body">Identify strong pain</text>
+  <text x="605" y="524" class="cell-body">and ask: how would</text>
+  <text x="605" y="543" class="cell-body">we solve this if</text>
+  <text x="605" y="562" class="cell-body">there were no limit</text>
+  <text x="605" y="581" class="cell-body">to work and energy</text>
+  <text x="605" y="600" class="cell-body">spent on the task?</text>
+
+  <text x="20" y="745" class="row-label">Examples</text>
+
+  <rect x="170" y="715" width="200" height="380" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="745" class="cell-title">Cursor</text>
+  <text x="185" y="765" class="cell-body">(autocomplete mode)</text>
+
+  <text x="185" y="800" class="cell-title">GitHub Copilot</text>
+  <text x="185" y="820" class="cell-body">Mainstream code copilot</text>
+
+  <text x="185" y="855" class="cell-title">Cognifyze (BR)</text>
+  <text x="185" y="875" class="cell-body">Wearable capturing</text>
+  <text x="185" y="894" class="cell-body">in-store sales</text>
+  <text x="185" y="913" class="cell-body">interactions, returning</text>
+  <text x="185" y="932" class="cell-body">coaching to the team</text>
+
+  <rect x="380" y="715" width="200" height="380" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="745" class="cell-title">Decagon, Sierra</text>
+  <text x="395" y="765" class="cell-body">SAC agents solving</text>
+  <text x="395" y="784" class="cell-body">70%+ of tickets</text>
+
+  <text x="395" y="820" class="cell-title">Pencil, Omneky</text>
+  <text x="395" y="840" class="cell-body">Marketing creatives</text>
+  <text x="395" y="859" class="cell-body">at scale</text>
+
+  <text x="395" y="895" class="cell-title">Finic, Variance (YC)</text>
+  <text x="395" y="915" class="cell-body">Automated fraud</text>
+  <text x="395" y="934" class="cell-body">investigation</text>
+
+  <text x="395" y="970" class="cell-title">Claude Code, Lovable</text>
+  <text x="395" y="990" class="cell-body">Partial dev and design</text>
+
+  <rect x="590" y="715" width="200" height="380" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="745" class="cell-title">BeeSafe AI</text>
+  <text x="605" y="765" class="cell-body">Undercover agents</text>
+  <text x="605" y="784" class="cell-body">engaging with</text>
+  <text x="605" y="803" class="cell-body">scammers to map</text>
+  <text x="605" y="822" class="cell-body">fraud infrastructure</text>
+
+  <text x="605" y="860" class="cell-title">Stripe Radar</text>
+  <text x="605" y="880" class="cell-body">100ms, 98% fraud</text>
+  <text x="605" y="899" class="cell-body">reduction</text>
+
+  <text x="605" y="935" class="cell-title">Conversational</text>
+  <text x="605" y="955" class="cell-title">commerce</text>
+  <text x="605" y="985" class="cell-body">E-commerce funnel</text>
+  <text x="605" y="1004" class="cell-body">becomes natural dialog</text>
+
+  <text x="20" y="1145" class="caption">Adapted from Jake Heller's framework (Y Combinator, 2025).</text>
+</svg>
