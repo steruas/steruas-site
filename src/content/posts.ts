@@ -116,8 +116,8 @@ export const posts: Post[] = [
     slug: "incentivos-ia-eficiencia-tiram-empresas-do-futuro",
     category: { pt: "Estratégia, Growth & IA", en: "Strategy, Growth & AI" },
     title: {
-      pt: "Assist, Replace, Unimaginable: por que seguir os incentivos te tira do futuro",
-      en: "Assist, Replace, Unimaginable: why following the incentives takes you out of the future",
+      pt: "Eficientes, mas no passado: o paradoxo da IA corporativa",
+      en: "Efficient, but stuck in the past: the corporate AI paradox",
     },
     excerpt: {
       pt: "Os três tipos de aposta em IA explicam por que o capital está fluindo pra eficiência enquanto os próximos líderes de mercado nascerão em outro lugar.",
