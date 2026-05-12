@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1170" font-family="Inter, system-ui, -apple-system, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1400" font-family="Inter, system-ui, -apple-system, sans-serif">
   <style>
     .header-title { font-size: 22px; font-weight: 700; fill: #1a1a1a; }
     .header-sub { font-size: 13px; font-weight: 600; fill: #6a6a6a; letter-spacing: 0.8px; }
@@ -8,7 +8,7 @@
     .caption { font-size: 12px; font-weight: 400; fill: #8a8a8a; font-style: italic; }
   </style>
 
-  <rect width="800" height="1170" fill="#ffffff"/>
+  <rect width="800" height="1400" fill="#ffffff"/>
 
   <text x="20" y="55" class="row-label">Tipo</text>
 
@@ -24,131 +24,152 @@
   <text x="690" y="48" class="header-sub" text-anchor="middle">TIPO 3</text>
   <text x="690" y="73" class="header-title" text-anchor="middle">Unimaginable</text>
 
-  <text x="20" y="145" class="row-label">Mercado</text>
-  <text x="20" y="163" class="row-label">endereçável</text>
+  <text x="20" y="145" class="row-label">Unidade da</text>
+  <text x="20" y="163" class="row-label">mudança</text>
 
-  <rect x="170" y="115" width="200" height="130" fill="#F5F8FB" rx="6"/>
-  <text x="185" y="145" class="cell-title">Médio</text>
+  <rect x="170" y="115" width="200" height="170" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="145" class="cell-body">Eleva o trabalho</text>
+  <text x="185" y="164" class="cell-body">humano em</text>
+  <text x="185" y="183" class="cell-body">processos já</text>
+  <text x="185" y="202" class="cell-body">existentes</text>
 
-  <rect x="380" y="115" width="200" height="130" fill="#F5F9F5" rx="6"/>
-  <text x="395" y="145" class="cell-title">Alto</text>
-  <text x="395" y="170" class="cell-body">Salários e benefícios</text>
-  <text x="395" y="189" class="cell-body">já pagos pra</text>
-  <text x="395" y="208" class="cell-body">desempenhar essas</text>
-  <text x="395" y="227" class="cell-body">funções</text>
+  <rect x="380" y="115" width="200" height="170" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="145" class="cell-body">Substitui trabalho</text>
+  <text x="395" y="164" class="cell-body">humano em tarefas</text>
+  <text x="395" y="183" class="cell-body">completas de</text>
+  <text x="395" y="202" class="cell-body">processos existentes</text>
 
-  <rect x="590" y="115" width="200" height="130" fill="#FAF7F1" rx="6"/>
-  <text x="605" y="145" class="cell-title">Teoricamente alto</text>
-  <text x="605" y="170" class="cell-body">Não calculado, mas</text>
-  <text x="605" y="189" class="cell-body">potencial de engolir</text>
-  <text x="605" y="208" class="cell-body">mercados existentes</text>
-  <text x="605" y="227" class="cell-body">e criar novos</text>
+  <rect x="590" y="115" width="200" height="170" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="145" class="cell-body">Revisa processos</text>
+  <text x="605" y="164" class="cell-body">end-to-end a partir</text>
+  <text x="605" y="183" class="cell-body">da "dor" e cria um</text>
+  <text x="605" y="202" class="cell-body">produto novo</text>
 
-  <text x="20" y="305" class="row-label">Nível</text>
-  <text x="20" y="323" class="row-label">de risco</text>
+  <text x="20" y="345" class="row-label">Mercado</text>
+  <text x="20" y="363" class="row-label">endereçável</text>
 
-  <rect x="170" y="275" width="200" height="170" fill="#F5F8FB" rx="6"/>
-  <text x="185" y="305" class="cell-title">Alto</text>
-  <text x="185" y="330" class="cell-body">Desafio é medir o</text>
-  <text x="185" y="349" class="cell-body">aumento de</text>
-  <text x="185" y="368" class="cell-body">produtividade real</text>
-  <text x="185" y="387" class="cell-body">incremental</text>
-  <text x="185" y="406" class="cell-body">atribuível à</text>
-  <text x="185" y="425" class="cell-body">ferramenta</text>
+  <rect x="170" y="315" width="200" height="130" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="345" class="cell-title">Médio</text>
 
-  <rect x="380" y="275" width="200" height="170" fill="#F5F9F5" rx="6"/>
-  <text x="395" y="305" class="cell-title">Baixo / Médio</text>
-  <text x="395" y="330" class="cell-body">Demanda já</text>
-  <text x="395" y="349" class="cell-body">comprovada,</text>
-  <text x="395" y="368" class="cell-body">empresas já pagam</text>
-  <text x="395" y="387" class="cell-body">pra ter as funções</text>
-  <text x="395" y="406" class="cell-body">realizadas</text>
+  <rect x="380" y="315" width="200" height="130" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="345" class="cell-title">Alto</text>
+  <text x="395" y="370" class="cell-body">Salários e benefícios</text>
+  <text x="395" y="389" class="cell-body">já pagos pra</text>
+  <text x="395" y="408" class="cell-body">desempenhar essas</text>
+  <text x="395" y="427" class="cell-body">funções</text>
 
-  <rect x="590" y="275" width="200" height="170" fill="#FAF7F1" rx="6"/>
-  <text x="605" y="305" class="cell-title">Alto</text>
-  <text x="605" y="330" class="cell-body">Desafio de provar</text>
-  <text x="605" y="349" class="cell-body">valor de</text>
-  <text x="605" y="368" class="cell-body">necessidades ainda</text>
-  <text x="605" y="387" class="cell-body">não atendidas</text>
+  <rect x="590" y="315" width="200" height="130" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="345" class="cell-title">Teoricamente alto</text>
+  <text x="605" y="370" class="cell-body">Não calculado, mas</text>
+  <text x="605" y="389" class="cell-body">potencial de engolir</text>
+  <text x="605" y="408" class="cell-body">mercados existentes</text>
+  <text x="605" y="427" class="cell-body">e criar novos</text>
 
-  <text x="20" y="505" class="row-label">Como ter</text>
-  <text x="20" y="523" class="row-label">sucesso</text>
+  <text x="20" y="505" class="row-label">Nível</text>
+  <text x="20" y="523" class="row-label">de risco</text>
 
-  <rect x="170" y="475" width="200" height="210" fill="#F5F8FB" rx="6"/>
-  <text x="185" y="505" class="cell-body">Conseguir medir</text>
-  <text x="185" y="524" class="cell-body">impacto em</text>
-  <text x="185" y="543" class="cell-body">resultados e garantir</text>
-  <text x="185" y="562" class="cell-body">usabilidade pra</text>
-  <text x="185" y="581" class="cell-body">rápida adesão à</text>
-  <text x="185" y="600" class="cell-body">ferramenta</text>
+  <rect x="170" y="475" width="200" height="170" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="505" class="cell-title">Alto</text>
+  <text x="185" y="530" class="cell-body">Desafio é medir o</text>
+  <text x="185" y="549" class="cell-body">aumento de</text>
+  <text x="185" y="568" class="cell-body">produtividade real</text>
+  <text x="185" y="587" class="cell-body">incremental</text>
+  <text x="185" y="606" class="cell-body">atribuível à</text>
+  <text x="185" y="625" class="cell-body">ferramenta</text>
 
-  <rect x="380" y="475" width="200" height="210" fill="#F5F9F5" rx="6"/>
-  <text x="395" y="505" class="cell-body">Assertividade e</text>
-  <text x="395" y="524" class="cell-body">confiabilidade da</text>
-  <text x="395" y="543" class="cell-body">ferramenta. Provar</text>
-  <text x="395" y="562" class="cell-body">em testes que a</text>
-  <text x="395" y="581" class="cell-body">solução de fato</text>
-  <text x="395" y="600" class="cell-body">substitui tarefas e</text>
-  <text x="395" y="619" class="cell-body">reduz HCs internos</text>
-  <text x="395" y="638" class="cell-body">ou de provedores</text>
-  <text x="395" y="657" class="cell-body">terceiros</text>
+  <rect x="380" y="475" width="200" height="170" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="505" class="cell-title">Baixo / Médio</text>
+  <text x="395" y="530" class="cell-body">Demanda já</text>
+  <text x="395" y="549" class="cell-body">comprovada,</text>
+  <text x="395" y="568" class="cell-body">empresas já pagam</text>
+  <text x="395" y="587" class="cell-body">pra ter as funções</text>
+  <text x="395" y="606" class="cell-body">realizadas</text>
 
-  <rect x="590" y="475" width="200" height="210" fill="#FAF7F1" rx="6"/>
-  <text x="605" y="505" class="cell-body">Identificar uma dor</text>
-  <text x="605" y="524" class="cell-body">forte e perguntar:</text>
-  <text x="605" y="543" class="cell-body">como resolveríamos</text>
-  <text x="605" y="562" class="cell-body">isso se não houvesse</text>
-  <text x="605" y="581" class="cell-body">limite de trabalho e</text>
-  <text x="605" y="600" class="cell-body">energia em uma</text>
-  <text x="605" y="619" class="cell-body">tarefa?</text>
+  <rect x="590" y="475" width="200" height="170" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="505" class="cell-title">Alto</text>
+  <text x="605" y="530" class="cell-body">Desafio de provar</text>
+  <text x="605" y="549" class="cell-body">valor de</text>
+  <text x="605" y="568" class="cell-body">necessidades ainda</text>
+  <text x="605" y="587" class="cell-body">não atendidas</text>
 
-  <text x="20" y="745" class="row-label">Exemplos</text>
+  <text x="20" y="705" class="row-label">Como ter</text>
+  <text x="20" y="723" class="row-label">sucesso</text>
 
-  <rect x="170" y="715" width="200" height="380" fill="#F5F8FB" rx="6"/>
-  <text x="185" y="745" class="cell-title">Cursor</text>
-  <text x="185" y="765" class="cell-body">(modo autocomplete)</text>
+  <rect x="170" y="675" width="200" height="210" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="705" class="cell-body">Conseguir medir</text>
+  <text x="185" y="724" class="cell-body">impacto em</text>
+  <text x="185" y="743" class="cell-body">resultados e garantir</text>
+  <text x="185" y="762" class="cell-body">usabilidade pra</text>
+  <text x="185" y="781" class="cell-body">rápida adesão à</text>
+  <text x="185" y="800" class="cell-body">ferramenta</text>
 
-  <text x="185" y="800" class="cell-title">GitHub Copilot</text>
-  <text x="185" y="820" class="cell-body">Copilot de código</text>
+  <rect x="380" y="675" width="200" height="210" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="705" class="cell-body">Assertividade e</text>
+  <text x="395" y="724" class="cell-body">confiabilidade da</text>
+  <text x="395" y="743" class="cell-body">ferramenta. Provar</text>
+  <text x="395" y="762" class="cell-body">em testes que a</text>
+  <text x="395" y="781" class="cell-body">solução de fato</text>
+  <text x="395" y="800" class="cell-body">substitui tarefas e</text>
+  <text x="395" y="819" class="cell-body">reduz HCs internos</text>
+  <text x="395" y="838" class="cell-body">ou de provedores</text>
+  <text x="395" y="857" class="cell-body">terceiros</text>
 
-  <text x="185" y="855" class="cell-title">Cognifyze (BR)</text>
-  <text x="185" y="875" class="cell-body">Wearable que captura</text>
-  <text x="185" y="894" class="cell-body">vendas no varejo</text>
-  <text x="185" y="913" class="cell-body">físico e devolve</text>
-  <text x="185" y="932" class="cell-body">coaching pro time</text>
+  <rect x="590" y="675" width="200" height="210" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="705" class="cell-body">Identificar uma dor</text>
+  <text x="605" y="724" class="cell-body">forte e perguntar:</text>
+  <text x="605" y="743" class="cell-body">como resolveríamos</text>
+  <text x="605" y="762" class="cell-body">isso se não houvesse</text>
+  <text x="605" y="781" class="cell-body">limite de trabalho e</text>
+  <text x="605" y="800" class="cell-body">energia em uma</text>
+  <text x="605" y="819" class="cell-body">tarefa?</text>
 
-  <rect x="380" y="715" width="200" height="380" fill="#F5F9F5" rx="6"/>
-  <text x="395" y="745" class="cell-title">Decagon, Sierra</text>
-  <text x="395" y="765" class="cell-body">Agentes de SAC</text>
-  <text x="395" y="784" class="cell-body">resolvendo 70%+</text>
-  <text x="395" y="803" class="cell-body">dos tickets</text>
+  <text x="20" y="945" class="row-label">Exemplos</text>
 
-  <text x="395" y="840" class="cell-title">Pencil, Omneky</text>
-  <text x="395" y="860" class="cell-body">Criativos de</text>
-  <text x="395" y="879" class="cell-body">marketing em escala</text>
+  <rect x="170" y="915" width="200" height="380" fill="#F5F8FB" rx="6"/>
+  <text x="185" y="945" class="cell-title">Cursor</text>
+  <text x="185" y="965" class="cell-body">(modo autocomplete)</text>
 
-  <text x="395" y="915" class="cell-title">Finic, Variance (YC)</text>
-  <text x="395" y="935" class="cell-body">Investigação de</text>
-  <text x="395" y="954" class="cell-body">fraude automatizada</text>
+  <text x="185" y="1000" class="cell-title">GitHub Copilot</text>
+  <text x="185" y="1020" class="cell-body">Copilot de código</text>
 
-  <text x="395" y="990" class="cell-title">Claude Code, Lovable</text>
-  <text x="395" y="1010" class="cell-body">Dev e design parcial</text>
+  <text x="185" y="1055" class="cell-title">Cognifyze (BR)</text>
+  <text x="185" y="1075" class="cell-body">Wearable que captura</text>
+  <text x="185" y="1094" class="cell-body">vendas no varejo</text>
+  <text x="185" y="1113" class="cell-body">físico e devolve</text>
+  <text x="185" y="1132" class="cell-body">coaching pro time</text>
 
-  <rect x="590" y="715" width="200" height="380" fill="#FAF7F1" rx="6"/>
-  <text x="605" y="745" class="cell-title">BeeSafe AI</text>
-  <text x="605" y="765" class="cell-body">Agentes undercover</text>
-  <text x="605" y="784" class="cell-body">que engajam com</text>
-  <text x="605" y="803" class="cell-body">golpistas pra mapear</text>
-  <text x="605" y="822" class="cell-body">infraestrutura</text>
+  <rect x="380" y="915" width="200" height="380" fill="#F5F9F5" rx="6"/>
+  <text x="395" y="945" class="cell-title">Decagon, Sierra</text>
+  <text x="395" y="965" class="cell-body">Agentes de SAC</text>
+  <text x="395" y="984" class="cell-body">resolvendo 70%+</text>
+  <text x="395" y="1003" class="cell-body">dos tickets</text>
 
-  <text x="605" y="860" class="cell-title">Stripe Radar</text>
-  <text x="605" y="880" class="cell-body">100ms, 98% de</text>
-  <text x="605" y="899" class="cell-body">redução de fraude</text>
+  <text x="395" y="1040" class="cell-title">Pencil, Omneky</text>
+  <text x="395" y="1060" class="cell-body">Criativos de</text>
+  <text x="395" y="1079" class="cell-body">marketing em escala</text>
 
-  <text x="605" y="935" class="cell-title">Comércio</text>
-  <text x="605" y="955" class="cell-title">conversacional</text>
-  <text x="605" y="985" class="cell-body">Funil de e-commerce</text>
-  <text x="605" y="1004" class="cell-body">vira diálogo natural</text>
+  <text x="395" y="1115" class="cell-title">Finic, Variance (YC)</text>
+  <text x="395" y="1135" class="cell-body">Investigação de</text>
+  <text x="395" y="1154" class="cell-body">fraude automatizada</text>
 
-  <text x="20" y="1145" class="caption">Adaptado do framework de Jake Heller (Y Combinator, 2025).</text>
+  <text x="395" y="1190" class="cell-title">Claude Code, Lovable</text>
+  <text x="395" y="1210" class="cell-body">Dev e design parcial</text>
+
+  <rect x="590" y="915" width="200" height="380" fill="#FAF7F1" rx="6"/>
+  <text x="605" y="945" class="cell-title">BeeSafe AI</text>
+  <text x="605" y="965" class="cell-body">Agentes undercover</text>
+  <text x="605" y="984" class="cell-body">que engajam com</text>
+  <text x="605" y="1003" class="cell-body">golpistas pra mapear</text>
+  <text x="605" y="1022" class="cell-body">infraestrutura</text>
+
+  <text x="605" y="1060" class="cell-title">Stripe Radar</text>
+  <text x="605" y="1080" class="cell-body">100ms, 98% de</text>
+  <text x="605" y="1099" class="cell-body">redução de fraude</text>
+
+  <text x="605" y="1135" class="cell-title">Comércio</text>
+  <text x="605" y="1155" class="cell-title">conversacional</text>
+  <text x="605" y="1185" class="cell-body">Funil de e-commerce</text>
+  <text x="605" y="1204" class="cell-body">vira diálogo natural</text>
+
+  <text x="20" y="1370" class="caption">Framework de Jake Heller (Y Combinator, 2025), adaptado por Stéphanie Nakamura Ruas.</text>
 </svg>
