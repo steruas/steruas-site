@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 430" role="img" aria-label="Diagrama dos três espaços de skills em growth">
+<title>Onde está o trabalho de growth hoje</title>
+<desc>Três espaços de trabalho humano em growth (marketing, quantitativo, arquitetura humano-agente) acima do que já foi automatizado por plataforma ou IA.</desc>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #3d3d3a; }
+  .th { font-size: 14px; font-weight: 500; }
+  .t { font-size: 14px; font-weight: 400; }
+  .ts { font-size: 12px; font-weight: 400; fill: #73726c; }
+  .purple-fill { fill: #EEEDFE; stroke: #534AB7; }
+  .purple-th { fill: #3C3489; font-weight: 500; }
+  .purple-ts { fill: #534AB7; }
+  .teal-fill { fill: #E1F5EE; stroke: #0F6E56; }
+  .teal-th { fill: #085041; font-weight: 500; }
+  .teal-ts { fill: #0F6E56; }
+  .coral-fill { fill: #FAECE7; stroke: #993C1D; }
+  .coral-th { fill: #712B13; font-weight: 500; }
+  .coral-ts { fill: #993C1D; }
+  .gray-fill { fill: #F1EFE8; stroke: #5F5E5A; }
+  .gray-th { fill: #2C2C2A; font-weight: 500; }
+  .gray-ts { fill: #5F5E5A; }
+  @media (prefers-color-scheme: dark) {
+    text { fill: #c2c0b6; }
+    .ts { fill: #9c9a92; }
+    .purple-fill { fill: #3C3489; stroke: #AFA9EC; }
+    .purple-th { fill: #CECBF6; }
+    .purple-ts { fill: #AFA9EC; }
+    .teal-fill { fill: #085041; stroke: #5DCAA5; }
+    .teal-th { fill: #9FE1CB; }
+    .teal-ts { fill: #5DCAA5; }
+    .coral-fill { fill: #712B13; stroke: #F0997B; }
+    .coral-th { fill: #F5C4B3; }
+    .coral-ts { fill: #F0997B; }
+    .gray-fill { fill: #444441; stroke: #B4B2A9; }
+    .gray-th { fill: #D3D1C7; }
+    .gray-ts { fill: #B4B2A9; }
+  }
+</style>
+
+<text class="th" x="340" y="32" text-anchor="middle">Onde está o trabalho de growth hoje</text>
+<text class="ts" x="340" y="60" text-anchor="middle">O que ainda exige o humano</text>
+
+<rect class="purple-fill" x="40" y="80" width="190" height="170" rx="8" stroke-width="0.5"/>
+<text class="purple-th" x="135" y="110" text-anchor="middle" font-size="14">Marketing</text>
+<text class="purple-ts" x="135" y="138" text-anchor="middle" font-size="12">Posicionamento</text>
+<text class="purple-ts" x="135" y="158" text-anchor="middle" font-size="12">Oferta e criativo</text>
+<text class="purple-ts" x="135" y="178" text-anchor="middle" font-size="12">Canal e narrativa</text>
+<text class="purple-ts" x="135" y="198" text-anchor="middle" font-size="12">Experiência do cliente</text>
+<text class="purple-ts" x="135" y="226" text-anchor="middle" font-size="12">Voltou ao centro</text>
+
+<rect class="teal-fill" x="245" y="80" width="190" height="170" rx="8" stroke-width="0.5"/>
+<text class="teal-th" x="340" y="110" text-anchor="middle" font-size="14">Quant analítico</text>
+<text class="teal-ts" x="340" y="138" text-anchor="middle" font-size="12">Incrementalidade</text>
+<text class="teal-ts" x="340" y="158" text-anchor="middle" font-size="12">MMM e causalidade</text>
+<text class="teal-ts" x="340" y="178" text-anchor="middle" font-size="12">Cohort e propensão</text>
+<text class="teal-ts" x="340" y="198" text-anchor="middle" font-size="12">Segmentação CRM</text>
+<text class="teal-ts" x="340" y="226" text-anchor="middle" font-size="12">Fronteira se deslocou</text>
+
+<rect class="coral-fill" x="450" y="80" width="190" height="170" rx="8" stroke-width="0.5"/>
+<text class="coral-th" x="545" y="110" text-anchor="middle" font-size="14">Arquitetura</text>
+<text class="coral-ts" x="545" y="138" text-anchor="middle" font-size="12">Humano + agente</text>
+<text class="coral-ts" x="545" y="158" text-anchor="middle" font-size="12">Desenho de processo</text>
+<text class="coral-ts" x="545" y="178" text-anchor="middle" font-size="12">Onde entra cada um</text>
+<text class="coral-ts" x="545" y="198" text-anchor="middle" font-size="12">Orquestração de fluxo</text>
+<text class="coral-ts" x="545" y="226" text-anchor="middle" font-size="12">Diferencial atual</text>
+
+<rect class="gray-fill" x="40" y="290" width="600" height="100" rx="8" stroke-width="0.5"/>
+<text class="gray-th" x="340" y="316" text-anchor="middle" font-size="14">Automatizado por plataforma ou IA</text>
+<text class="gray-ts" x="340" y="342" text-anchor="middle" font-size="12">Bid management granular</text>
+<text class="gray-ts" x="340" y="360" text-anchor="middle" font-size="12">Desdobramento de peças</text>
+<text class="gray-ts" x="340" y="378" text-anchor="middle" font-size="12">Subida de campanhas</text>
+</svg>

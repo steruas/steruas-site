@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 280" role="img" aria-label="WhatsApp message costs by type">
+<title>Cost per message type on WhatsApp Brazil</title>
+<desc>Horizontal bar chart comparing the four WhatsApp Business message types in Brazil: marketing R$ 0.35, utility R$ 0.05, authentication R$ 0.02, and service free within the 24-72h window.</desc>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #3d3d3a; }
+  .th { font-size: 14px; font-weight: 500; }
+  .ts { font-size: 12px; font-weight: 400; fill: #73726c; }
+  .label { font-size: 12px; font-weight: 400; }
+  .coral-fill { fill: #FAECE7; stroke: #993C1D; }
+  .amber-fill { fill: #FAEEDA; stroke: #854F0B; }
+  .teal-fill { fill: #E1F5EE; stroke: #0F6E56; }
+  .divider { stroke: #B4B2A9; }
+  @media (prefers-color-scheme: dark) {
+    text { fill: #c2c0b6; }
+    .ts { fill: #9c9a92; }
+    .coral-fill { fill: #712B13; stroke: #F0997B; }
+    .amber-fill { fill: #633806; stroke: #EF9F27; }
+    .teal-fill { fill: #085041; stroke: #5DCAA5; }
+    .divider { stroke: #5F5E5A; }
+  }
+</style>
+
+<text class="th" x="340" y="30" text-anchor="middle">Approximate cost per message on WhatsApp Business Brazil</text>
+
+<text class="label" x="180" y="78" text-anchor="end">Marketing</text>
+<rect class="coral-fill" x="190" y="64" width="350" height="22" rx="4" stroke-width="0.5"/>
+<text class="label" x="550" y="78" dominant-baseline="central">R$ 0.35</text>
+
+<text class="label" x="180" y="118" text-anchor="end">Utility</text>
+<rect class="amber-fill" x="190" y="104" width="50" height="22" rx="4" stroke-width="0.5"/>
+<text class="label" x="250" y="118" dominant-baseline="central">R$ 0.05</text>
+
+<text class="label" x="180" y="158" text-anchor="end">Authentication</text>
+<rect class="amber-fill" x="190" y="144" width="20" height="22" rx="4" stroke-width="0.5"/>
+<text class="label" x="220" y="158" dominant-baseline="central">R$ 0.02</text>
+
+<text class="label" x="180" y="198" text-anchor="end">Service</text>
+<rect class="teal-fill" x="190" y="184" width="6" height="22" rx="4" stroke-width="0.5"/>
+<text class="label" x="206" y="198" dominant-baseline="central">Free within the 24h-72h window</text>
+
+<line x1="190" y1="226" x2="540" y2="226" class="divider" stroke-width="0.5"/>
+<text class="ts" x="340" y="252" text-anchor="middle">Marketing costs 7x more than utility and 17x more than authentication</text>
+</svg>
