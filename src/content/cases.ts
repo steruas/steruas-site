@@ -1,6 +1,7 @@
 export const cases = [
   {
     slug: "bacen-reclame-aqui",
+    externalUrl: "/trabalhos/bacen-reclame-aqui/index.html",
     title: { pt: "Caso 1: Análise Bacen + Reclame Aqui", en: "Case 1: Bacen + Reclame Aqui Analysis" },
     desc: {
       pt: "Cruzamento entre reclamações registradas no Banco Central e o Reclame Aqui pra mapear onde a experiência do cliente bancário se descola da régua regulatória.",

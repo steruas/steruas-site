@@ -56,9 +56,10 @@ function RouteComponent() {
 
           {/* Caso 1 — destaque */}
           <FadeIn delay={0.15}>
-            <Link
-              to="/$locale/feito-com-ia/$slug"
-              params={{ locale, slug: featured.slug }}
+            <a
+              href={featured.externalUrl ?? `/${locale}/feito-com-ia/${featured.slug}`}
+              target={featured.externalUrl ? "_blank" : undefined}
+              rel={featured.externalUrl ? "noreferrer" : undefined}
               className="mt-20 block group"
             >
               <article className="border border-[#E5E3DC] bg-white/40 rounded-lg overflow-hidden transition-all hover:border-[#B8862B]/40">
@@ -101,7 +102,7 @@ function RouteComponent() {
                   </div>
                 </div>
               </article>
-            </Link>
+            </a>
           </FadeIn>
 
           {/* Casos 2 e 3 */}

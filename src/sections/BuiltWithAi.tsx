@@ -67,13 +67,14 @@ export function BuiltWithAi() {
                     <div className="mt-2 text-[#1A1A1A]/80">{featured.sector[locale]}</div>
                   </div>
                 </div>
-                <Link
-                  to="/$locale/feito-com-ia/$slug"
-                  params={{ locale, slug: featured.slug }}
+                <a
+                href={featured.externalUrl ?? `/${locale}/feito-com-ia/${featured.slug}`}
+                  target={featured.externalUrl ? "_blank" : undefined}
+                  rel={featured.externalUrl ? "noreferrer" : undefined}
                   className="mt-8 inline-flex items-center gap-2 text-sm text-[#B8862B] hover:underline underline-offset-4"
                 >
                   {t.builtWithAi.featuredCta} →
-                </Link>
+                </a>
               </div>
             </div>
           </article>
