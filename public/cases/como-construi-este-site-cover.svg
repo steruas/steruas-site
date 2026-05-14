@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Fluxo de construção do site: do Claude ao deploy">
+
+  <!-- Background bege quentinho do site -->
+  <rect width="1280" height="720" fill="#F0EFE8"/>
+
+  <!-- Eyebrow topo -->
+  <text x="640" y="80" text-anchor="middle" fill="#B8862B" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="14" letter-spacing="3.5" font-weight="500">FROM AMBITION TO DEPLOY</text>
+
+  <!-- Linha tracejada vertical guia do loop -->
+  <line x1="640" y1="135" x2="640" y2="625" stroke="#E5E3DC" stroke-width="1" stroke-dasharray="4,6"/>
+
+  <!-- ============ STEP 1: AMBITION + SCOPE (Claude) ============ -->
+  <rect x="380" y="130" width="380" height="90" rx="4" fill="#1A1A1A"/>
+  <text x="570" y="166" text-anchor="middle" fill="#FAFAF7" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" letter-spacing="3" font-weight="500">01 · IN CLAUDE</text>
+  <text x="570" y="200" text-anchor="middle" fill="#FAFAF7" font-family="Fraunces, Georgia, serif" font-size="26" font-style="italic">Ambition + scope</text>
+
+  <text x="800" y="165" fill="#6b6557" font-family="ui-sans-serif, Inter, sans-serif" font-size="14">Conversation to detail</text>
+  <text x="800" y="188" fill="#6b6557" font-family="ui-sans-serif, Inter, sans-serif" font-size="14">objectives and structure</text>
+
+  <line x1="570" y1="220" x2="570" y2="253" stroke="#B8862B" stroke-width="2"/>
+  <polygon points="570,260 564,250 576,250" fill="#B8862B"/>
+
+  <!-- ============ STEP 2: FIRST VERSION (Lovable) ============ -->
+  <rect x="380" y="265" width="380" height="90" rx="4" fill="#B8862B"/>
+  <text x="570" y="301" text-anchor="middle" fill="#FAFAF7" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" letter-spacing="3" font-weight="500">02 · IN LOVABLE</text>
+  <text x="570" y="335" text-anchor="middle" fill="#FAFAF7" font-family="Fraunces, Georgia, serif" font-size="26" font-style="italic">First version</text>
+
+  <text x="800" y="300" fill="#6b6557" font-family="ui-sans-serif, Inter, sans-serif" font-size="14">Detailed prompt becomes</text>
+  <text x="800" y="323" fill="#6b6557" font-family="ui-sans-serif, Inter, sans-serif" font-size="14">a navigable site</text>
+
+  <line x1="570" y1="355" x2="570" y2="388" stroke="#B8862B" stroke-width="2"/>
+  <polygon points="570,395 564,385 576,385" fill="#B8862B"/>
+
+  <!-- ============ STEP 3: EXPORT THE CODE (GitHub) ============ -->
+  <rect x="380" y="400" width="380" height="90" rx="4" fill="#FAFAF7" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text x="570" y="436" text-anchor="middle" fill="#1A1A1A" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" letter-spacing="3" font-weight="500">03 · IN GITHUB</text>
+  <text x="570" y="470" text-anchor="middle" fill="#1A1A1A" font-family="Fraunces, Georgia, serif" font-size="26" font-style="italic">Export the code</text>
+
+  <text x="800" y="435" fill="#6b6557" font-family="ui-sans-serif, Inter, sans-serif" font-size="14">Leaves the Lovable</text>
+  <text x="800" y="458" fill="#6b6557" font-family="ui-sans-serif, Inter, sans-serif" font-size="14">walled garden, becomes mine</text>
+
+  <line x1="570" y1="490" x2="570" y2="523" stroke="#B8862B" stroke-width="2"/>
+  <polygon points="570,530 564,520 576,520" fill="#B8862B"/>
+
+  <!-- ============ STEP 4: REFINEMENT LOOP ============ -->
+  <rect x="380" y="535" width="500" height="90" rx="4" fill="#1A1A1A"/>
+  <text x="630" y="571" text-anchor="middle" fill="#FAFAF7" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" letter-spacing="3" font-weight="500">04 · REFINEMENT LOOP</text>
+  <text x="630" y="605" text-anchor="middle" fill="#FAFAF7" font-family="Fraunces, Georgia, serif" font-size="24" font-style="italic">Claude → Terminal → VSCode</text>
+
+  <!-- Loop arrow voltando ao Lovable -->
+  <path d="M 380 580 Q 280 580 280 355 Q 280 310 380 310" stroke="#B8862B" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  <polygon points="380,310 372,305 372,315" fill="#B8862B"/>
+
+  <text x="265" y="465" fill="#B8862B" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" letter-spacing="2.5" font-weight="500" transform="rotate(-90, 265, 465)">GO BACK IF NEEDED</text>
+
+  <!-- Caption final -->
+  <text x="640" y="680" text-anchor="middle" fill="#6b6557" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="13" letter-spacing="2">→ git push → Cloudflare ships in 1-3 min</text>
+
+</svg>

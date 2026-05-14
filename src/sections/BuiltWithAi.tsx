@@ -36,7 +36,7 @@ export function BuiltWithAi() {
             <div className="grid grid-cols-1 lg:grid-cols-5">
               <div className="lg:col-span-3 aspect-[16/10] lg:aspect-auto bg-[#0A0A0C] relative overflow-hidden">
                 <img
-                  src="/cases/bacen-reclame-aqui-cover.png"
+                  src={featured.cover ?? "/cases/bacen-reclame-aqui-cover.png"}
                   alt={featured.title[locale]}
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
@@ -61,7 +61,7 @@ export function BuiltWithAi() {
                   </div>
                 </div>
                 <a
-                href={featured.externalUrl ?? `/${locale}/feito-com-ia/${featured.slug}`}
+                  href={featured.externalUrl ?? `/${locale}/feito-com-ia/${featured.slug}`}
                   target={featured.externalUrl ? "_blank" : undefined}
                   rel={featured.externalUrl ? "noreferrer" : undefined}
                   className="mt-8 inline-flex items-center gap-2 text-sm text-[#B8862B] hover:underline underline-offset-4"
@@ -77,6 +77,7 @@ export function BuiltWithAi() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
           {others.map((c, i) => {
             const isComingSoon = c.status === "coming-soon";
+            const hasCover = !!c.cover;
             const cardClasses = `border rounded-lg p-8 h-full transition-transform ${
               isComingSoon
                 ? "border-[#E5E3DC] opacity-75"
@@ -85,7 +86,15 @@ export function BuiltWithAi() {
 
             const cardContent = (
               <article className={cardClasses}>
-                <div className="aspect-[16/9] -mx-2 -mt-2 mb-6 rounded bg-gradient-to-br from-[#F0EFE8] to-[#E5E3DC] relative">
+                <div className="aspect-[16/9] -mx-2 -mt-2 mb-6 rounded bg-gradient-to-br from-[#F0EFE8] to-[#E5E3DC] relative overflow-hidden">
+                  {hasCover && (
+                    <img
+                      src={c.cover}
+                      alt={c.title[locale]}
+                      className="absolute inset-0 w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  )}
                   {isComingSoon && (
                     <div className="absolute top-3 right-3 text-[10px] uppercase tracking-[0.18em] text-[#1A1A1A]/60 bg-white/80 px-2 py-1 rounded">
                       {t.builtWithAi.comingSoon}
