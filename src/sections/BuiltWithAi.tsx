@@ -34,20 +34,13 @@ export function BuiltWithAi() {
         <FadeIn delay={0.1}>
           <article className="mt-20 border border-[#E5E3DC] bg-white/40 rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-5">
-              <div className="lg:col-span-3 aspect-[16/10] lg:aspect-auto bg-gradient-to-br from-[#F0EFE8] to-[#E5E3DC] relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center px-8">
-                    <div className="eyebrow mb-3">Dashboard placeholder</div>
-                    <div className="font-serif text-2xl text-[#1A1A1A]/40">[ embed area ]</div>
-                  </div>
-                </div>
-                {/* faint chart lines */}
-                <svg className="absolute inset-0 w-full h-full opacity-20" preserveAspectRatio="none" viewBox="0 0 400 250">
-                  <polyline fill="none" stroke="#B8862B" strokeWidth="1.5"
-                    points="0,200 40,180 80,190 120,150 160,160 200,110 240,130 280,80 320,95 360,55 400,70" />
-                  <polyline fill="none" stroke="#1A1A1A" strokeWidth="1" strokeDasharray="3 3"
-                    points="0,210 40,205 80,200 120,195 160,185 200,180 240,170 280,160 320,150 360,140 400,130" />
-                </svg>
+              <div className="lg:col-span-3 aspect-[16/10] lg:aspect-auto bg-[#0A0A0C] relative overflow-hidden">
+                <img
+                  src="/cases/bacen-reclame-aqui-cover.png"
+                  alt={featured.title[locale]}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
               <div className="lg:col-span-2 p-8 md:p-10 flex flex-col">
                 <div className="eyebrow">{t.builtWithAi.featured}</div>
