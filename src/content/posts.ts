@@ -206,7 +206,7 @@ export const posts: Post[] = [
   },
   {
     slug: "o-que-mudou-em-growth",
-    category: { pt: "Growth, IA", en: "Growth, AI" },
+    category: { pt: "Growth & IA", en: "Growth & AI" },
     title: {
       pt: "O que está quente em growth marketing com inteligência artificial",
       en: "What is hot in growth marketing with artificial intelligence",
