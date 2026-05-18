@@ -208,14 +208,9 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 <nav>
 <div class="nav-logo">Análise · Bancos BR</div>
-<a href="#sec1">1 · Ranking</a>
-<a href="#sec1b">1A · Clientes</a>
-<a href="#sec1c">1B · Motivos</a>
-<a href="#sec1d">1C · Q4 2025</a>
-<a href="#sec1e">1D · Evolução</a>
-<a href="#sec2">2 · Qualitativo</a>
-<a href="#sec3">3 · CX como Vantagem</a>
-<a href="#metodologia">Metodologia</a>
+<a href="#sec1">Ranking</a>
+<a href="#sec2">Oportunidades por Instituição</a>
+<a href="#sec3">CX como Vantagem Competitiva</a>
 </nav>
 <div class="hero">
 <div class="eyebrow">Análise de Dados · Setor Financeiro Brasileiro · 2022–2025</div>
@@ -1303,7 +1298,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="font-size:11px;color:var(--text3);font-family:'DM Mono',monospace;margin-bottom:2rem">Fonte: Reclame Aqui · perfis públicos · acumulado até 3 anos · dados coletados out/2025–mar/2026 · análise baseada em top 5 por dimensão "Tipo de problema"</div>
 <div class="subsec-title">2.2 — Dores, padrões e oportunidades por instituição</div>
 <p class="subsec-intro">Para cada instituição: distribuição de reclamações por motivo conforme classificação do Bacen (Q4 2025), verbatim do Reclame Aqui e oportunidades de melhoria.</p>
-<div class="warn-box"><strong>Nota metodológica:</strong> a distribuição percentual nos gráficos de donut usa os motivos de reclamação conforme classificação do Bacen no Q4 2025 (nomes encurtados para caber na visualização; os percentuais são em relação ao total de reclamações procedentes da instituição no trimestre). <strong>Sobre múltiplos perfis no Reclame Aqui:</strong> diversas instituições possuem mais de um perfil cadastrado na plataforma, seja por razões históricas ou por separação de produtos (ex: banco vs. cartões). Os dados de "principais problemas" apresentados nesta seção referem-se ao primeiro perfil retornado na busca pela marca da instituição no Reclame Aqui, que em geral corresponde ao perfil principal ou de maior volume. Uma análise consolidando todos os perfis de cada conglomerado poderia alterar os percentuais e a ordem dos principais problemas. Os verbatim do Reclame Aqui são representativos do padrão encontrado nas reclamações públicas, não uma amostra estatística.</div>
+<div class="warn-box"><strong>Nota metodológica:</strong> a distribuição percentual nos gráficos de donut usa os motivos de reclamação conforme classificação do Bacen no Q4 2025 (nomes encurtados para caber na visualização; os percentuais são em relação ao total de reclamações procedentes da instituição no trimestre). <strong>Sobre múltiplos perfis no Reclame Aqui:</strong> diversas instituições possuem mais de um perfil cadastrado na plataforma, seja por razões históricas ou por separação de produtos (ex: banco vs. cartões). Os dados de "principais problemas" apresentados nesta seção referem-se ao primeiro perfil retornado na busca pela marca da instituição no Reclame Aqui, que em geral corresponde ao perfil principal ou de maior volume. Uma análise consolidando todos os perfis de cada conglomerado poderia alterar os percentuais e a ordem dos principais problemas. Os verbatim do Reclame Aqui foram selecionados manualmente pela autora como ilustração do padrão encontrado nas reclamações públicas, não como amostra estatística. Próximo passo natural seria raspagem sistemática para análise quantitativa robusta.</div>
 <div class="bank-selector" style="margin-top:1.5rem">
 <button class="bsel active" onclick="showBank('bradesco',this,'#cc092f')" style="border-color:rgba(204,9,47,.4);color:#fff"><span class="bdot" style="background:var(--bradesco)"></span>Bradesco</button>
 <button class="bsel" onclick="showBank('itau',this,'#f26522')"><span class="bdot" style="background:var(--itau)"></span>Itaú</button>
@@ -1339,8 +1334,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-bradesco"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -1393,32 +1388,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.970)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Bancos</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">56,6% <span style="font-size:10px;font-weight:400;color:var(--text3)">(80.391)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(17.789)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(14.106)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Internet Banking</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(6.093)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Cartões de Crédito</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(2.961)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -1448,12 +1418,12 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 </div>
 </div>
-<div class="ins"><strong>Maior número absoluto de reclamações do setor (4.849).</strong> O motivo dominante é "crédito exceto consignado" (993 reclamações), superando cartão de crédito. Isso é um padrão específico do Bradesco entre os bancões e sugere problemas concentrados na jornada de crédito pessoal. Os verbatim do Reclame Aqui apontam um padrão recorrente de informação divergente entre canais e atendimentos sucessivos.</div>
+<div class="ins"><strong>Maior número absoluto de reclamações do setor (4.849).</strong> O motivo dominante é "crédito exceto consignado" (993 reclamações), superando cartão de crédito. Isso é um padrão específico do Bradesco entre os bancões e sugere problemas concentrados na jornada de crédito pessoal. Os verbatim do Reclame Aqui mostrados na ficha sugerem informação divergente entre canais e atendimentos sucessivos como vetor recorrente — análise dirigida pendente para confirmar como padrão.</div>
 <div class="card">
 <div class="card-title"><span class="ctd" style="background:var(--green)"></span>Oportunidades prioritárias — perspectiva de produto, growth e IA</div>
 <div class="hyp-list">
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(204,9,47,.15);color:var(--bradesco)">01</div><div><div class="hyp-title">Visão única do cliente — hipótese de causa estrutural</div><div class="hyp-desc">Se a inconsistência de informação entre canais for confirmada como padrão dominante dos verbatim (análise dirigida pendente), uma leitura possível é arquitetura organizacional: domínios separados (crédito, seguros, conta) operando com dados próprios, sem dono único da visão do cliente. Resolver com CDP isolado tende a ser insuficiente; usualmente exige mandato executivo sobre propriedade dos dados, com prazo realista de 24-36 meses para resultado mensurável. Caso de negócio: cada chamada repetida ao SAC custa entre R$8 e R$25, e 4.849 reclamações procedentes ao BC representam uma fração do volume total de contatos.</div><span class="hyp-impact i-alto">Decisão executiva · Prioridade 1 de transformação</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(245,158,11,.15);color:var(--amber)">02</div><div><div class="hyp-title">Análise dirigida do motivo dominante — "crédito exceto consignado"</div><div class="hyp-desc">993 reclamações na categoria "crédito exceto consignado" como motivo #1 é um padrão singular do Bradesco entre os bancões: supera cartão de crédito e diferencia o perfil da instituição. Antes de propor soluções, vale uma análise dirigida do que está dentro dessa categoria: rotativo, parcelado, crédito pessoal, consignado privado, refinanciamento. Cada um tem jornadas distintas (contratação, cobrança, contestação, encerramento), e o vetor de fricção dominante pode ser específico. Quick win possível: instrumentar funil por sub-jornada de crédito e identificar o ponto de fricção concentrado, antes de aplicar hipóteses genéricas.</div><span class="hyp-impact i-alto">Diagnóstico → priorização</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(204,9,47,.15);color:var(--bradesco)">01</div><div><div class="hyp-title">Visão única do cliente — hipótese de causa estrutural</div><div class="hyp-desc">Se a inconsistência de informação entre canais for confirmada como padrão dominante dos verbatim (análise dirigida pendente), uma leitura possível é arquitetura organizacional: domínios separados (crédito, seguros, conta) operando com dados próprios, sem dono único da visão do cliente. Resolver com CDP isolado tende a ser insuficiente; usualmente exige mandato executivo sobre propriedade dos dados, com prazo realista de 24-36 meses para resultado mensurável. Caso de negócio: o custo de chamada repetida ao SAC é não-trivial (benchmark de mercado), e as 4.849 reclamações procedentes ao BC representam apenas uma fração do volume total de contatos.</div><span class="hyp-impact i-alto">Decisão executiva · Prioridade 1 de transformação</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(245,158,11,.15);color:var(--amber)">02</div><div><div class="hyp-title">Análise dirigida do motivo dominante — crédito exceto consignado</div><div class="hyp-desc">993 reclamações na categoria "Irregularidades... operações de crédito, exceto consignado" como motivo #1 é padrão singular do Bradesco entre os bancões: supera cartão de crédito e diferencia o perfil da instituição. Antes de propor soluções, vale análise dirigida do que está dentro dessa categoria ampla: CDC, parcelado, crédito pessoal, refinanciamento (consignado tem categorias próprias e não entra aqui). Cada subproduto tem jornadas distintas (contratação, cobrança, contestação, encerramento), e o vetor de fricção dominante pode ser específico. Quick win possível: instrumentar funil por sub-jornada de crédito e identificar o ponto de fricção concentrado, antes de aplicar hipóteses genéricas.</div><span class="hyp-impact i-alto">Diagnóstico → priorização</span></div></div>
 <div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">03</div><div><div class="hyp-title">Resolução no primeiro contato — orquestração entre canais</div><div class="hyp-desc">Se a inconsistência entre canais e atendimentos for confirmada como padrão dos verbatim, uma rota possível é orquestração: cada contato carrega contexto do anterior, com handoff explícito entre canais (chat, telefone, app, agência). Quick win possível: capturar e replicar o contexto do cliente no primeiro contato (intenção, produto, histórico de tickets). O cliente não deveria precisar re-explicar a cada novo atendente. Trade-off: exige integração entre sistemas e disciplina de log de contato. Mensurável via taxa de re-abertura de ticket e tempo médio de resolução.</div><span class="hyp-impact i-ime">Quick win operacional</span></div></div>
 </div>
 </div>
@@ -1476,8 +1446,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-itau"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -1530,32 +1500,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(4.492)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Bancos</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">53,1% <span style="font-size:10px;font-weight:400;color:var(--text3)">(82.269)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(21.230)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Internet Banking</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(13.257)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(6.743)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Não categorizado</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(6.135)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -1585,12 +1530,12 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 </div>
 </div>
-<div class="ins"><strong>Surpreendente no Q4:</strong> consignado praticamente empatou com cartão de crédito (508 vs 517 reclamações). Combinado com a estratégia pública do banco de foco em rentabilidade e a expansão recente em consignado, os atritos de portabilidade e formalização desse produto já aparecem no ranking. O motivo "débito não autorizado" (363) abrange uma variedade de situações (fraudes Pix, débitos não reconhecidos, cobranças por cartão sem autorização) e mereceria análise dirigida dos verbatim para isolar a hipótese dominante. Apesar disso, o Itaú tem a maior nota RA entre os bancões (8,2) e o melhor índice de solução (84,1%): sinal de que problemas que chegam ao RA tendem a ser resolvidos no canal.</div>
+<div class="ins"><strong>Surpreendente no Q4:</strong> "Irregularidades... serviços relacionados a operações de crédito consignado" (508) praticamente empatou com "Irregularidades... cartões de crédito" (517). Combinado com a estratégia pública do banco de foco em rentabilidade e a expansão recente em consignado, os atritos na execução do contrato desse produto já aparecem no ranking, ao lado de 145 reclamações de DDC (Documento Descritivo de Crédito, instrumento regulatório que padroniza como o cliente recebe as informações da operação contratada). O motivo "Débito em conta não autorizado pelo cliente" (363) abrange variedade de situações (fraudes Pix, débitos não reconhecidos, cobranças por cartão sem autorização) e mereceria análise dirigida dos verbatim para isolar a hipótese dominante. Apesar disso, o Itaú tem a maior nota RA entre os bancões (8,2) e o melhor índice de solução (84,1%): sinal de que problemas que chegam ao RA tendem a ser resolvidos no canal.</div>
 <div class="card">
 <div class="card-title"><span class="ctd" style="background:var(--green)"></span>Oportunidades prioritárias</div>
 <div class="hyp-list">
 <div class="hyp-item"><div class="hyp-num" style="background:rgba(242,101,34,.15);color:var(--itau)">01</div><div><div class="hyp-title">Jornada de contestação de fraude Pix centrada na vítima</div><div class="hyp-desc">Se os verbatim confirmarem que o processo atual exige documentação inacessível em casos de engenharia social, uma rota possível é triagem automática por padrão da transação (valor, horário, beneficiário, histórico) acionando o MED nos casos com padrão de golpe, sem formulário inicial e sem espera de 15 dias. Trade-off conhecido: aumenta risco de falsos positivos no banco e exige calibração progressiva. Vale benchmarking dirigido com instituições reconhecidas no eco do RA pela facilidade de contestação.</div><span class="hyp-impact i-alto">Alto impacto · Risco de imagem alto</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(242,101,34,.15);color:var(--itau)">02</div><div><div class="hyp-title">Monitoramento proativo de jornada de consignado</div><div class="hyp-desc">508 reclamações de consignado no Q4 é sinal de atrito crescente. À medida que o Itaú escala esse produto, a jornada de portabilidade e informação de contrato tende a precisar de mesma qualidade que os demais produtos. Detecção precoce de contratos com sinal de atrito pode reduzir a entrada no ranking de procedentes, mas exige modelos calibrados ao padrão específico do Itaú. Vale benchmark interno antes de pacote pronto.</div><span class="hyp-impact i-medio">Impacto médio · Crescimento de risco</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(242,101,34,.15);color:var(--itau)">02</div><div><div class="hyp-title">Monitoramento proativo da jornada de consignado</div><div class="hyp-desc">508 reclamações na categoria "Irregularidades... serviços relacionados a operações de crédito consignado" no Q4 é sinal de atrito relevante. À medida que o Itaú escala esse produto, a jornada do contrato vivo (formalização, cobrança das parcelas, mudança de margem, encerramento) tende a precisar da mesma qualidade que os demais produtos. Detecção precoce de contratos com sinal de atrito pode reduzir a entrada no ranking de procedentes, mas exige modelos calibrados ao padrão específico do Itaú. Vale benchmark interno antes de pacote pronto.</div><span class="hyp-impact i-medio">Impacto médio · Crescimento de risco</span></div></div>
 <div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">03</div><div><div class="hyp-title">Ouvidoria acessível em até 2 cliques — e visível</div><div class="hyp-desc">Se os verbatim confirmarem que o caminho para a ouvidoria é difícil de localizar no app, uma rota de acesso visível pode reduzir o escalonamento direto ao BC, oferecendo ao cliente uma via interna antes da regulatória. Impacto esperado no índice BC: redução em uma fração dos casos de procedência; vale quantificar via análise de causa-raiz das 3.636 procedentes.</div><span class="hyp-impact i-ime">Quick win · Impacto direto no índice BC</span></div></div>
 </div>
 </div>
@@ -1615,8 +1560,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-santander"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -1669,32 +1614,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(12.151)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Bancos</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">45,3% <span style="font-size:10px;font-weight:400;color:var(--text3)">(86.022)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(24.069)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(17.327)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Cartões de Crédito</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(13.723)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Internet Banking</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(8.554)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -1724,13 +1644,13 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 </div>
 </div>
-<div class="ins">33% das reclamações do Santander envolvem "oferta ou prestação de informação inadequada" sobre produtos e crédito. Não é fraude: é gap entre o que foi comunicado na venda e o que foi entregue. Combinado com nota RA 7,2 e índice de solução 70,6% (o mais baixo entre os bancões aqui analisados), há sinal duplo: o gap não se resolve no canal interno (RA) e escala para o regulador (BC). Esse padrão de sinal duplo é o mais preocupante entre os bancões analisados.</div>
+<div class="ins">33% das reclamações do Santander envolvem "oferta ou prestação de informação inadequada" sobre produtos e crédito. Não é fraude: é descumprimento na transparência de informação. A causa-raiz pode variar (oferta confusa, divergência entre proposta e contrato, condições mudadas após contratação, atendente desatualizado, erro de exibição) e exige análise dirigida dos verbatim para isolar. Combinado com nota RA 7,2 e índice de solução 70,6% (o mais baixo entre os bancões aqui analisados), há sinal duplo: o gap não se resolve no canal interno (RA) e escala para o regulador (BC). Esse padrão de sinal duplo, entre os bancões analisados, é o que merece mais atenção e análise dirigida.</div>
 <div class="card">
 <div class="card-title"><span class="ctd" style="background:var(--green)"></span>Oportunidades prioritárias</div>
 <div class="hyp-list">
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(235,0,0,.15);color:var(--santander)">01</div><div><div class="hyp-title">Consistência entre taxa ofertada e taxa contratada</div><div class="hyp-desc">348 reclamações de "informação inadequada sobre crédito" em um trimestre é número que sinaliza risco regulatório concreto. Hipótese: verificação automatizada em tempo real entre taxa ofertada no app/proposta e taxa que entra no contrato, com bloqueio na divergência. Trade-off conhecido: pode aumentar fricção no fechamento de venda, e exige tolerância calibrada e A/B test antes de full rollout. Mas o risco regulatório do status quo é concreto: 348 procedentes em um único trimestre.</div><span class="hyp-impact i-reg">Risco regulatório · BC pode autuar</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(235,0,0,.15);color:var(--santander)">01</div><div><div class="hyp-title">Consistência entre o que foi informado e o que foi contratado</div><div class="hyp-desc">348 reclamações na categoria "Oferta ou prestação de informação sobre operação de crédito de forma inadequada, exceto crédito consignado" em um único trimestre é número que sinaliza risco regulatório concreto. A categoria do Bacen é ampla e cobre divergências em qualquer atributo material da operação: taxa, prazo, tarifas, encargos, parcela, CET, garantias. Hipótese: trilha automatizada que verifica, em tempo real, paridade entre o que foi informado na proposta e o que entra no contrato em cada um desses atributos, com bloqueio na divergência. Trade-off conhecido: pode aumentar fricção no fechamento de venda, e exige tolerância calibrada e A/B test antes de full rollout. Mas o risco regulatório do status quo é concreto e o BC já tipifica a categoria.</div><span class="hyp-impact i-reg">Risco regulatório · BC pode autuar</span></div></div>
 <div class="hyp-item"><div class="hyp-num" style="background:rgba(235,0,0,.15);color:var(--santander)">02</div><div><div class="hyp-title">Análise dirigida — onde está o gap "comunicado vs entregue"</div><div class="hyp-desc">"Oferta ou prestação de informação inadequada" como categoria dominante é diagnóstico, não solução. Antes de aplicar correção, vale uma análise dirigida: o gap está na peça de venda (publicidade, app, simulação)? Na conversão (proposta vs contrato)? No pós-venda (cobrança vs combinado)? Cada um tem solução diferente. Sem isolar o ponto exato, soluções genéricas tendem a tratar sintoma sem reduzir o índice de procedência no BC.</div><span class="hyp-impact i-alto">Diagnóstico → priorização</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">03</div><div><div class="hyp-title">Fechar o gap de resolução para os pares do segmento</div><div class="hyp-desc">Hipótese: mapear as 10 categorias com maior taxa de não-resolução no RA e desenhar fluxos específicos. Reduzir o gap de 14 pontos para o Itaú (84%) exige combinação de automação (orquestração de SLA, sugestão de resposta) e capacitação de agentes humanos por categoria, não apenas tecnologia. Meta inicial defensável: subir 5-7 pontos em 12 meses; salto direto para 85%+ é otimista. Cada ponto recuperado representa milhares de clientes que hoje escalam para BC ou Procon.</div><span class="hyp-impact i-alto">Alto impacto estrutural</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">03</div><div><div class="hyp-title">Fechar o gap de resolução para os pares do segmento</div><div class="hyp-desc">Hipótese: mapear as 10 categorias com maior taxa de não-resolução no RA e desenhar fluxos específicos. Hipótese: reduzir o gap de 14 pontos para o Itaú (84%) exigirá combinação de automação (orquestração de SLA, sugestão de resposta) e capacitação de agentes humanos por categoria, não apenas tecnologia. Meta inicial defensável: subir 5-7 pontos em 12 meses; salto direto para 85%+ é otimista. Cada ponto recuperado representa milhares de clientes que hoje escalam para BC ou Procon.</div><span class="hyp-impact i-alto">Alto impacto estrutural</span></div></div>
 </div>
 </div>
 </div>
@@ -1752,8 +1672,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-inter"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -1806,32 +1726,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(12.118)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Bancos</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">44,9% <span style="font-size:10px;font-weight:400;color:var(--text3)">(91.999)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(24.716)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(21.218)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Internet Banking</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(14.018)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Cartões de Crédito</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(11.111)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -1856,7 +1751,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 </div>
 </div>
-<div class="ins"><strong>Revelação surpreendente do Q4:</strong> o maior motivo de reclamação do Inter não é cartão ou consignado: é SAC (327 reclamações, 20% do total). Esse perfil é singular entre os digitais. Uma hipótese é que a complexidade do super app cresceu mais rápido que a capacidade do atendimento. O auto-atendimento cobre uma fração dos casos, e o SAC absorve o volume residual sem capacidade de resolução na primeira interação. O Inter chegou ao 2º lugar no ranking em Q4 2024 e recuou para o 5º em Q4 2025. Foi sinal de que ações corretivas foram tomadas, mas SAC permanece o gargalo principal.</div>
+<div class="ins"><strong>Revelação surpreendente do Q4:</strong> o maior motivo de reclamação do Inter não é cartão ou consignado: é SAC (327 reclamações, 20% do total). Esse perfil é singular entre os digitais. Uma hipótese é que a complexidade do super app cresceu mais rápido que a capacidade do atendimento. A leitura da hipótese seria: auto-atendimento cobrindo uma fração dos casos e SAC absorvendo o volume residual sem capacidade consistente de resolução na primeira interação. Sem acesso aos dados operacionais internos, é leitura possível, não conclusão fechada. O Inter chegou ao 2º lugar no ranking em Q4 2024 e recuou para o 5º em Q4 2025 — movimento que pode refletir ações corretivas, mas SAC permanece como o motivo dominante no Q4 2025.</div>
 <div class="card">
 <div class="card-title"><span class="ctd" style="background:var(--green)"></span>Oportunidades prioritárias</div>
 <div class="hyp-list">
@@ -1884,8 +1779,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-mercpago"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -1938,32 +1833,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(10.077)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Não encontrei meu problema</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">16,5% <span style="font-size:10px;font-weight:400;color:var(--text3)">(44.227)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Meios de pagamentos eletr.</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(32.304)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Problemas c/ Atendimento</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(28.541)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Diversos</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(26.405)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Bancos</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(24.009)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -1988,13 +1858,18 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 </div>
 </div>
-<div class="ins"><strong>O padrão do BC confirma o Reclame Aqui:</strong> os dois maiores motivos do Mercado Pago são "irregularidades em conta pós-paga" e "irregularidades em conta pré-paga", traduzindo o problema de contas bloqueadas/suspensas sem aviso. Somados a "bloqueio Pix" (217), quase 30% das reclamações envolvem o cliente não conseguindo acessar ou usar o próprio dinheiro. Isso pode representar o maior impacto financeiro direto no cliente entre os motivos analisados.</div>
+<div class="ins"><strong>Os dois maiores motivos do Mercado Pago são categorias amplas do Bacen sobre integridade de operações em conta de pagamento — IP.</strong>
+<div style="margin:.6rem 0 .6rem;padding:.65rem .85rem;background:var(--bg3);border-left:3px solid var(--mercpago);border-radius:0 6px 6px 0;font-size:12.5px;line-height:1.7">
+<strong style="color:var(--text2)">1º — "Irregularidades relativas a integridade, confiabilidade, segurança, sigilo ou legitimidade das operações e serviços prestados relacionados a conta de pagamento pós-paga - IP" (284)</strong><br><span style="font-size:11.5px;color:var(--text3)">A categoria do Bacen cobre situações como: cobrança em fatura de cartão que deveria ter sido estornada; cobrança indevida em fatura; compras não reconhecidas com cartão clonado ou roubado; cobranças em duplicidade; não reconhecimento de pagamento de fatura; inconsistências em dados fornecidos na fatura.</span></div>
+<div style="margin:0 0 .8rem;padding:.65rem .85rem;background:var(--bg3);border-left:3px solid var(--mercpago);border-radius:0 6px 6px 0;font-size:12.5px;line-height:1.7">
+<strong style="color:var(--text2)">2º — "Irregularidades relativas a integridade, confiabilidade, segurança, sigilo ou legitimidade das operações e serviços prestados relacionados a conta de pagamento pré-paga - IP" (271)</strong><br><span style="font-size:11.5px;color:var(--text3)">A categoria cobre situações análogas, mas na conta/wallet pré-paga: cobrança de transação que deveria ter sido estornada; cobrança indevida; compras não reconhecidas com instrumento pré-pago; cobranças em duplicidade; débitos não autorizados; não acatamento de pedido de cancelamento de débito.</span></div>
+Somadas, 555 reclamações nessas duas categorias (21% do total) apontam para uma <strong>dor estrutural de legitimidade e integridade das operações</strong>: o cliente questiona o quê foi cobrado, por quê, e exige reversão. Em paralelo, 217 reclamações em "Bloqueio de valores ou de conta fora do âmbito do Pix - IP" formam um eixo distinto e direto de acesso ao dinheiro. Os três motivos somam quase 30% do volume e concentram a fricção do cliente do Mercado Pago em duas frentes distintas: legitimidade de operações (na conta) e acesso ao dinheiro (bloqueios).</div>
 <div class="card">
 <div class="card-title"><span class="ctd" style="background:var(--green)"></span>Oportunidades prioritárias</div>
 <div class="hyp-list">
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(0,177,234,.15);color:var(--mercpago)">01</div><div><div class="hyp-title">Comunicação antecipada de suspensão + rota de recuperação em 24h</div><div class="hyp-desc">555 reclamações (21%) envolvem conta bloqueada/suspensa. Os verbatim sugerem padrão de suspensão sem aviso, impossibilidade de acessar o app para resolver, e bot sem escalada. Hipótese: notificar antes de bloquear, com motivo específico e rota clara de recuperação biométrica em até 24h. É mais decisão de design do que de tecnologia: exige distinguir quando uma suspensão pode ser preventiva (com aviso) vs imediata (por risco), e treinar o modelo de risco para essa diferença.</div><span class="hyp-impact i-alto">Urgente · Maior causa de churn</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(0,177,234,.15);color:var(--mercpago)">02</div><div><div class="hyp-title">Escalada humana automática para dinheiro retido</div><div class="hyp-desc">Quando o sistema detecta que o cliente tem saldo retido há mais de 48h sem resolução, escalar automaticamente para humano sem o cliente precisar pedir. IA de triagem que identifica esse padrão já é viável com os dados que o Mercado Pago tem.</div><span class="hyp-impact i-alto">Alto impacto · Reduz risco regulatório</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">03</div><div><div class="hyp-title">Separar claramente conta financeira da experiência de marketplace</div><div class="hyp-desc">Hipótese: usuário que entrou pelo marketplace e virou cliente financeiro pode estar enfrentando curva de aprendizado mais longa do que cliente que escolheu a conta diretamente. Onboarding contextual e separação visual das duas experiências pode reduzir erros e contatos evitáveis. Validação antes do redesenho: instrumentar dados de uso por origem do cliente (marketplace vs financeiro direto) e medir taxa de erro/contato em cada cohort.</div><span class="hyp-impact i-medio">Impacto médio-alto</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(0,177,234,.15);color:var(--mercpago)">01</div><div><div class="hyp-title">Escalada humana automática para dinheiro retido</div><div class="hyp-desc">Hipótese: para casos em que o saldo fica retido sem resolução por mais de 48h (prazo sugestivo, calibrável conforme a magnitude do problema), escalar automaticamente para humano sem o cliente precisar pedir. IA de triagem que identifica esse padrão é tecnicamente viável com os tipos de dados típicos de operação de IP.</div><span class="hyp-impact i-alto">Alto impacto · Reduz risco regulatório</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">02</div><div><div class="hyp-title">Separar claramente conta financeira da experiência de marketplace</div><div class="hyp-desc">Hipótese: usuário que entrou pelo marketplace e virou cliente financeiro pode estar enfrentando curva de aprendizado mais longa do que cliente que escolheu a conta diretamente. Onboarding contextual e separação visual das duas experiências pode reduzir erros e contatos evitáveis. Validação antes do redesenho: instrumentar dados de uso por origem do cliente (marketplace vs financeiro direto) e medir taxa de erro/contato em cada cohort.</div><span class="hyp-impact i-medio">Impacto médio-alto</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(0,177,234,.15);color:var(--mercpago)">03</div><div><div class="hyp-title">Calibrar expectativa antes da aquisição — combater a "propaganda enganosa" no funil</div><div class="hyp-desc">Não é categoria do Bacen, mas é sinal forte do Reclame Aqui: 19.123 reclamações classificadas como "Propaganda enganosa" (7,2% do total). Esse padrão aparece quase exclusivamente em fintechs e instituições de pagamento — bancões tradicionais não têm volume relevante nessa rubrica. A hipótese é que campanhas agressivas de aquisição (cashback condicional, "abra grátis e ganhe X", limites estimados) criam expectativas que a experiência real do produto não cumpre. Oportunidade: revisar nudges e copy do funil de aquisição para alinhar promessa e entrega; auditar simuladores e mensagens promocionais com critério de "o que o cliente vai entender ao final do fluxo". Ganho esperado mais em prevenção (menos churn pós-aquisição, menos volume de SAC) do que em receita imediata.</div><span class="hyp-impact i-medio">Padrão setorial · Pre-aquisição</span></div></div>
 </div>
 </div>
 </div>
@@ -2020,8 +1895,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-nubank"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -2074,32 +1949,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(7.977)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Cartões de Crédito</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">40,0% <span style="font-size:10px;font-weight:400;color:var(--text3)">(135.853)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(51.971)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Aplicativos</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(39.579)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Bancos</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(37.537)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(12.451)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -2124,13 +1974,13 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 </div>
 </div>
-<div class="ins"><strong>O DDC (Documento Descritivo de Crédito) aparece com 105 reclamações</strong>, tão alto quanto conta pós-paga. Isso aponta para um gap de transparência em operações de crédito: clientes que contratam empréstimo ou parcelamento não conseguem acessar as informações completas do contrato de forma clara no app. À medida que o Nubank escala para crédito pessoal, consignado e alta renda, esse gap tende a crescer. DDC é o tipo de problema que se amplifica com complexidade de produto.</div>
+<div class="ins"><strong>A categoria "Irregularidades relacionadas ao fornecimento de informações relativas a operação de crédito contratada (DDC)" aparece com 105 reclamações</strong>, empatada com "Irregularidades relativas a integridade, confiabilidade, segurança, sigilo ou legitimidade das operações e serviços prestados relacionados a conta de pagamento pós-paga - IP". O DDC (Documento Descritivo de Crédito) é o instrumento regulatório que padroniza como o cliente recebe as informações da operação contratada. Volume nessa categoria aponta gap de transparência em crédito: a categoria do Bacen cobre falhas no fornecimento de informações da operação contratada (envio, formato, completude, acessibilidade). À medida que o Nubank escala para crédito pessoal, consignado e alta renda — produtos onde o detalhamento contratual é mais denso —, esse gap pode amplificar-se. DDC é o tipo de problema que se amplifica com complexidade de produto.</div>
 <div class="card" style="border-color:rgba(184,134,43,.25)">
 <div class="card-title"><span class="ctd" style="background:var(--green)"></span>Oportunidades de evolução — manter a liderança conforme escala</div>
 <div class="hyp-list">
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(130,10,209,.15);color:var(--nu)">01</div><div><div class="hyp-title">Crédito explicável — por que meu limite é esse?</div><div class="hyp-desc">105 reclamações de DDC + padrão do Reclame Aqui sobre limites opacos. À medida que o Nubank escala em crédito pessoal e consignado, a opacidade dos critérios tende a gerar mais fricção. IA explicável (XAI) que mostra ao cliente, em linguagem simples, os 3 principais fatores do score (sem revelar o modelo) pode reduzir a percepção de arbitrariedade e o churn de clientes ativos de alto valor. Efeito mensurável via cohort analysis pós-implementação.</div><span class="hyp-impact i-alto">Alto impacto · Churn de ativos</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(130,10,209,.15);color:var(--nu)">02</div><div><div class="hyp-title">Bug tracker público para erros conhecidos</div><div class="hyp-desc">Bugs que persistem por meses geram centenas de reclamações redundantes (ex.: cartão inativo visível no app). Uma página de status simples que informa sobre bugs conhecidos e previsão de correção reduz volume de contato: o cliente sabe que o banco sabe do problema, e não precisa reportar pela 100ª vez.</div><span class="hyp-impact i-ime">Quick win · Transparência</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(130,10,209,.15);color:var(--nu)">03</div><div><div class="hyp-title">Mecanismo nativo de denúncia de fraude Pix no app</div><div class="hyp-desc">63 reclamações de bloqueio Pix no BC: categoria pequena em volume mas relevante no eco do Reclame Aqui. Fluxo nativo de "denunciar transação suspeita" + acionamento automático do MED pode reduzir atrito e fortalecer o posicionamento de CX. O impacto material no índice BC é limitado pelo tamanho da categoria; o ganho é mais simbólico (liderança em jornada de fraude).</div><span class="hyp-impact i-ime">Quick win · Liderança de CX</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(130,10,209,.15);color:var(--nu)">01</div><div><div class="hyp-title">Crédito explicável — por que meu limite é esse?</div><div class="hyp-desc">105 reclamações de DDC + verbatim do Reclame Aqui sugerindo questionamentos sobre opacidade de limites. À medida que o Nubank escala em crédito pessoal e consignado, a opacidade dos critérios tende a gerar mais fricção. IA explicável (XAI) que mostra ao cliente, em linguagem simples, os 3 principais fatores do score (sem revelar o modelo) pode reduzir a percepção de arbitrariedade e o churn de clientes ativos de alto valor. Efeito mensurável via cohort analysis pós-implementação.</div><span class="hyp-impact i-alto">Alto impacto · Churn de ativos</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(130,10,209,.15);color:var(--nu)">02</div><div><div class="hyp-title">Mecanismo nativo de denúncia de fraude Pix no app</div><div class="hyp-desc">63 reclamações de bloqueio Pix no BC: categoria pequena em volume, mas relevante nos verbatim do Reclame Aqui mostrados na ficha. Fluxo nativo de "denunciar transação suspeita" + acionamento automático do MED pode reduzir atrito e fortalecer o posicionamento de CX. O impacto material no índice BC é limitado pelo tamanho da categoria; o ganho é mais simbólico (liderança em jornada de fraude).</div><span class="hyp-impact i-ime">Quick win · Liderança de CX</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(130,10,209,.15);color:var(--nu)">03</div><div><div class="hyp-title">Encerramento de conta com previsibilidade — proteger o cliente final</div><div class="hyp-desc">Não está nos top 10 do Bacen, mas aparece com força nos verbatim do Reclame Aqui: relatos de contas canceladas com aviso prévio insuficiente, saldo retido, e dificuldade de retirar o dinheiro depois. Em casos onde a decisão é legítima (compliance, fraude, lavagem), o que pode ser comunicado ao cliente é limitado. A oportunidade está na jornada de saída: prazo claro para acesso ao saldo, fluxo de saque definido por etapa, escalada humana automática quando o cliente solicita. O ganho não está em revisar a decisão de fechar; está em construir confiança institucional na forma como o fechamento é executado, especialmente conforme o Nubank avança em produtos de alta renda onde a relação se prolonga ao longo do ciclo de vida do cliente.</div><span class="hyp-impact i-medio">Reputação · Marca de longo prazo</span></div></div>
 </div>
 </div>
 </div>
@@ -2154,8 +2004,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-picpay"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -2163,19 +2013,23 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
 <span style="font-size:12px;font-weight:600;color:var(--text)">Cobrança indevida</span>
 </div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">23,5% <span style="font-size:10px;font-weight:400;color:var(--text3)">(24.185)</span></div>
+<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">23,55% <span style="font-size:10px;font-weight:400;color:var(--text3)">(24.311)</span></div>
 </div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
 <span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
 <span style="font-size:11px;color:var(--text3)">Estorno do valor pago</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(15.989)</span>
+<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(15.804)</span>
 </div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
 <span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
 <span style="font-size:11px;color:var(--text3)">Mau atendimento no SAC</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(6.205)</span>
+<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(6.011)</span>
 </div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
 <span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
 <span style="font-size:11px;color:var(--text3)">Propaganda enganosa</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(6.106)</span>
+<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(5.960)</span>
+</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
+<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
+<span style="font-size:11px;color:var(--text3)">Dificuldade de cadastro</span>
+<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.491)</span>
 </div>
 </div>
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
@@ -2185,51 +2039,26 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
 <span style="font-size:12px;font-weight:600;color:var(--text)">Conta</span>
 </div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">17,3% <span style="font-size:10px;font-weight:400;color:var(--text3)">(17.803)</span></div>
+<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">17,31% <span style="font-size:10px;font-weight:400;color:var(--text3)">(17.870)</span></div>
 </div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
 <span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
 <span style="font-size:11px;color:var(--text3)">Pagamentos eletrônicos</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(16.829)</span>
+<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(16.926)</span>
 </div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
 <span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
 <span style="font-size:11px;color:var(--text3)">Cartão de crédito</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(13.604)</span>
+<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(13.310)</span>
 </div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
 <span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
 <span style="font-size:11px;color:var(--text3)">Aparelhos</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.191)</span>
+<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.114)</span>
 </div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
 <span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
 <span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.164)</span>
+<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.073)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Meios de pagamentos eletr.</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">20,9% <span style="font-size:10px;font-weight:400;color:var(--text3)">(21.481)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Bancos</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(21.340)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(15.750)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Cartões de Crédito</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(7.821)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Problemas c/ Atendimento</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.731)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -2254,13 +2083,14 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 </div>
 </div>
-<div class="ins"><strong>O maior índice do setor (55,52) tem uma causa dominante clara:</strong> 806 reclamações (22% do total) na categoria "concessão de crédito sem formalização adequada do título", indicando que o BC encontrou indícios sistemáticos de descumprimento na entrega ou formato do contrato de consignado. Combinado com 372 reclamações de portabilidade bloqueada, quase 1 em 3 reclamações do PicPay é sobre consignado. Esse perfil concentrado em um produto específico é singular entre os digitais.</div>
+<div class="ins"><strong>O maior índice do setor (55,52) tem dois eixos principais distintos.</strong> O primeiro é "Concessão de crédito (exceto consignado) sem a formalização do título adequado" com 806 reclamações (22% do total) — categoria do Bacen que cobre crédito não-consignado: CDC, parcelamento, crediário, indicando descumprimento sistemático na entrega ou formato do contrato. O segundo eixo é consignado, com 372 reclamações de "Restrição à realização de portabilidade de operações de crédito consignado" + 281 de "Irregularidades... serviços relacionados a operações de crédito consignado" — somadas, 653 reclamações (17,6%) concentradas na jornada de portabilidade e na execução do contrato. Os dois eixos juntos respondem por 40% do volume e indicam que o PicPay tem fricção em jornadas de crédito de naturezas diferentes — perfil singular entre os digitais.</div>
 <div class="card">
 <div class="card-title"><span class="ctd" style="background:var(--green)"></span>Oportunidades prioritárias</div>
 <div class="hyp-list">
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(17,199,111,.15);color:var(--picpay)">01</div><div><div class="hyp-title">Transparência no consignado: de risco regulatório a vantagem competitiva</div><div class="hyp-desc">806 reclamações de formalização inadequada em um trimestre são alerta regulatório máximo, e também um sinal de mercado. O consignado é um produto onde o cliente frequentemente tem baixíssimo poder de barganha e pouca literacia financeira. O PicPay poderia ser referência no segmento ao criar uma jornada de contratação genuinamente transparente (CET em destaque, simulador de custo real, direito de arrependimento explícito), transformando uma obrigação da Resolução BC 4.974/2021 em posicionamento. No segmento de consignado, confiança é o diferencial mais escasso e mais durável.</div><span class="hyp-impact i-reg">Risco regulatório → oportunidade de posicionamento</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(17,199,111,.15);color:var(--picpay)">01</div><div><div class="hyp-title">Formalização contratual completa antes de liberar o crédito</div><div class="hyp-desc">806 reclamações procedentes em um único trimestre na categoria "concessão de crédito (exceto consignado) sem formalização do título adequado" sinalizam alerta regulatório direto. O motivo classifica operações de crédito (CDC, parcelamento, crediário) em que o cliente não recebeu ou não acessou o título contratual com as condições completas. Hipótese: gate de finalização da contratação no app que exige confirmação ativa do título assinado digitalmente, com CET em destaque, parcelas, encargos e direito de arrependimento explícito antes do desembolso. Trade-off: aumenta fricção na conversão, mas o status quo já está custando reclamações em volume que chama atenção do regulador, e fechar essa janela vira posicionamento de marca em transparência.</div><span class="hyp-impact i-reg">Risco regulatório → oportunidade de posicionamento</span></div></div>
 <div class="hyp-item"><div class="hyp-num" style="background:rgba(17,199,111,.15);color:var(--picpay)">02</div><div><div class="hyp-title">Suporte ativo de portabilidade — não só passivo</div><div class="hyp-desc">372 reclamações de portabilidade bloqueada. O PicPay pode notificar proativamente o cliente quando o banco de origem descumpre o prazo legal (5 dias úteis) e acionar o mecanismo de reclamação ao BC automaticamente, virando parceiro do cliente contra o banco de origem.</div><span class="hyp-impact i-alto">Alto impacto · Diferencial competitivo</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">03</div><div><div class="hyp-title">Contratação de consignado com confirmação ativa de compreensão</div><div class="hyp-desc">Hipótese: antes de finalizar a contratação, exigir interação ativa (não apenas checkbox) com simulação personalizada de CET, prazo total e parcelas, em linguagem simples. Trade-off conhecido: pode aumentar fricção no funil e reduzir conversão. Mas com 806 reclamações de formalização inadequada em um trimestre, o risco regulatório de manter o status quo é alto. Vale teste A/B com cohorts de novo contrato, medindo taxa de procedência subsequente e percepção de qualidade.</div><span class="hyp-impact i-ime">Quick win com profundidade estratégica</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">03</div><div><div class="hyp-title">Contratação de consignado com confirmação ativa de compreensão</div><div class="hyp-desc">Hipótese: antes de finalizar a contratação de consignado, exigir interação ativa (não apenas checkbox) com simulação personalizada de CET, prazo total e parcelas, em linguagem simples. Trade-off conhecido: pode aumentar fricção no funil e reduzir conversão. Mas com 281 reclamações na categoria "Irregularidades... serviços relacionados a operações de crédito consignado" e 372 em "Restrição à realização de portabilidade de crédito consignado" no único trimestre (somadas, 653), o risco regulatório de manter o status quo é alto. Vale teste A/B com cohorts de novo contrato, medindo taxa de procedência subsequente e percepção de qualidade.</div><span class="hyp-impact i-ime">Quick win com profundidade estratégica</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(17,199,111,.15);color:var(--picpay)">04</div><div><div class="hyp-title">Calibrar expectativa antes da aquisição — combater a "propaganda enganosa" no funil</div><div class="hyp-desc">Não é categoria do Bacen, mas é sinal forte do Reclame Aqui: 5.960 reclamações classificadas como "Propaganda enganosa" (5,8% do total). Esse padrão aparece quase exclusivamente em fintechs e instituições de pagamento — bancões tradicionais não têm volume relevante nessa rubrica. A hipótese é que campanhas agressivas de aquisição (cashback condicional, "abra grátis e ganhe X", limites estimados) criam expectativas que a experiência real do produto não cumpre. Oportunidade: revisar nudges e copy do funil de aquisição para alinhar promessa e entrega; auditar simuladores e mensagens promocionais com critério de "o que o cliente vai entender ao final do fluxo". Ganho esperado mais em prevenção (menos churn pós-aquisição, menos volume de SAC) do que em receita imediata.</div><span class="hyp-impact i-medio">Padrão setorial · Pre-aquisição</span></div></div>
 </div>
 </div>
 </div>
@@ -2284,8 +2114,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-c6"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -2338,32 +2168,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(4.573)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Bancos</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">35,2% <span style="font-size:10px;font-weight:400;color:var(--text3)">(65.506)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Cartões de Crédito</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(50.860)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(21.256)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Internet Banking</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(13.519)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.231)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -2388,12 +2193,12 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 </div>
 </div>
-<div class="ins"><strong>O C6 tem um problema concentrado em consignado:</strong> somando informação inadequada (235), doc liquidação antecipada (186), portabilidade bloqueada (127) e irregularidades gerais (100), <strong>quase 40% das reclamações são de consignado</strong>. Os volumes sugerem descasamento entre a expansão do portfólio de consignado e a capacidade da operação de suporte (uma hipótese a investigar). O motivo "doc liquidação antecipada" é especialmente preocupante: impede o cliente de quitar a dívida e mantém a geração de juros.</div>
+<div class="ins"><strong>O C6 tem um problema concentrado em consignado:</strong> somando 235 reclamações de "Oferta ou prestação de informação sobre crédito consignado de forma inadequada", 127 de "Restrição à realização de portabilidade de crédito consignado relativas a pessoas naturais" e 100 de "Irregularidades... serviços relacionados a operações de crédito consignado", <strong>quase 27% das reclamações do C6 são especificamente de consignado</strong>. Em paralelo, 186 reclamações em "Irregularidades relacionadas ao fornecimento de documento para liquidação antecipada de operações de crédito" — categoria que cobre crédito em geral e não é restrita a consignado, mas que num portfólio com forte expansão em consignado tende a ter sobreposição. Os volumes sugerem descasamento entre a expansão do portfólio e a capacidade da operação de suporte. O motivo de liquidação antecipada merece atenção: falhas no fornecimento do documento podem postergar a quitação efetiva do contrato e manter o cliente gerando juros sem necessidade.</div>
 <div class="card">
 <div class="card-title"><span class="ctd" style="background:var(--green)"></span>Oportunidades prioritárias</div>
 <div class="hyp-list">
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(157,78,221,.15);color:var(--c6)">01</div><div><div class="hyp-title">Emissão digital instantânea de documentos de liquidação antecipada</div><div class="hyp-desc">186 reclamações de documentos para liquidação em um trimestre. O documento deve ser gerado instantaneamente no app, não em 30 dias. Isso é tecnicamente simples e elimina completamente essa categoria de reclamação, além de ser exigência legal implícita do direito do consumidor à quitação.</div><span class="hyp-impact i-alto">Alto impacto · Risco regulatório</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(157,78,221,.15);color:var(--c6)">02</div><div><div class="hyp-title">SAC com resolução no primeiro contato para consignado</div><div class="hyp-desc">Consignado é o produto mais complexo do portfólio do C6 e o mais reclamado. Hipótese: agente IA especializado em consignado com acesso ao contrato completo, histórico de pagamentos e regras de portabilidade pode absorver volume significativo de chamados de baixa complexidade. Meta inicial defensável: 40-50% de resolução autônoma, com aumento gradual conforme aprendizado por categoria.</div><span class="hyp-impact i-alto">Urgente · 40% das reclamações</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(157,78,221,.15);color:var(--c6)">01</div><div><div class="hyp-title">Emissão digital instantânea de documentos de liquidação antecipada</div><div class="hyp-desc">186 reclamações de documentos para liquidação em um trimestre. Hipótese: documento gerado instantaneamente no app, sem prazo de dias. Solução tecnicamente simples, com potencial de reduzir drasticamente o volume nessa categoria. Alinha-se ao espírito do CDC sobre direito à quitação antecipada (art. 52 §2º).</div><span class="hyp-impact i-alto">Alto impacto · Risco regulatório</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(157,78,221,.15);color:var(--c6)">02</div><div><div class="hyp-title">SAC com resolução no primeiro contato para consignado</div><div class="hyp-desc">Consignado é o produto mais complexo do portfólio do C6 e o mais reclamado. Hipótese: agente IA especializado em consignado com acesso ao contrato completo, histórico de pagamentos e regras de portabilidade pode absorver volume significativo de chamados de baixa complexidade. Meta inicial sugestiva: 40-50% de resolução autônoma, calibrada conforme aprendizado por categoria — valor exato depende de benchmark interno e maturidade do agente.</div><span class="hyp-impact i-alto">Urgente · ~27% das reclamações</span></div></div>
 <div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">03</div><div><div class="hyp-title">Portabilidade com acompanhamento ativo</div><div class="hyp-desc">Quando um cliente inicia portabilidade do C6 para outro banco, enviar confirmação de prazo e notificar proativamente o status. Evita o cliente tendo que ligar múltiplas vezes para checar.</div><span class="hyp-impact i-ime">Quick win</span></div></div>
 </div>
 </div>
@@ -2418,8 +2223,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-neon"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -2472,32 +2277,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(1.890)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Cartões de Crédito</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">32,3% <span style="font-size:10px;font-weight:400;color:var(--text3)">(26.228)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Bancos</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(25.721)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(11.816)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.691)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Internet Banking</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(2.223)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -2522,13 +2302,17 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 </div>
 </div>
-<div class="ins"><strong>O Neon tem perfil de digital em expansão:</strong> conta pós-paga + pré-paga + consignado concentram ~35% das reclamações, sugerindo descasamento entre expansão de portfólio e capacidade de suporte. O problema de SCR (49 reclamações) é especialmente grave: dívidas quitadas que permanecem no sistema de crédito do BC bloqueiam o cliente em todo o sistema financeiro, não só no Neon.</div>
+<div class="ins"><strong>O Neon tem perfil de digital em expansão, com concentração em integridade de operações IP e em consignado.</strong>
+<div style="margin:.6rem 0 .6rem;padding:.65rem .85rem;background:var(--bg3);border-left:3px solid var(--neon);border-radius:0 6px 6px 0;font-size:12.5px;line-height:1.7">
+109 reclamações em "Irregularidades relativas a integridade, confiabilidade, segurança, sigilo ou legitimidade das operações e serviços prestados relacionados a conta de pagamento pós-paga - IP", 80 em "Irregularidades relativas a integridade, confiabilidade, segurança, sigilo ou legitimidade das operações e serviços prestados relacionados a conta de pagamento pré-paga - IP" e 69 em "Irregularidades relativas a integridade, confiabilidade, segurança, sigilo ou legitimidade dos serviços relacionados a operações de crédito consignado". <br><span style="font-size:11.5px;color:var(--text3)">As duas categorias de conta IP do Bacen cobrem questionamentos sobre legitimidade de cobranças, estornos não feitos, compras não reconhecidas, débitos não autorizados e cobranças em duplicidade — não se reduzem a bloqueio de acesso ao saldo.</span></div>
+Somadas, 258 reclamações (cerca de 25% do total). Combinadas com 86 + 57 em saldo devedor de fatura de cartão (banco e IP), passam de 38%, sugerindo descasamento entre expansão de portfólio e capacidade de suporte. O problema de "Irregularidades relacionadas ao Sistema de Informações de Crédito do Banco Central (SCR)" — 49 reclamações — é especialmente grave: dívidas quitadas que permanecem no sistema de crédito do BC bloqueiam o cliente em todo o sistema financeiro, não só no Neon.</div>
 <div class="card">
 <div class="card-title"><span class="ctd" style="background:var(--green)"></span>Oportunidades prioritárias</div>
 <div class="hyp-list">
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(234,179,8,.15);color:var(--neon)">01</div><div><div class="hyp-title">Comunicação proativa de qualquer alteração em conta ou limite</div><div class="hyp-desc">Clientes descobrem bloqueios e cortes de limite ao tentar usar o cartão. Push antecipado com motivo e próximos passos elimina surpresa e reduz contato de SAC desnecessário.</div><span class="hyp-impact i-ime">Quick win · Alto impacto percebido</span></div></div>
-<div class="hyp-item"><div class="hyp-num" style="background:rgba(234,179,8,.15);color:var(--neon)">02</div><div><div class="hyp-title">Baixa automática no SCR após pagamento confirmado</div><div class="hyp-desc">49 reclamações de SCR em um trimestre é muito alto para uma base de 26M. A baixa no sistema do BC deve ser automática no momento do pagamento confirmado, não manual. Isso é risco legal e de reputação grave.</div><span class="hyp-impact i-reg">Risco regulatório · Ação imediata</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(234,179,8,.15);color:var(--neon)">01</div><div><div class="hyp-title">Comunicação proativa de qualquer alteração em conta ou limite</div><div class="hyp-desc">Hipótese: clientes podem estar descobrindo bloqueios e cortes de limite ao tentar usar o cartão — vale conferir nos verbatim do Reclame Aqui. Push antecipado com motivo e próximos passos tende a reduzir contato de SAC e melhorar percepção.</div><span class="hyp-impact i-ime">Quick win · Alto impacto percebido</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(234,179,8,.15);color:var(--neon)">02</div><div><div class="hyp-title">Baixa automática no SCR após pagamento confirmado</div><div class="hyp-desc">49 reclamações de SCR em um trimestre é volume relevante para uma base de 26M, principalmente pela natureza do problema (afeta o cliente em todo o sistema financeiro). Quando a baixa no SCR não é automática após o pagamento confirmado, o cliente fica preso no sistema do BC. É risco legal e reputacional relevante.</div><span class="hyp-impact i-reg">Risco regulatório · Ação imediata</span></div></div>
 <div class="hyp-item"><div class="hyp-num" style="background:rgba(139,144,160,.15);color:var(--text2)">03</div><div><div class="hyp-title">Contrato de consignado acessível no app</div><div class="hyp-desc">Se os verbatim do Reclame Aqui confirmarem dificuldade de acesso ao contrato, implementar acesso direto no app pode resolver uma categoria inteira. Tecnicamente simples e candidato a quick win, mas o impacto material depende de quão concentrada está a reclamação nesse vetor específico.</div><span class="hyp-impact i-ime">Quick win · Exigência legal implícita</span></div></div>
+<div class="hyp-item"><div class="hyp-num" style="background:rgba(234,179,8,.15);color:var(--neon)">04</div><div><div class="hyp-title">Calibrar expectativa antes da aquisição — combater a "propaganda enganosa" no funil</div><div class="hyp-desc">Não é categoria do Bacen, mas é sinal forte do Reclame Aqui: 13.543 reclamações classificadas como "Propaganda enganosa" (~11% do total). Esse padrão aparece quase exclusivamente em fintechs e instituições de pagamento — bancões tradicionais não têm volume relevante nessa rubrica. A hipótese é que campanhas agressivas de aquisição (cashback condicional, "abra grátis e ganhe X", limites estimados) criam expectativas que a experiência real do produto não cumpre. Oportunidade: revisar nudges e copy do funil de aquisição para alinhar promessa e entrega; auditar simuladores e mensagens promocionais com critério de "o que o cliente vai entender ao final do fluxo". Ganho esperado mais em prevenção (menos churn pós-aquisição, menos volume de SAC) do que em receita imediata.</div><span class="hyp-impact i-medio">Padrão setorial · Pre-aquisição</span></div></div>
 </div>
 </div>
 </div>
@@ -2552,8 +2336,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-pagseguro"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -2606,32 +2390,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(7.711)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Meios de pagamentos eletr.</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">24,5% <span style="font-size:10px;font-weight:400;color:var(--text3)">(39.362)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(26.288)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Bancos</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(23.013)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Problemas c/ Atendimento</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(9.733)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Não categorizado</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(8.467)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -2717,8 +2476,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-caixa"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -2771,32 +2530,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(6.486)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Bancos</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">43,4% <span style="font-size:10px;font-weight:400;color:var(--text3)">(67.714)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(21.919)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Cartões de Crédito</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(11.326)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(7.326)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Problemas c/ Atendimento</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(3.072)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -2823,8 +2557,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div style="position:relative;height:210px"><canvas id="chart-bb"></canvas></div>
 </div>
 <div class="card" style="background:rgba(249,115,22,.04);border-color:rgba(249,115,22,.2)">
-<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem">
+<div class="card-title" style="margin-bottom:.65rem"><span class="ctd" style="background:#fb923c"></span><span style="color:#fb923c">⭐ Reclame Aqui — principais problemas</span><span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">acumulado · até 3 anos · abr/2026</span></div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:.5rem">
 <div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
 <div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Tipo de problema</div>
 <div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
@@ -2877,32 +2611,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(9.448)</span>
 </div>
 </div>
-<div style="background:var(--bg3);border-radius:8px;padding:.6rem .7rem">
-<div style="font-size:9px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#fb923c;margin-bottom:.4rem;border-bottom:1px solid rgba(251,146,60,.2);padding-bottom:.3rem">Categoria</div>
-<div style="padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="display:flex;align-items:baseline;gap:5px">
-<span style="font-size:9px;color:#fb923c;font-family:'DM Mono',monospace;font-weight:700;flex-shrink:0">1·</span>
-<span style="font-size:12px;font-weight:600;color:var(--text)">Bancos</span>
-</div>
-<div style="font-size:13px;font-weight:700;color:#fb923c;font-family:'DM Mono',monospace;margin-top:1px">44,9% <span style="font-size:10px;font-weight:400;color:var(--text3)">(58.981)</span></div>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">2·</span>
-<span style="font-size:11px;color:var(--text3)">Não encontrei meu problema</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(18.112)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">3·</span>
-<span style="font-size:11px;color:var(--text3)">Cartões de Crédito</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(13.508)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">4·</span>
-<span style="font-size:11px;color:var(--text3)">Financeiras</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(12.410)</span>
-</div><div style="display:flex;align-items:baseline;gap:5px;padding:.22rem 0;border-bottom:1px solid rgba(255,255,255,0.04)">
-<span style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;flex-shrink:0">5·</span>
-<span style="font-size:11px;color:var(--text3)">Internet Banking</span>
-<span style="font-size:10px;color:#555a6a;font-family:'DM Mono',monospace;margin-left:auto;white-space:nowrap">(7.248)</span>
-</div>
-</div>
+
 </div>
 <div style="font-size:9px;color:#555a6a;font-family:'DM Mono',monospace;margin-top:.4rem">Fonte: reclameaqui.com.br · perfil público · acumulado histórico</div>
 </div>
@@ -2975,8 +2684,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <section id="sec3">
 <div class="sec-header">
 <div class="sec-label"><span class="sec-num">Seção 3</span><div class="sec-line"></div></div>
-<h2>CX como vantagem competitiva — mas para quem?</h2>
-<p class="sec-intro">O setor financeiro brasileiro cresceu em múltiplos caminhos simultâneos: Nubank por produto e CX, Mercado Pago por ecossistema, PicPay por consolidação inorgânica, Itaú por rentabilização da base. Não há uma relação simples entre nível de reclamações e crescimento. O que os dados permitem é uma leitura diferente: reclamações como sinal de mercado, oráculo das dores reais do cliente, das lacunas de produto e dos movimentos regulatórios que estão por vir.</p>
+<h2>CX como Vantagem Competitiva</h2>
+<p class="sec-intro">O setor financeiro brasileiro cresceu em múltiplos caminhos simultâneos: Nubank por produto e CX, Mercado Pago por ecossistema, PicPay por consolidação inorgânica, Itaú por rentabilização da base. Não há relação simples entre nível de reclamações e crescimento. O que os dados permitem é uma leitura diferente: reclamações como inteligência de mercado, alavanca de crescimento, e mapa de oportunidades de receita, retenção e marca.</p>
 </div>
 <!-- Gráfico — crescimento de clientes Q4 2024→2025 -->
 <div class="chart-card" style="margin-bottom:2rem">
@@ -3015,59 +2724,39 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </div>
 <div style="border-top:1px solid var(--border);padding-top:1.25rem;font-size:13px;color:var(--text2);line-height:1.85">A conclusão mais honesta é que <strong style="color:var(--text)">não existe um único caminho</strong>. Para comparar adequadamente, precisaríamos de dados de rentabilidade por cliente, custo de atendimento, receita por produto e churn — que as instituições não divulgam de forma comparável. O que os dados do BC e do Reclame Aqui permitem é uma leitura de <em>qualidade percebida pelo cliente</em> — não de resultado financeiro.</div>
 </div>
-<!-- A IDEIA POTENTE: CX COMO ORÁCULO -->
+<!-- A IDEIA POTENTE: CX COMO VANTAGEM COMPETITIVA -->
 <div style="background:var(--bg2);border:1px solid rgba(184,134,43,.25);border-radius:12px;padding:1.75rem;margin-bottom:1.75rem">
-<div style="font-size:11px;font-family:'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:.75rem">A ideia que fica · além da eficiência operacional</div>
-<div style="font-size:20px;font-weight:600;color:#fff;font-family:'Playfair Display',serif;margin-bottom:1.25rem;line-height:1.3">CX como bola de cristal — o oráculo do que o cliente precisa</div>
-<div style="font-size:14px;color:var(--text2);line-height:1.85;margin-bottom:1.5rem">Mesmo que não seja possível provar que CX <em>causa</em> crescimento, há uma tese mais potente: <strong style="color:var(--text)">reclamações são sinais de mercado não explorados</strong>. O cliente que reclama está dizendo o que precisa — sobre o seu produto, sobre o produto do concorrente, sobre o que falta em toda a indústria. Lido assim, o conjunto de dados de BC e Reclame Aqui não é um ranking de quem se saiu pior. É um mapa de oportunidades.</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1.5rem">
+<div style="font-size:11px;font-family:'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:.75rem">A ideia que fica · CX como mecanismo de crescimento</div>
+<div style="font-size:20px;font-weight:600;color:#fff;font-family:'Playfair Display',serif;margin-bottom:1.25rem;line-height:1.3">CX como vantagem competitiva — não só como custo a otimizar</div>
+<div style="font-size:14px;color:var(--text2);line-height:1.85;margin-bottom:1.5rem">A leitura tradicional trata CX como centro de custo a ser otimizado. Os dados sugerem outra leitura: <strong style="color:var(--text)">reclamações são sinais de mercado pouco explorados, e CX é alavanca direta de crescimento</strong>. Lido como inteligência estratégica, o conjunto de dados de BC e Reclame Aqui não é um ranking de quem se saiu pior. É um mapa de oportunidades de receita, retenção e marca.</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem">
 <div style="background:var(--bg3);border-radius:10px;padding:1.1rem">
-<div style="font-size:12px;font-weight:600;color:var(--accent2);margin-bottom:.5rem">Identificar gaps de produto</div>
-<div style="font-size:12px;color:var(--text2);line-height:1.65">A categoria que mais cresceu entre os motivos — rotativo e encargos — saltou de 0,3% para 4,3% do total em 3 anos. Isso não é só um problema de CX: é um sinal de que o mercado não entende os produtos de crédito que contrata. Há espaço para um produto ou uma comunicação diferente.</div>
-</div>
-<div style="background:var(--bg3);border-radius:10px;padding:1.1rem">
-<div style="font-size:12px;font-weight:600;color:var(--accent2);margin-bottom:.5rem">Formular mensagens competitivas</div>
-<div style="font-size:12px;color:var(--text2);line-height:1.65">A campanha de planos de celular do Nubank é um exemplo preciso: entendeu que a dor dos clientes não era preço — era a sensação de estar preso. A promessa "sem fidelidade, sem letras miúdas" ataca diretamente uma reclamação recorrente da indústria. CX como inteligência de mercado para posicionamento.</div>
+<div style="font-size:12px;font-weight:600;color:var(--accent2);margin-bottom:.5rem">Resolver dor estrutural reduz churn e atrai novos clientes</div>
+<div style="font-size:12px;color:var(--text2);line-height:1.65">Cliente com problema estrutural não resolvido vira detrator e vira churn. Resolver a causa-raiz dos motivos que aparecem com volume nas reclamações tem efeito duplo: retém base atual e converte ex-clientes insatisfeitos em alvo de aquisição. A categoria que mais cresceu entre os motivos do BC — rotativo e encargos, de 0,3% para 4,3% do total em 3 anos — é exemplo do que está pedindo ação concreta de produto, não apenas de canal.</div>
 </div>
 <div style="background:var(--bg3);border-radius:10px;padding:1.1rem">
-<div style="font-size:12px;font-weight:600;color:var(--accent2);margin-bottom:.5rem">Antecipar movimentos regulatórios</div>
-<div style="font-size:12px;color:var(--text2);line-height:1.65">Há indícios de que reclamações antecipam movimentos regulatórios. Em pelo menos dois ciclos recentes — portabilidade de consignado e transparência de fatura de cartão de crédito — os picos de reclamação precederam intervenção do BC em 12 a 18 meses. Não é prova de regra geral (são dois casos), mas é padrão consistente com o que se espera: o regulador reage a sinais de mercado, e reclamações são um dos sinais mais visíveis. Para uma instituição, monitorar a evolução dos motivos do ranking BC oferece tipicamente uma janela de antecedência para adaptar produto e comunicação antes da obrigatoriedade — convertendo risco regulatório em diferencial de marca.</div>
+<div style="font-size:12px;font-weight:600;color:var(--accent2);margin-bottom:.5rem">Mapear dores dos clientes dos concorrentes abre avenida de ataque</div>
+<div style="font-size:12px;color:var(--text2);line-height:1.65">As reclamações dos clientes <em>do concorrente</em> são roteiro de proposta de valor para conquistá-los. A campanha de planos de celular do Nubank é exemplo preciso: entendeu que a dor não era preço, era a sensação de estar preso, e atacou diretamente com "sem fidelidade, sem letras miúdas". CX como inteligência competitiva — não para defender base, para tomar a do outro.</div>
+</div>
+<div style="background:var(--bg3);border-radius:10px;padding:1.1rem">
+<div style="font-size:12px;font-weight:600;color:var(--accent2);margin-bottom:.5rem">IA generativa muda a decisão do consumidor: reclamação pública vira input de CAC</div>
+<div style="font-size:12px;color:var(--text2);line-height:1.65">O consumidor cada vez mais pergunta para uma IA antes de escolher banco, cartão ou empréstimo, e a IA responde com base no que está disponível publicamente: avaliações, reclamações, posts, notas em portais. Minimizar reclamações e multiplicar promotores tem impacto direto em CAC (porque a IA recomenda) e em share of voice (porque a IA repete o que encontra). É um canal de marca novo, ainda subexplorado pelas instituições financeiras.</div>
+</div>
+<div style="background:var(--bg3);border-radius:10px;padding:1.1rem">
+<div style="font-size:12px;font-weight:600;color:var(--accent2);margin-bottom:.5rem">IA aplicada a CX precisa preservar acesso ao humano — sob pena de virar problema</div>
+<div style="font-size:12px;color:var(--text2);line-height:1.65">A categoria "Insatisfação com o atendimento prestado pelo SAC ou Central de Relacionamento" entrou no ranking de motivos do BC em Q4 2024 e cresceu em 2025. O sinal mais provável é que o uso de IA para reduzir drasticamente custos de atendimento começou a prejudicar a experiência: cliente que não consegue mais acessar humano quando precisa. IA em CX é alavanca poderosa quando bem desenhada, mas quando substitui sem critério a opção humana, o resultado já chegou ao radar regulatório.</div>
 </div>
 </div>
-<div style="background:rgba(184,134,43,.08);border-left:3px solid var(--accent2);border-radius:0 8px 8px 0;padding:1rem 1.25rem;font-size:13px;color:var(--text2);line-height:1.8"><strong style="color:#fff">A pergunta que fica:</strong> quantas instituições financeiras brasileiras têm uma função estruturada de <em>inteligência de reclamações</em> — não para apagar incêndios, mas para informar roadmap de produto, posicionamento de marketing e antecipação regulatória? Os dados são públicos. A leitura estratégica, aparentemente, ainda é rara.</div>
+<div style="background:rgba(184,134,43,.06);border-left:3px solid var(--accent2);border-radius:0 8px 8px 0;padding:.9rem 1.25rem;font-size:12px;color:var(--text2);line-height:1.75;margin-bottom:1.25rem"><strong style="color:#fff">Nota lateral · sinal regulatório.</strong> Há indícios de que picos de reclamação antecipam intervenção do BC. Em pelo menos dois ciclos recentes — portabilidade de consignado e transparência de fatura de cartão — os picos precederam regulamentação em 12 a 18 meses. Não é regra geral (são dois casos), mas é padrão consistente com o que se espera. Monitorar a evolução dos motivos do ranking BC pode oferecer janela para adaptar produto e comunicação antes da obrigatoriedade.</div>
+<div style="background:rgba(184,134,43,.08);border-left:3px solid var(--accent2);border-radius:0 8px 8px 0;padding:1rem 1.25rem;font-size:13px;color:var(--text2);line-height:1.8"><strong style="color:#fff">A pergunta que fica:</strong> quantas instituições financeiras brasileiras tratam reclamações como inteligência de crescimento — não apenas como volume a apagar? Os dados são públicos. A leitura estratégica, aparentemente, ainda é rara.</div>
 <div style="margin-top:1.5rem;padding:1.5rem 1.5rem 1.25rem;background:linear-gradient(135deg,rgba(184,134,43,.08),rgba(251,146,60,.04));border:1px solid rgba(184,134,43,.18);border-radius:12px">
-<div style="font-size:13px;color:var(--text2);line-height:1.75;margin-bottom:1rem">Construo análises como essa para ajudar instituições financeiras a enxergarem oportunidades de crescimento escondidas em dados que elas (e seus concorrentes) já têm. Se isso conversa com algo que você está tentando resolver, me chama.</div>
+<div style="font-size:18px;font-weight:600;color:#fff;font-family:'Playfair Display',serif;margin-bottom:.85rem;line-height:1.3">Conecto dados e estratégia para crescimento.</div>
+<div style="font-size:13px;color:var(--text2);line-height:1.75;margin-bottom:1rem">Parte do meu trabalho é construir análises como essa para ajudar instituições a enxergarem oportunidades escondidas em dados que elas (e seus concorrentes) já têm. A outra parte é botar pra rodar: estruturar áreas, montar times, conduzir a execução até o resultado aparecer. Se isso conversa com algo que você está tentando resolver, me chama.</div>
 <div style="display:flex;flex-wrap:wrap;gap:.85rem;align-items:center;padding-top:.85rem;border-top:1px solid rgba(184,134,43,.15);font-size:12px;font-family:'DM Mono',monospace;color:var(--text3)"><strong style="color:#fff;font-family:inherit">Stéphanie Nakamura Ruas</strong><span style="color:var(--text3)">·</span><a href="mailto:hello@steruas.com" style="color:var(--accent2);text-decoration:none">hello@steruas.com</a><span style="color:var(--text3)">·</span><a href="https://linkedin.com/in/steruas" target="_blank" rel="noopener" style="color:var(--accent2);text-decoration:none">linkedin.com/in/steruas</a></div>
 </div>
 </div>
 </section>
-<hr class="div"/>
-<!-- ═══ METODOLOGIA ═══ -->
-<section id="metodologia">
-<div class="sec-header">
-<div class="sec-label"><span class="sec-num">Metodologia e Fontes</span><div class="sec-line"></div></div>
-<h2>Como Este Relatório Foi Produzido</h2>
-</div>
-<div class="metodo-box">
-<h4>Seção 1 — Ranking do Banco Central (dados primários)</h4>
-    Todos os índices, quantidades de reclamações procedentes e números de clientes são dados oficiais do Banco Central do Brasil, extraídos diretamente do Ranking de Reclamações Q4 2025 (publicado em jan/2026, disponível em www3.bcb.gov.br/ranking). Os detalhamentos por motivo de reclamação por instituição foram extraídos das telas do portal interativo do BC. <em>Escolha de Q4 (não acumulado anual):</em> a análise usa apenas o 4º trimestre de cada ano para ler o estado das instituições ao fim de cada ciclo anual, sob a metodologia regulatória em vigor naquele momento. Picos pontuais ao longo do ano (campanhas, crises de produto, ações regulatórias) ficam fora desta leitura — Q4 mostra como o ano fechou, não como ele se moveu trimestre a trimestre.
 
-    <h4>Seção 1A — Evolução da base de clientes</h4>
-    Os dados de Q4 2025 são oficiais do BC (jan/2026). Os dados históricos de 2018 a 2021 são estimativas baseadas em comunicados de imprensa oficiais das instituições e cobertura especializada (Finsiders Brasil, Poder360, Brazil Journal). Esses anos anteriores devem ser lidos como tendências, não valores exatos.
-
-    <h4>Seção 1D — Evolução do índice de reclamações</h4>
-    Valores de 2022 em diante são dados oficiais do BC. Valores anteriores são estimativas baseadas em reportagens especializadas e comunicados de imprensa das instituições. A linha do Nubank começa em 2019 (quando apareceu pela primeira vez no ranking do BC), mas entrou no top 15 permanente apenas em 2022.
-
-    <h4>Seção 2 — Distribuição por motivo — Bacen Q4 2025</h4>
-    Os percentuais de distribuição por categoria são calculados a partir dos dados reais do BC Q4 2025: somamos as quantidades de reclamações por motivo de cada instituição (conforme detalhamento do portal do BC) e calculamos a participação de cada categoria no total de reclamações procedentes da instituição. Os motivos do BC foram agrupados por similaridade de tema para facilitar a leitura — por exemplo, "Irregularidades relativas a cartões de crédito" e "Irregularidades relativas a operações de crédito rotativo de cartão" foram agrupados em "Cartão de crédito". A IA ajudou no agrupamento, mas os números-base são os oficiais do BC.
-
-    <h4>Seção 2 — Reclame Aqui como proxy qualitativa</h4>
-    Utilizamos o Reclame Aqui como proxy qualitativa para dores específicas que os dados do BC não detalham por player. As métricas de nota, índice de solução e tempo de resposta são dos perfis públicos de 12 instituições (out/2025–mar/2026). Os verbatim foram selecionados manualmente a partir das reclamações respondidas no período, priorizando aquelas que ilustram o padrão dominante já identificado nos top 5 da dimensão "Tipo de problema" do RA. Não é amostra aleatória nem estatística — é ilustração curada para tornar tangíveis os padrões agregados. Edição: apenas ortografia mínima e remoção de identificadores pessoais. <em>Limitações da fonte:</em> o RA tem viés de seleção (quem reclama na plataforma tende a ser cliente digitalmente engajado, mais jovem e mais urbano), e as métricas de nota e índice de solução são moderadas pela própria plataforma, com regras próprias. <em>Roadmap V2:</em> coleta sistemática por scraping com amostra estratificada por categoria, classificação automática e análise de frequência, para validar quais padrões aqui sugeridos se mantêm em base estatisticamente robusta. Nota sobre PicPay: opera dois perfis no RA (IP e Bank); a seção 2.1 usa o PicPay Bank, que concentra as reclamações bancárias relevantes para este estudo.
-
-    <h4>Seção 3 — CX, crescimento e oráculo estratégico</h4>
-    Dados de crescimento de base de clientes: PDFs BC Q4 2024 e Q4 2025 (jan/2026). Dados financeiros (lucro Itaú R$41,4bi): relatório anual Itaú Unibanco FY2024. Estratégia "clientes-alvo" e fala "saímos de públicos menos resilientes ao longo dos ciclos": entrevista coletiva de Milton Maluhy Filho, CEO Itaú Unibanco, sobre resultados do 1T26 (Bloomberg Línea, mai/2026); o <em>de-risking</em> da carteira de cartões em 2024 é tratamento recorrente nos relatórios de analistas de bancos (Genial, Empiricus) durante 2024–2025. Custo de atendimento Nubank (US$0,80/cliente ativo/mês): relatório Q4 2025 Nu Holdings (fev/2026). Preferência de marca (25%): Bridge Research / NPS Prism by Bain &amp; Company Q1/2025. Prêmio Reclame Aqui Nubank: 9 anos consecutivos, comunicado dez/2025. Campanha de planos de celular Nubank: lançamento dez/2024, posicionamento público disponível em nu.com.br.
-  </div>
-</section>
 <div class="fn">
   Produzido por Stéphanie Nakamura Ruas · Abril 2026 · <a href="mailto:hello@steruas.com" style="color:var(--accent2);text-decoration:none">hello@steruas.com</a> · <a href="https://linkedin.com/in/steruas" target="_blank" rel="noopener" style="color:var(--accent2);text-decoration:none">linkedin.com/in/steruas</a><br/>
   Fontes primárias: Banco Central do Brasil (www3.bcb.gov.br/ranking) · Reclame Aqui · Relatórios Nu Holdings Q4/FY2025 · Relatórios Itaú Unibanco FY2024 · Bloomberg Línea (entrevista Maluhy, 1T26) · Bridge Research · NPS Prism by Bain &amp; Company · OpenAI case study · Birdie AI · Nu Videocast<br/><br/>
