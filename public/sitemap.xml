@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://steruas.com/pt</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://steruas.com/pt"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://steruas.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://steruas.com/pt"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://steruas.com/pt/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/sobre"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/sobre"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://steruas.com/en/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/sobre"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/sobre"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://steruas.com/pt/ensaios</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/ensaios"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/ensaios"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steruas.com/en/ensaios</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/ensaios"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/ensaios"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://steruas.com/pt/ensaios/como-preparar-marca-produtos-recomendados-ias</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/ensaios/como-preparar-marca-produtos-recomendados-ias"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/ensaios/como-preparar-marca-produtos-recomendados-ias"/>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steruas.com/en/ensaios/como-preparar-marca-produtos-recomendados-ias</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/ensaios/como-preparar-marca-produtos-recomendados-ias"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/ensaios/como-preparar-marca-produtos-recomendados-ias"/>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://steruas.com/pt/ensaios/incentivos-ia-eficiencia-tiram-empresas-do-futuro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/ensaios/incentivos-ia-eficiencia-tiram-empresas-do-futuro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/ensaios/incentivos-ia-eficiencia-tiram-empresas-do-futuro"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steruas.com/en/ensaios/incentivos-ia-eficiencia-tiram-empresas-do-futuro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/ensaios/incentivos-ia-eficiencia-tiram-empresas-do-futuro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/ensaios/incentivos-ia-eficiencia-tiram-empresas-do-futuro"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://steruas.com/pt/ensaios/o-que-mudou-em-growth</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/ensaios/o-que-mudou-em-growth"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/ensaios/o-que-mudou-em-growth"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steruas.com/en/ensaios/o-que-mudou-em-growth</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/ensaios/o-que-mudou-em-growth"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/ensaios/o-que-mudou-em-growth"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://steruas.com/pt/feito-com-ia</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/feito-com-ia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/feito-com-ia"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steruas.com/en/feito-com-ia</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/feito-com-ia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/feito-com-ia"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://steruas.com/pt/feito-com-ia/como-construi-este-site</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/feito-com-ia/como-construi-este-site"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/feito-com-ia/como-construi-este-site"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steruas.com/en/feito-com-ia/como-construi-este-site</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/feito-com-ia/como-construi-este-site"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steruas.com/en/feito-com-ia/como-construi-este-site"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://steruas.com/trabalhos/bacen-reclame-aqui/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

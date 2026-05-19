@@ -12,19 +12,36 @@ export const Route = createFileRoute("/$locale")({
   head: ({ params }) => {
     const isPt = params.locale === "pt";
     const title = isPt
-      ? "SteRuas — Growth com IA e visão sistêmica"
-      : "SteRuas — AI-native growth and systems thinking";
+      ? "Stéphanie Nakamura Ruas — Growth com IA e visão sistêmica"
+      : "Stéphanie Nakamura Ruas — AI-native growth and systems thinking";
     const desc = isPt
-      ? "Estrategista de growth com foco em serviços financeiros. Ensaios e ferramentas construídos com IA."
-      : "Growth strategist focused on financial services. Essays and tools built with AI.";
+      ? "Stéphanie Nakamura Ruas é estrategista de growth com foco em serviços financeiros. Ensaios e ferramentas construídos com IA."
+      : "Stéphanie Nakamura Ruas is a growth strategist focused on financial services. Essays and tools built with AI.";
+    const url = isPt ? "https://steruas.com/pt" : "https://steruas.com/en";
+    const ogLocale = isPt ? "pt_BR" : "en_US";
+    const ogLocaleAlt = isPt ? "en_US" : "pt_BR";
+
     return {
       meta: [
         { title },
         { name: "description", content: desc },
+        { name: "author", content: "Stéphanie Nakamura Ruas" },
         { property: "og:title", content: title },
         { property: "og:description", content: desc },
         { property: "og:type", content: "website" },
+        { property: "og:url", content: url },
+        { property: "og:site_name", content: "Stéphanie Nakamura Ruas" },
+        { property: "og:locale", content: ogLocale },
+        { property: "og:locale:alternate", content: ogLocaleAlt },
         { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: desc },
+      ],
+      links: [
+        { rel: "canonical", href: url },
+        { rel: "alternate", hrefLang: "pt-BR", href: "https://steruas.com/pt" },
+        { rel: "alternate", hrefLang: "en", href: "https://steruas.com/en" },
+        { rel: "alternate", hrefLang: "x-default", href: "https://steruas.com/pt" },
       ],
       scripts: [
         {
@@ -32,9 +49,28 @@ export const Route = createFileRoute("/$locale")({
           children: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            name: "SteRuas",
+            name: "Stéphanie Nakamura Ruas",
+            alternateName: ["SteRuas", "Stephanie Nakamura Ruas", "Stephanie Ruas"],
+            url: "https://steruas.com",
+            image: "https://steruas.com/logo.svg",
             jobTitle: isPt ? "Estrategista de Growth com IA" : "AI Growth Strategist",
             description: desc,
+            knowsAbout: [
+              "Growth Marketing",
+              "Artificial Intelligence",
+              "Corporate Strategy",
+              "Financial Services",
+              "Digital Marketing",
+            ],
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "São Paulo",
+              addressRegion: "SP",
+              addressCountry: "BR",
+            },
+            sameAs: [
+              "https://www.linkedin.com/in/steruas/",
+            ],
           }),
         },
       ],
