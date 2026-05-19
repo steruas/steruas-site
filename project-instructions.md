@@ -32,7 +32,7 @@ Pra acelerar a indexação de um ensaio ou case novo, três passos:
 
 Copia o bloco de uma URL similar existente e adapta. Estrutura padrão:
 
-\`\`\`xml
+```xml
 <url>
   <loc>https://steruas.com/pt/ensaios/SLUG-NOVO</loc>
   <xhtml:link rel="alternate" hreflang="pt-BR" href="https://steruas.com/pt/ensaios/SLUG-NOVO"/>
@@ -41,7 +41,7 @@ Copia o bloco de uma URL similar existente e adapta. Estrutura padrão:
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
-\`\`\`
+```
 
 Adicionar tanto a versão PT quanto a EN (mesmo que slug seja idêntico, o Google trata como duas URLs distintas).
 
@@ -61,11 +61,11 @@ Backlink imediato + tração social. O LinkedIn é o multiplicador de indexaçã
 
 Roda no terminal:
 
-\`\`\`bash
+```bash
 curl -sI https://steruas.com/robots.txt
 curl -sI https://steruas.com/sitemap.xml
 curl -sL https://steruas.com/ | grep -iE 'noindex|<title|description'
-\`\`\`
+```
 
 O que checar:
 - robots e sitemap respondendo 200 (não 404)
