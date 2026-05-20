@@ -10,7 +10,7 @@ export const content = {
     hero: {
       eyebrow: "Growth · IA · Estratégia",
       headline: "Growth com IA e olhar de estrategista.",
-      sub: "Voltando pra growth depois de seis anos em estratégia corporativa. Pensamento divergente e fluência em IA. Olhando primeiro pra serviços financeiros, onde a margem ainda paga curiosidade.",
+      sub: "Voltando pra growth depois de seis anos em estratégia corporativa. Pensamento divergente acelerado por IA.",
       ctaPrimary: "Ver projetos",
       ctaGhost: "Ler ensaios",
     },
@@ -30,7 +30,7 @@ export const content = {
         "Em momentos de juros altos e risco político-econômico apertado, inovação frequentemente se torna privilégio de setores de alta margem. Por isso foco as análises primeiro no setor financeiro, onde a margem ainda paga curiosidade. Mas o método viaja: pensamento divergente aplicado com IA para entender mercados e oportunidades de crescimento funciona em qualquer setor de informação intensiva. Tenho grande interesse e curiosidade por setores de tech, educação, saúde e agro.",
         "Este site é meu laboratório público: um espaço para compartilhar análises, protótipos e ensaios em construção. Se algum desses ângulos lhe interessa, vamos conversar.",
       ],
-      tags: ["Growth", "IA Aplicada", "Estratégia", "Serviços Financeiros"],
+      tags: ["Growth", "IA Aplicada", "Estratégia", "Digital Products"],
       download: "Baixar CV (PDF)",
     },
     blog: {
@@ -80,14 +80,14 @@ export const content = {
     hero: {
       eyebrow: "Growth · AI · Strategy",
       headline: "Growth with AI, through a strategist's lens.",
-      sub: "Returning to growth after six years in corporate strategy. Divergent thinking and AI fluency. Looking first at financial services, where margins still pay for curiosity.",
+      sub: "Returning to growth after six years in corporate strategy. Divergent thinking accelerated by AI.",
       ctaPrimary: "See projects",
       ctaGhost: "Read essays",
     },
     about: {
       eyebrow: "About",
       headline: "Strategist returning to growth, with applied AI.",
-      hookHome: "Consulting gave me rigor. Startups taught me to navigate uncertainty. Large corporations taught me translation. AI gives me the speed to finally operate at the pace of someone who thinks in trees.",
+      hookHome: "Consulting gave me rigor. Startups taught me to navigate uncertainty. Large corporations taught me translation. AI gives me the speed to finally operate at the pace of someone who thinks laterally.",
       readMore: "Read full bio",
       body: [
         "Strategist returning to growth after six years in corporate strategy. My background is plural: consulting, startups at different stages, and large corporations. Each context trained a different muscle: analytical rigor, execution under uncertainty, and the ability to lead transformation in complex environments.",
@@ -100,7 +100,7 @@ export const content = {
         "In moments of high interest rates and tight political-economic risk, innovation often becomes a privilege of high-margin sectors. That's why I'm focusing my analyses on financial services first, where margin still rewards curiosity. But the method travels: divergent thinking applied with AI to understand markets and growth opportunities works in any information-intensive sector. I have strong interest and curiosity in tech, education, healthcare, and agribusiness.",
         "This site is my public lab: a space to share analyses, prototypes, essays and work in progress. If any of these angles interest you, I'd love to hear from you.",
       ],
-      tags: ["Growth", "Applied AI", "Strategy", "Financial Services"],
+      tags: ["Growth", "Applied AI", "Strategy", "Digital Products"],
       download: "Download CV (PDF)",
     },
     blog: {

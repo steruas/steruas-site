@@ -15,8 +15,8 @@ export const Route = createFileRoute("/$locale")({
       ? "Stéphanie Nakamura Ruas — Growth com IA e visão sistêmica"
       : "Stéphanie Nakamura Ruas — AI-native growth and systems thinking";
     const desc = isPt
-      ? "Stéphanie Nakamura Ruas é estrategista de growth com foco em serviços financeiros. Ensaios e ferramentas construídos com IA."
-      : "Stéphanie Nakamura Ruas is a growth strategist focused on financial services. Essays and tools built with AI.";
+      ? "Stéphanie Nakamura Ruas: Estrategista de growth com pensamento sistêmico acelerado por IA. Ensaios e ferramentas construídos com IA."
+      : "Stéphanie Nakamura Ruas: Growth strategist applying AI-enhanced lateral thinking to business growth. Essays and tools built with AI.";
     const url = isPt ? "https://steruas.com/pt" : "https://steruas.com/en";
     const ogLocale = isPt ? "pt_BR" : "en_US";
     const ogLocaleAlt = isPt ? "en_US" : "pt_BR";
@@ -59,7 +59,6 @@ export const Route = createFileRoute("/$locale")({
               "Growth Marketing",
               "Artificial Intelligence",
               "Corporate Strategy",
-              "Financial Services",
               "Digital Marketing",
             ],
             address: {
